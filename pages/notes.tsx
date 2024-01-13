@@ -4,7 +4,6 @@ import Link from "next/link";
 import { getAllPosts } from "../lib/api";
 import React, { useState, lazy, Suspense } from "react";
 import Header from "../components/misc/header";
-import { Analytics } from "@vercel/analytics/react"
 const ParticlesAnimation = lazy(() => import('../components/ui/ParticlesAnimation'));
 
 // Define the interface for page properties
@@ -58,7 +57,6 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
             </Link>
           ))}
         </div>
-        <Analytics />
       </div>
     </>
   );

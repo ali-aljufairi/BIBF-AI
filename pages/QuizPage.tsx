@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import QuizCard from "../components/misc/QuizCard";
 import Header from "../components/misc/header";
 import Footer from "../components/misc/footer";
-import { Analytics } from "@vercel/analytics/react"
 
 // Import the questions from the JSON file in the public folder which is the root of the project
 const questions = require("../public/Quiz/Exam_Dumbs.json");
@@ -59,7 +58,6 @@ const QuizPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Analytics />
       <Footer />
     </>
   );
