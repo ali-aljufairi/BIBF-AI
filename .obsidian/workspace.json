@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Day1.md",
+                "file": "common_md/reinventing-the-wheel.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Day1.md",
+                "file": "common_md/reinventing-the-wheel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Day1.md",
+                "file": "common_md/reinventing-the-wheel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Day1.md"
+                "file": "common_md/reinventing-the-wheel.md"
               }
             }
           }
@@ -148,17 +148,54 @@
   },
   "active": "7a23acc4fe9dff1e",
   "lastOpenFiles": [
-    "Untitled 1.md",
-    "2024-01-19.md",
-    "common_md/Day1.md",
-    "common_md/home.md",
-    "Untitled.md",
-    "common_md/accepted-markdown-metadata.md",
+    "node_modules/remark-parse/lib/index.d.ts",
+    "node_modules/remark-parse/lib/index.js",
+    "node_modules/remark-parse/readme.md",
+    "node_modules/remark-parse/license",
+    "node_modules/remark-parse/index.d.ts",
+    "node_modules/remark-parse/package.json",
+    "node_modules/remark-parse/lib",
+    "node_modules/remark-parse/index.js",
+    "node_modules/remark-parse",
+    "node_modules/web-namespaces/readme.md",
+    "node_modules/web-namespaces/package.json",
+    "node_modules/web-namespaces/license",
+    "node_modules/web-namespaces/index.js",
+    "node_modules/trough/readme.md",
+    "node_modules/trim-lines/readme.md",
+    "node_modules/micromark-factory-destination/readme.md",
+    "node_modules/micromark-extension-gfm-tagfilter/readme.md",
+    "node_modules/mdast-util-definitions/readme.md",
+    "node_modules/decode-named-character-reference/readme.md",
+    "node_modules/character-entities-html4/readme.md",
+    "node_modules/character-entities-legacy/readme.md",
+    "node_modules/bcp-47-match/readme.md",
+    "node_modules/boolbase/README.md",
+    "node_modules/camelcase-css/README.md",
+    "node_modules/dlv/README.md",
+    "node_modules/cssesc/README.md",
+    "node_modules/function-bind/README.md",
+    "public/md_assets/attachments/vercel-project-id.png",
+    "public/md_assets/attachments/vercel-create-token.png",
+    "public/md_assets/attachments/vercel-account-id.png",
+    "public/md_assets/attachments/publish-dir-yml.png",
+    "public/md_assets/attachments/github-secrets-vercel.png",
+    "public/md_assets/attachments/fork-linked-blog-starter-md.png",
+    "public/md_assets/attachments/enable-actions-github.png",
+    "public/md_assets/attachments/fn-website-demo.gif",
+    "public/md_assets/attachments/disconnect-repo-vercel.png",
+    "public/md_assets/attachments/configure-project-vercel.png",
+    "node_modules/next/license.md",
+    "node_modules/hast-util-from-html/readme.md",
+    "node_modules/markdown-table/readme.md",
+    "node_modules/@types/react/README.md",
+    "node_modules/extend-shallow/README.md",
+    "node_modules/is-extendable/README.md",
+    "node_modules/css-selector-parser/README.md",
+    "node_modules/caniuse-lite/README.md",
+    "node_modules/acorn-node/LICENSE.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "create a link.md",
-    "Welcome.md",
-    "BIBF-AI"
+    "Untitled 1.canvas"
   ]
 }
