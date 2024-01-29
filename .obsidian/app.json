@@ -1,3 +1,6 @@
 {
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "common_md/attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "common_md"
 }
