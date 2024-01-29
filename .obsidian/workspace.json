@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/reinventing-the-wheel.md",
+                "file": "common_md/home.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed66677093b6c854",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "common_md/Cloud Essential.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 474.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/reinventing-the-wheel.md",
+                "file": "common_md/Cloud Essential.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/reinventing-the-wheel.md",
+                "file": "common_md/Cloud Essential.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/reinventing-the-wheel.md"
+                "file": "common_md/Cloud Essential.md"
               }
             }
           }
@@ -146,8 +160,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a23acc4fe9dff1e",
+  "active": "ed66677093b6c854",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "common_md/Cloud Essential.md",
+    "Untitled.md",
+    "common_md/home.md",
+    "common_md/Day1.md",
+    "common_md/linked-blog-starter-does-not-reinvent-wheel.md",
+    "common_md/reinventing-the-wheel.md",
     "node_modules/remark-parse/lib/index.d.ts",
     "node_modules/remark-parse/lib/index.js",
     "node_modules/remark-parse/readme.md",
@@ -160,7 +181,6 @@
     "node_modules/web-namespaces/readme.md",
     "node_modules/web-namespaces/package.json",
     "node_modules/web-namespaces/license",
-    "node_modules/web-namespaces/index.js",
     "node_modules/trough/readme.md",
     "node_modules/trim-lines/readme.md",
     "node_modules/micromark-factory-destination/readme.md",
@@ -188,12 +208,6 @@
     "node_modules/next/license.md",
     "node_modules/hast-util-from-html/readme.md",
     "node_modules/markdown-table/readme.md",
-    "node_modules/@types/react/README.md",
-    "node_modules/extend-shallow/README.md",
-    "node_modules/is-extendable/README.md",
-    "node_modules/css-selector-parser/README.md",
-    "node_modules/caniuse-lite/README.md",
-    "node_modules/acorn-node/LICENSE.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
