@@ -12,15 +12,15 @@ const Header = () => {
     };
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
-  }, [top]);  
+  }, [top]);
 
   return (
     <header className={`fixed w-full z-30 md:bg-slate-900 transition duration-300 ease-in-out ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}>
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <h2 className="shrink-0 mr-4 text-2xl font-bold tracking-tight md:tracking-tighter leading-tight">
+          <h2 className="shrink-0 mr-4 text-2xl  text-cyan-100 font-bold tracking-tight md:tracking-tighter leading-tight">
             <Link href="/" className="block hover:underline" aria-label="My Blog">
-              My Blog.
+              My Blog 
             </Link>
           </h2>
           <ul className="flex grow justify-end flex-wrap items-center">
@@ -33,7 +33,7 @@ const Header = () => {
             </li>
           </ul>
           {/* Search */}
-          <Search visible={searching} setVisible={setSearching}/>
+          <Search visible={searching} setVisible={setSearching} />
         </div>
       </div>
     </header>

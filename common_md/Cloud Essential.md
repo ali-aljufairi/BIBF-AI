@@ -71,7 +71,7 @@ You only pay for what you use of each service, like paying per second for Lambda
 - Know when to use ECS vs EKS for containers
 - Pick the simplest option unless told otherwise
 
-### 1. Virtual Private Cloud (VPC): Building Isolated Environments
+###  Virtual Private Cloud (VPC): Building Isolated Environments
 
 In the discussion about VPC, the instructors elucidated the concept of creating isolated environments within AWS:
 
@@ -80,7 +80,7 @@ In the discussion about VPC, the instructors elucidated the concept of creating 
 - **Customization:** Users can tailor VPCs to their specific needs, defining IP address ranges, subnets, and configuring route tables to suit their organizational requirements.
     
 
-### 2. IP Addresses: Navigating the Digital Landscape
+###  IP Addresses: Navigating the Digital Landscape
 
 The session transitioned to understanding IP addresses within the AWS ecosystem:
 
@@ -89,7 +89,7 @@ The session transitioned to understanding IP addresses within the AWS ecosystem:
 - **Elastic IPs:** Instructors explained the flexibility of Elastic IP addresses, allowing users to associate a static IP with their instances, ensuring consistent accessibility.
     
 
-### 3. Load Balancer: Distributing Workloads Effectively
+### Load Balancer: Distributing Workloads Effectively
 
 The discussion then shifted to the significance of Load Balancers in optimizing performance:
 
@@ -98,7 +98,7 @@ The discussion then shifted to the significance of Load Balancers in optimizing 
 - **Enhanced Availability:** By distributing traffic across various instances, Load Balancers contribute to increased availability and fault tolerance within the system.
     
 
-### 4. Direct Connect: Establishing Dedicated Connections
+###  Direct Connect: Establishing Dedicated Connections
 
 Instructors introduced the concept of Direct Connect as a means of establishing dedicated connections to AWS:
 
@@ -107,7 +107,7 @@ Instructors introduced the concept of Direct Connect as a means of establishing 
 - **Predictable Performance:** With a dedicated connection, organizations can achieve more predictable network performance compared to internet-based connections.
 
 
-### 5. VPN (Virtual Private Network): Securing Communication Channels
+### VPN (Virtual Private Network): Securing Communication Channels
 
 The session concluded with insights into VPNs as a mechanism for securing communication channels:
 

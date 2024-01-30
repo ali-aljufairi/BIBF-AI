@@ -4,7 +4,7 @@ import { GitHub, Linkedin, Instagram } from 'react-feather';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white p-4">
+    <footer className="bg-slate-900 text-white p-4">
 
       <div className="container mx-auto flex justify-between items-center">
 
