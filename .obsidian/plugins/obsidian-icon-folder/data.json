@@ -6,6 +6,8 @@
     "emojiStyle": "none",
     "iconColor": "#c293f0",
     "recentlyUsedIcons": [
+      "FabNodeJs",
+      "FabReact",
       "LiImage",
       "LiFolder"
     ],
@@ -25,5 +27,7 @@
     "iconIdentifier": ":"
   },
   "common_md": "LiFolder",
-  "common_md/attachments": "LiImage"
+  "common_md/attachments": "LiImage",
+  "components": "FabReact",
+  "node_modules": "FabNodeJs"
 }

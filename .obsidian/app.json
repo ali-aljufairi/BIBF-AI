@@ -2,5 +2,8 @@
   "promptDelete": false,
   "attachmentFolderPath": "common_md/attachments",
   "newFileLocation": "folder",
-  "newFileFolderPath": "common_md"
+  "newFileFolderPath": "common_md",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }
