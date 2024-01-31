@@ -289,10 +289,64 @@ file Storage: Provides a file system interface and shared access to files. It is
 - **S3 Glacier Deep Archive:**  
   The lowest-cost storage class for data archiving and long-term backup. It offers retrieval times ranging from minutes to hours.  
   - **Transition:** Objects can be transitioned to and from S3 Glacier Deep Archive.
-![](attachments/Lambda.png)
+    
 
+![](attachments/Lambda.png)
 
 ![](attachments/Shared%20files.png)
 
-
 ![](attachments/Fsx.png)
+
+![](attachments/Pasted%20image%2020240131143210.png)
+
+## Database Services
+
+### RDS (Relational Database Service)
+
+Amazon RDS is a managed relational database service that provides resizable capacity and automates time-consuming administration tasks. It supports six popular database engines: Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and Microsoft SQL Server.
+
+
+### DynamoDB
+
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. It supports both document and key-value data models, and is suitable for mobile, web, gaming, ad tech, IoT, and many other applications.
+
+
+
+### Amazon Redshift
+
+Amazon Redshift is a fully managed data warehouse service that makes it simple and cost-effective to analyze data using existing business intelligence tools. It is optimized for datasets ranging from a few hundred gigabytes to a petabyte or more, and can be used to analyze relational data, JSON, and spatial data.
+
+
+### Amazon ElastiCache
+
+Amazon ElastiCache is a fully managed in-memory data store and cache service that supports two popular engines: Redis and Memcached. It is suitable for real-time applications that require sub-millisecond response times, such as gaming, ad tech, financial services, and IoT.
+
+### Amazon Neptune
+
+Amazon Neptune is a fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. It is suitable for use cases such as recommendation engines, fraud detection, knowledge graphs, drug discovery, and network security.
+
+### Amazon Quantum Ledger Database (QLDB)
+
+Amazon QLDB is a fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. It is suitable for applications that require a complete and verifiable history of data changes, such as supply chain, financial, insurance, and manufacturing.
+
+
+### Amazon DocumentDB
+
+Amazon DocumentDB is a fully managed document database service that supports MongoDB workloads. It is designed to be compatible with existing MongoDB applications and tools, and is suitable for use cases such as content management, catalogs, user profiles, and real-time analytics.
+
+
+### Amazon Keyspaces (for Apache Cassandra)
+
+Amazon Keyspaces is a scalable, highly available, and fully managed Cassandra-compatible database service. It is suitable for use cases such as IoT, user and session management, and gaming.
+
+
+### Amazon Timestream
+
+Amazon Timestream is a fully managed time series database service that makes it easy to store and analyze trillions of events per day. It is suitable for use cases such as IoT, industrial telemetry, application monitoring, and DevOps.
+
+
+### Relational Vs. Non-Relational Databases
+
+- **Relational Databases:** Relational databases store data in tables with rows and columns. They are suitable for structured data with fixed schemas, such as financial transactions, customer records, and inventory management.
+
+- **Non-Relational Databases:** Non-relational databases store data in collections of key-value pairs, documents, graphs, or other structures. They are suitable for unstructured data with dynamic schemas, such as social media posts, mobile app data, and IoT device data.
