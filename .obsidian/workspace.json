@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fa8200e2356e2e26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "common_md/Arcting on AWS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Cloud Essential.md",
+                "file": "common_md/Arcting on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Cloud Essential.md",
+                "file": "common_md/Arcting on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Cloud Essential.md"
+                "file": "common_md/Arcting on AWS.md"
               }
             }
           }
@@ -160,10 +172,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed66677093b6c854",
+  "active": "fa8200e2356e2e26",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "common_md/Cloud Essential.md",
+    "common_md/Arcting on AWS.md",
+    "public/favicon/mstile-70x70.png",
+    "public/favicon/mstile-310x310.png",
+    "public/favicon/mstile-310x150.png",
+    "public/favicon/mstile-144x144.png",
+    "public/favicon/favicon-96x96.png",
+    "public/favicon/favicon-196x196.png",
+    "public/favicon/favicon-128.png",
+    "public/favicon/code.txt",
+    "public/favicon/apple-touch-icon-76x76.png",
+    "public/favicon/apple-touch-icon-72x72.png",
+    "public/favicon/apple-touch-icon-60x60.png",
+    "Untitled 1.md",
     "Untitled.md",
     "common_md/home.md",
     "common_md/Day1.md",
@@ -180,7 +204,6 @@
     "node_modules/remark-parse",
     "node_modules/web-namespaces/readme.md",
     "node_modules/web-namespaces/package.json",
-    "node_modules/web-namespaces/license",
     "node_modules/trough/readme.md",
     "node_modules/trim-lines/readme.md",
     "node_modules/micromark-factory-destination/readme.md",
@@ -195,19 +218,8 @@
     "node_modules/dlv/README.md",
     "node_modules/cssesc/README.md",
     "node_modules/function-bind/README.md",
-    "public/md_assets/attachments/vercel-project-id.png",
-    "public/md_assets/attachments/vercel-create-token.png",
-    "public/md_assets/attachments/vercel-account-id.png",
-    "public/md_assets/attachments/publish-dir-yml.png",
-    "public/md_assets/attachments/github-secrets-vercel.png",
-    "public/md_assets/attachments/fork-linked-blog-starter-md.png",
-    "public/md_assets/attachments/enable-actions-github.png",
-    "public/md_assets/attachments/fn-website-demo.gif",
-    "public/md_assets/attachments/disconnect-repo-vercel.png",
-    "public/md_assets/attachments/configure-project-vercel.png",
     "node_modules/next/license.md",
     "node_modules/hast-util-from-html/readme.md",
-    "node_modules/markdown-table/readme.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
