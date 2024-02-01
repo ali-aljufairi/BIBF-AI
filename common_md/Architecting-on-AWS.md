@@ -143,7 +143,7 @@ This module covers networking fundamentals important for architecting on AWS. Ke
 
 
 
-# Day 2 
+# Day 2  Compute Services and Storage Services and Database Services
 
 ## Evolution of Computing 
 
@@ -211,11 +211,11 @@ AWS Lambda is a serverless compute service that allows you to run code without p
 
 
 
-# Storage Services
+## Storage Services
 
 
 
-## Cloud Storage Overview
+### Cloud Storage Overview
 
 Block Storage: Provides raw storage volumes that can be attached to EC2 instances. It is suitable for databases, file systems, and applications that require persistent storage.
 
@@ -223,7 +223,7 @@ Object Storage: Provides a flat structure for storing and retrieving data. It is
 
 file Storage: Provides a file system interface and shared access to files. It is suitable for migrating on-premises file-based workloads to the cloud.
 
-## S3 (Simple Storage Service)
+### S3 (Simple Storage Service)
 
 ### S3 Benefits
 
@@ -350,3 +350,23 @@ Amazon Timestream is a fully managed time series database service that makes it 
 - **Relational Databases:** Relational databases store data in tables with rows and columns. They are suitable for structured data with fixed schemas, such as financial transactions, customer records, and inventory management.
 
 - **Non-Relational Databases:** Non-relational databases store data in collections of key-value pairs, documents, graphs, or other structures. They are suitable for unstructured data with dynamic schemas, such as social media posts, mobile app data, and IoT device data.
+
+
+### What should you cache?
+
+- **Frequently Accessed Data:** Caching frequently accessed data can improve application performance and reduce latency.
+
+- **Expensive Data:** Caching expensive data can reduce the cost of accessing data, especially if the data is stored in a different region or availability zone.
+
+- **Data with Low Update Frequency:** Caching data with low update frequency can reduce the number of requests to the database, improving performance and reducing costs.
+
+
+### Common caching strategies 
+
+Caching strategies include:
+
+- **Write-Through:** Write-through caching writes data to the cache and the database at the same time. It is simple to implement, but can result in stale data.
+
+- **Write-Around:** Write-around caching writes data directly to the database, bypassing the cache. It is useful for data that is not frequently accessed.
+
+- **Lazy Loading:** Lazy loading caches data only when it is requested. It is useful for data that is not frequently accessed.
