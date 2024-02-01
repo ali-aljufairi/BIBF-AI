@@ -4,8 +4,9 @@
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
     "emojiStyle": "none",
-    "iconColor": "#c293f0",
+    "iconColor": "#d8a3f0",
     "recentlyUsedIcons": [
+      "FabCss3",
       "FabNodeJs",
       "FabReact",
       "LiImage",
@@ -29,5 +30,6 @@
   "common_md": "LiFolder",
   "common_md/attachments": "LiImage",
   "components": "FabReact",
-  "node_modules": "FabNodeJs"
+  "node_modules": "FabNodeJs",
+  "styles": "FabCss3"
 }

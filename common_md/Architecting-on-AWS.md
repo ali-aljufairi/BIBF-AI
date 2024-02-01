@@ -209,10 +209,7 @@ AWS Lambda is a serverless compute service that allows you to run code without p
 
 
 
-
-
 ## Storage Services
-
 
 
 ### Cloud Storage Overview
@@ -370,3 +367,52 @@ Caching strategies include:
 - **Write-Around:** Write-around caching writes data directly to the database, bypassing the cache. It is useful for data that is not frequently accessed.
 
 - **Lazy Loading:** Lazy loading caches data only when it is requested. It is useful for data that is not frequently accessed.
+
+
+### ElastiCache for Redis
+
+Amazon ElastiCache for Redis is a fully managed in-memory data store and cache service that supports Redis workloads. It is suitable for real-time applications that require sub-millisecond response times, such as gaming, ad tech, financial services, and IoT.
+
+
+### ElastiCache for Memcached
+
+Amazon ElastiCache for Memcached is a fully managed in-memory data store and cache service that supports Memcached workloads. It is suitable for real-time applications that require sub-millisecond response times, such as gaming, ad tech, financial services, and IoT.
+
+### AWS DynamoDB DAX 
+
+Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement. It is suitable for read-heavy DynamoDB workloads, such as gaming, ad tech, financial services, and IoT.
+
+
+# Day 3:  
+
+
+## Module : Monitoring and Scaling
+
+
+
+### Benefits of Monitoring
+
+- **Improved Performance:** Monitoring helps identify performance bottlenecks and other issues that can impact application performance.
+
+- **Reduced Downtime:** Monitoring helps identify issues before they impact users, reducing downtime and improving availability.
+
+- **Cost Optimization:** Monitoring helps identify underutilized resources, allowing you to optimize costs by eliminating waste.
+
+### Monitoring Services
+
+#### CloudWatch
+- collects and tracks metrics, collects and monitors log files, sets alarms, and automatically reacts to changes in your AWS resources.
+
+- Access monitoring data and view graphs using the CloudWatch console, command-line tools, or API.
+
+- create alarms that watch metrics and send notifications or automatically make changes to the resources you are monitoring when a threshold is breached.
+
+- Initate change to resources using CloudWatch Events.
+
+
+### Types of logs 
+
+
+
+
+![](attachments/Pasted%20image%2020240201094933.png)
