@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4ec117421f6eca9a",
+        "id": "437884a28295283d",
         "type": "tabs",
         "children": [
           {
-            "id": "03ecbf6fb28ecfd2",
+            "id": "00a94b4704046da4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/accepted-markdown-metadata.md",
+                "file": "common_md/Architecting-on-AWS.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/accepted-markdown-metadata.md",
+                "file": "common_md/Architecting-on-AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/accepted-markdown-metadata.md",
+                "file": "common_md/Architecting-on-AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/accepted-markdown-metadata.md"
+                "file": "common_md/Architecting-on-AWS.md"
               }
             }
           }
@@ -147,9 +148,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "187d128a8bd91fe8",
+  "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240201111952.png",
+    "common_md/attachments/Pasted image 20240201111610.png",
+    "common_md/attachments/image.png",
     "common_md/Architecting-on-AWS.md",
+    "obsidian.vimrc",
+    "common_md/attachments/Pasted image 20240201105645.png",
     "common_md/accepted-markdown-metadata.md",
     "common_md/attachments/Pasted image 20240201094933.png",
     "public/md_assets/attachments/Shared files.png",
@@ -158,9 +164,6 @@
     "public/md_assets/attachments/Fsx.png",
     "public/md_assets/attachments/check.png",
     "public/md_assets/attachments/Benfits-of-Container.png",
-    "public/md_assets/attachments/Architecting-on-AWS.png",
-    "common_md/attachments/Pasted image 20240131143210.png",
-    "common_md/attachments/Fsx.png",
     "node_modules/acorn-node/test/index.js",
     "node_modules/acorn-node/test",
     "node_modules/autoprefixer/bin/autoprefixer",
@@ -170,7 +173,6 @@
     "node_modules/class-variance-authority/node_modules/clsx/dist/clsx.js",
     "node_modules/class-variance-authority/node_modules/clsx/dist",
     "node_modules/@types/node/dns/promises.d.ts",
-    "node_modules/@types/node/dns",
     "common_md/Polices.md",
     "common_md/home.md",
     "common_md/install-linked-blog-starter-locally.md",

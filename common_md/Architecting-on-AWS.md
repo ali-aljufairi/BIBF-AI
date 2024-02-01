@@ -43,7 +43,7 @@ AWS Organizations enable the management of multiple AWS accounts. It allows for 
 User-created policies that cater to specific needs or requirements, providing a flexible way to define detailed permissions.
 
 ### 3. Resource-Based Policies:
-These policies dictate access to AWS resources based on the resource's attributes. They specify who can perform actions on the resource and under what conditions.
+ These policies dictate access to AWS resources based on the resource's attributes. They specify who can perform actions on the resource and under what conditions.
 
 
 ![policy.png](attachments/policy.png)
@@ -389,7 +389,7 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 ## Module : Monitoring and Scaling
 
 
-
+ 
 ### Benefits of Monitoring
 
 - **Improved Performance:** Monitoring helps identify performance bottlenecks and other issues that can impact application performance.
@@ -401,6 +401,11 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 ### Monitoring Services
 
 #### CloudWatch
+
+<!-- Important  make quote  -->
+
+> Amazon CloudWatch Store for only 10 years 
+
 - collects and tracks metrics, collects and monitors log files, sets alarms, and automatically reacts to changes in your AWS resources.
 
 - Access monitoring data and view graphs using the CloudWatch console, command-line tools, or API.
@@ -416,3 +421,41 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 
 
 ![](attachments/Pasted%20image%2020240201094933.png)
+
+### Amazon EventBridge
+
+
+![](attachments/Pasted%20image%2020240201105645.png)
+
+
+#### EventBridge Rules with CloudWatch Events
+
+- **Schedule:** Trigger an event at a specified time or interval.
+
+- **Event Pattern:** Trigger an event when a specific event occurs.
+
+
+
+### ELB (Elastic Load Balancer)
+
+![Alt text](attachments/image.png)
+
+![](attachments/Pasted%20image%2020240201111952.png)
+
+
+## Automation 
+
+
+### CloudFormation
+
+- CloudFormation is a service that allows you to define and provision AWS infrastructure as code. It allows you to create templates that can be used to provision resources in a repeatable and predictable manner.
+
+ 
+ - stack is a collection of AWS resources that you can manage as a single unit. In CloudFormation, you create, update, and delete a collection of resources by creating, updating, and deleting stacks.
+ 
+ - CloudFormation templates are JSON or YAML files that describe the AWS resources and configurations required to run an application. Templates can be used to provision resources in a repeatable and predictable manner.
+ 
+ - nested stack is a stack that is created as part of another stack. Nested stacks allow you to reuse templates and provision resources in a modular and encapsulated manner.
+ 
+- Stack Sets allow you to provision stacks across multiple accounts and regions with a single operation. Stack Sets are useful for deploying infrastructure in a multi-account environment. 
+ 
