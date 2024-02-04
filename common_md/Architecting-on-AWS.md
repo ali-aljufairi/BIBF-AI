@@ -89,6 +89,11 @@ In summary, the key difference between stateless and stateful filtering is in ho
 #### Route Table:
 - Default Private: By default, route tables in a VPC are private and can't be accessed by external entities or resources outside the VPC. This ensures network isolation and security.
 
+#### Elastic network interface (ENI):
+
+- An Elastic Network Interface (ENI) is a virtual network interface that can be attached to an EC2 instance. It can have one or more private IPv4 addresses, one public IPv4 address, one or more IPv6 addresses, and one or more security groups.
+
+> Does not have to be attached to an EC2 instance it can be in the air
 
 
 
@@ -207,10 +212,7 @@ AWS Lambda is a serverless compute service that allows you to run code without p
 - Evaluate Lambda's pay-per-use model for cost-effective solutions, especially for workloads with variable demand.
 
 
-
-
 ## Storage Services
-
 
 ### Cloud Storage Overview
 
@@ -388,8 +390,6 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 
 ## Module : Monitoring and Scaling
 
-
- 
 ### Benefits of Monitoring
 
 - **Improved Performance:** Monitoring helps identify performance bottlenecks and other issues that can impact application performance.
@@ -416,8 +416,6 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 
 
 ### Types of logs 
-
-
 
 
 ![](attachments/Pasted%20image%2020240201094933.png)
@@ -450,12 +448,114 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 
 - CloudFormation is a service that allows you to define and provision AWS infrastructure as code. It allows you to create templates that can be used to provision resources in a repeatable and predictable manner.
 
- 
  - stack is a collection of AWS resources that you can manage as a single unit. In CloudFormation, you create, update, and delete a collection of resources by creating, updating, and deleting stacks.
  
  - CloudFormation templates are JSON or YAML files that describe the AWS resources and configurations required to run an application. Templates can be used to provision resources in a repeatable and predictable manner.
  
  - nested stack is a stack that is created as part of another stack. Nested stacks allow you to reuse templates and provision resources in a modular and encapsulated manner.
  
-- Stack Sets allow you to provision stacks across multiple accounts and regions with a single operation. Stack Sets are useful for deploying infrastructure in a multi-account environment. 
- 
+- Stack Sets allow you to provision stacks across multiple accounts and regions with a single operation. Stack Sets are useful for deploying infrastructure in a multi-account environment.
+
+ - change sets allow you to preview the changes that will be made to a stack before they are applied. Change sets are useful for reviewing and approving changes to a stack before they are executed. 
+
+ ![](attachments/Pasted%20image%2020240201132446.png)
+
+
+ ## Container Services
+ ![](attachments/Pasted%20image%2020240201143235.png)
+
+![](attachments/Pasted%20image%2020240201143215.png)
+
+
+## Aws Networking 2
+
+
+
+
+### VPC endpoints  
+
+- VPC endpoints allow you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink.
+- VPC endpoints are virtual devices that are horizontally scaled, redundant, and highly available. They allow you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
+
+### VPC peering
+
+- VPC peering allows you to connect two VPCs so that they can communicate with each other using private IP addresses. VPC peering is useful for connecting VPCs within the same AWS account or across different AWS accounts.
+
+
+### Transit Gateway
+
+- Transit Gateway is a service that allows you to connect multiple VPCs and on-premises networks together in a hub-and-spoke model. Transit Gateway simplifies network connectivity and reduces operational overhead by providing a single gateway for connecting multiple networks.
+
+
+![](attachments/Pasted%20image%2020240204145131.png)
+
+
+### AWS Direct Connect
+
+- AWS Direct Connect is a service that allows you to establish a dedicated network connection between your network and AWS. Direct Connect is useful for connecting your on-premises network to AWS, providing a more consistent network experience than internet-based connections.
+
+
+## Serverless 
+
+
+### Aws serverless Portfolio
+
+
+![](attachments/Pasted%20image%2020240204145643.png)
+
+- AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers. Lambda is useful for building serverless applications, event-driven applications, and microservices.
+
+- Amazon API Gateway is a fully managed service that allows you to create, publish, maintain, monitor, and secure APIs at any scale. API Gateway is useful for building serverless applications, event-driven applications, and microservices.
+
+- Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB is useful for building serverless applications, event-driven applications, and microservices.
+
+- Amazon S3 is a fully managed object storage service that provides highly scalable, durable, and secure storage for objects. S3 is useful for building serverless applications, event-driven applications, and microservices.
+
+- AWS Step Functions is a fully managed service that allows you to coordinate multiple AWS services into serverless workflows. Step Functions is useful for building serverless applications, event-driven applications, and microservices.
+
+- Amazon SNS is a fully managed pub/sub messaging service that allows you to send and receive messages between distributed systems. SNS is useful for building serverless applications, event-driven applications, and microservices.
+
+- Amazon SQS is a fully managed message queuing service that allows you to decouple and scale microservices, distributed systems, and serverless applications. SQS is useful for building serverless applications, event-driven applications, and microservices.
+
+- AWS AppSync is a fully managed service that allows you to build scalable and secure GraphQL APIs. AppSync is useful for building serverless applications, event-driven applications, and microservices.
+
+- Amazon Cognito is a fully managed service that allows you to add user sign-up, sign-in, and access control to your web and mobile apps. Cognito is useful for building serverless applications, event-driven applications, and microservices.
+
+
+
+### Amazon kinses
+
+
+![](attachments/Pasted%20image%2020240204145951.png)
+
+![](attachments/Pasted%20image%2020240204150030.png)
+
+![](attachments/Pasted%20image%2020240204150048.png)
+
+
+## Aws Edge Services
+
+### Amazon CloudFront
+
+- Amazon CloudFront is a content delivery network (CDN) service that delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, and no minimum usage commitments. CloudFront is useful for delivering static and dynamic content, streaming media, and APIs.
+
+
+### Amazon Route 53
+
+- Amazon Route 53 is a scalable and highly available domain name system (DNS) web service. Route 53 is useful for routing end users to internet applications by translating human-readable names into IP addresses.
+
+
+
+### AWS WAF
+
+- AWS WAF is a web application firewall that helps protect web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. WAF is useful for protecting web applications from common web exploits, such as SQL injection, cross-site scripting, and more.
+
+
+### AWS Shield
+
+- AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards web applications running on AWS. Shield is useful for protecting web applications from DDoS attacks.
+
+
+### AWS Firewall Manager
+
+- AWS Firewall Manager is a security management service that allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organization. Firewall Manager is useful for centrally managing firewall rules across multiple accounts and applications.
