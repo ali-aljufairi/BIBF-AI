@@ -13,8 +13,7 @@ const Layout = ({ children }: Props) => {
       <main className="grow">
         {children}
       </main>
-      <Footer />
-    </div>
+      <Footer /> </div>
   )
 }
 

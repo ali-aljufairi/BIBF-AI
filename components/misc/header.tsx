@@ -18,9 +18,15 @@ const Header = () => {
     <header className={`fixed w-full z-30 md:bg-slate-900 transition duration-300 ease-in-out ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}>
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <h2 className="shrink-0 mr-4 text-2xl  text-cyan-100 font-bold tracking-tight md:tracking-tighter leading-tight">
-            <Link href="/" className="block hover:underline" aria-label="My Blog">
-              My Blog 
+          <h2 className="shrink-0 mr-4 text-2xl  text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
+            <Link href="/BIBF-AI" className="block hover:underline" aria-label="My Blog">
+              Home
+            </Link>
+          </h2>
+
+          <h2 className="shrink-0 mr-4 text-2xl  text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
+            <Link href="/notes" className="block hover:underline" aria-label="notes">
+              notes  
             </Link>
           </h2>
           <ul className="flex grow justify-end flex-wrap items-center">

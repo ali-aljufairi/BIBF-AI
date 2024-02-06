@@ -18,6 +18,19 @@ module.exports = {
     },
     extend: {
       colors: {
+        "Pufr": {
+          50: "#F1F3F9",
+          100: "#E2E6F3",
+          200: "#C1CAE6",
+          300: "#9CACD8",
+          400: "#607CC3",
+          500: "#0F172A",
+          600: "#11192C",
+          700: "#11182C",
+          800: "#1C2645",
+          900: "#1D2644",
+          950: "#1E2643"
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
