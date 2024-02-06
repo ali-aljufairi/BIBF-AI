@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Architecting-on-AWS.md",
+                "file": "common_md/Data-Analytics-Fundamentals.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Architecting-on-AWS.md",
+                "file": "common_md/Data-Analytics-Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Architecting-on-AWS.md",
+                "file": "common_md/Data-Analytics-Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Architecting-on-AWS.md"
+                "file": "common_md/Data-Analytics-Fundamentals.md"
               }
             }
           }
@@ -150,20 +150,21 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
-    "common_md/attachments/Pasted image 20240204150048.png",
-    "common_md/attachments/Pasted image 20240204150030.png",
-    "common_md/attachments/Pasted image 20240204145951.png",
-    "common_md/attachments/Pasted image 20240204145643.png",
-    "common_md/attachments/Pasted image 20240204145131.png",
-    "Excalidraw/Drawing 2024-02-04 09.09.06.excalidraw.md",
+    "common_md/attachments/Pasted image 20240205161441.png",
+    "common_md/attachments/Pasted image 20240205160719.png",
+    "common_md/attachments/Pasted image 20240205160658.png",
+    "common_md/attachments/Pasted image 20240205160637.png",
+    "common_md/attachments/Pasted image 20240205160559.png",
+    "common_md/attachments/Pasted image 20240205152220.png",
+    "common_md/attachments/Pasted image 20240205145850.png",
+    "common_md/attachments/Pasted image 20240205142120.png",
+    "common_md/attachments/Pasted image 20240205142023.png",
+    "common_md/attachments/Pasted image 20240205133539.png",
+    "common_md/attachments/Pasted image 20240205133420.png",
     "common_md/Architecting-on-AWS.md",
+    "common_md/attachments/Mindmap.excalidraw",
+    "Excalidraw/Drawing 2024-02-04 09.09.06.excalidraw.md",
     "Excalidraw",
-    "common_md/attachments/Pasted image 20240201143235.png",
-    "common_md/attachments/Pasted image 20240201143215.png",
-    "common_md/attachments/Pasted image 20240201132446.png",
-    "common_md/attachments/Pasted image 20240201111952.png",
-    "common_md/attachments/Pasted image 20240201111610.png",
-    "common_md/attachments/image.png",
     "obsidian.vimrc",
     "common_md/accepted-markdown-metadata.md",
     "node_modules/acorn-node/test/index.js",
@@ -173,7 +174,6 @@
     "node_modules/class-variance-authority/node_modules/clsx/dist/clsx.mjs",
     "node_modules/class-variance-authority/node_modules/clsx/dist/clsx.min.js",
     "node_modules/class-variance-authority/node_modules/clsx/dist/clsx.js",
-    "node_modules/class-variance-authority/node_modules/clsx/dist",
     "common_md/Polices.md",
     "common_md/home.md",
     "common_md/install-linked-blog-starter-locally.md",

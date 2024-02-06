@@ -1,5 +1,6 @@
 # Day 1: AWS Security and Identity Management
 
+![](attachments/Untitled-2023-10-15-0815.svg)
 ## Create Role
 
 ### Trust Policy: 
@@ -466,9 +467,7 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 
 ![](attachments/Pasted%20image%2020240201143215.png)
 
-
 ## Aws Networking 2
-
 
 
 
@@ -559,3 +558,26 @@ Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memor
 ### AWS Firewall Manager
 
 - AWS Firewall Manager is a security management service that allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organization. Firewall Manager is useful for centrally managing firewall rules across multiple accounts and applications.
+
+![](attachments/Pasted%20image%2020240204150748.png)
+
+## outposts
+
+- AWS Outposts is a fully managed service that extends AWS infrastructure, AWS services, APIs, and tools to virtually any datacenter, co-location space, or on-premises facility for a truly consistent hybrid experience.
+
+![](attachments/Pasted%20image%2020240204150923.png)
+
+
+## Backup and Recovery
+
+![](attachments/Pasted%20image%2020240204154043.png)
+
+![](attachments/Pasted%20image%2020240204153946.png)
+
+
+
+### AWS Backup    
+
+- AWS Backup is a fully managed backup service that makes it easy to centralize and automate the backup of data across AWS services. Backup is useful for protecting data across AWS services, such as Amazon EBS, Amazon RDS, Amazon DynamoDB, and more. 
+
+
