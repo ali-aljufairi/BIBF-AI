@@ -185,12 +185,9 @@ Certainly! Let’s delve into the differences between the **ACID** and **BASE** 
     - **Eventually Consistent**: Over time, the system converges to a consistent state. It doesn’t guarantee immediate consistency but ensures eventual correctness.
     - **Use Case Example**: NoSQL databases often follow the BASE model. These databases handle large-scale data, trading off strict consistency for scalability and availability. [Examples include Apache CouchDB and IBM Db2](https://phoenixnap.com/kb/acid-vs-base)[1](https://phoenixnap.com/kb/acid-vs-base).
 
-[In summary, ACID provides consistency, while BASE prioritizes high availability and eventual consistency](https://phoenixnap.com/kb/acid-vs-base)[1](https://phoenixnap.com/kb/acid-vs-base)[2](https://www.geeksforgeeks.org/acid-model-vs-base-model-for-database/)[3](https://aws.amazon.com/compare/the-difference-between-acid-and-base-database/). 📊🔍
-
-![](attachments/Pasted%20image%2020240205160559.png)
 
 
-
+### Types of Data Analytics
 
 ![](attachments/Pasted%20image%2020240205160637.png)
 
@@ -199,4 +196,3 @@ Certainly! Let’s delve into the differences between the **ACID** and **BASE** 
 
 
 ![](attachments/Pasted%20image%2020240205160719.png)
-![](attachments/Pasted%20image%2020240205161441.png)

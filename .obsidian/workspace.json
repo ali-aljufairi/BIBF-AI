@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Data-Analytics-Fundamentals.md",
+                "file": "common_md/hadoop.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "07fe200ee49ec5e3",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-02-06 11.06.26.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Data-Analytics-Fundamentals.md",
+                "file": "Excalidraw/Drawing 2024-02-06 11.06.26.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Data-Analytics-Fundamentals.md",
+                "file": "Excalidraw/Drawing 2024-02-06 11.06.26.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Data-Analytics-Fundamentals.md"
+                "file": "Excalidraw/Drawing 2024-02-06 11.06.26.excalidraw.md"
               }
             }
           }
@@ -148,19 +159,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "00a94b4704046da4",
+  "active": "07fe200ee49ec5e3",
   "lastOpenFiles": [
-    "common_md/attachments/Pasted image 20240205161441.png",
-    "common_md/attachments/Pasted image 20240205160719.png",
-    "common_md/attachments/Pasted image 20240205160658.png",
-    "common_md/attachments/Pasted image 20240205160637.png",
-    "common_md/attachments/Pasted image 20240205160559.png",
-    "common_md/attachments/Pasted image 20240205152220.png",
-    "common_md/attachments/Pasted image 20240205145850.png",
-    "common_md/attachments/Pasted image 20240205142120.png",
-    "common_md/attachments/Pasted image 20240205142023.png",
-    "common_md/attachments/Pasted image 20240205133539.png",
-    "common_md/attachments/Pasted image 20240205133420.png",
+    "common_md/attachments/Pasted Image 20240206110946_718.png",
+    "common_md/attachments/Pasted Image 20240206110930_749.png",
+    "common_md/attachments/Pasted Image 20240206110930_738.png",
+    "common_md/attachments/Pasted Image 20240206110915_720.png",
+    "common_md/attachments/Pasted Image 20240206110657_717.png",
+    "common_md/attachments/Pasted Image 20240206110641_987.png",
+    "common_md/hadoop.md",
+    "Excalidraw/Drawing 2024-02-06 11.06.26.excalidraw.md",
+    "common_md/attachments/Pasted image 20240206101937.png",
+    "common_md/IoT-Analytics.md",
+    "common_md/attachments/Pasted image 20240206095335.png",
+    "common_md/attachments/Pasted image 20240206094608.png",
+    "common_md/image.png",
+    "common_md/attachments/Pasted image 20240206094418.png",
+    "common_md/Data-Analytics-Fundamentals.md",
     "common_md/Architecting-on-AWS.md",
     "common_md/attachments/Mindmap.excalidraw",
     "Excalidraw/Drawing 2024-02-04 09.09.06.excalidraw.md",
@@ -192,10 +207,6 @@
     "node_modules/date-fns/docs/unicodeTokens.md",
     "node_modules/date-fns/docs/timeZones.md",
     "node_modules/date-fns/docs/release.md",
-    "node_modules/date-fns/docs/i18n.md",
-    "node_modules/date-fns/docs/gettingStarted.md",
-    "node_modules/date-fns/docs/fp.md",
-    "node_modules/date-fns/docs/constants.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
