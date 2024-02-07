@@ -18,6 +18,14 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ea2c5c6bed36d5ce",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ]
       }
@@ -150,6 +158,11 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240207141924.png",
+    "common_md/attachments/Pasted image 20240207141558.png",
+    "common_md/Data Lakes.md",
+    "common_md/attachments/Pasted image 20240207132626.png",
+    "common_md/attachments/Pasted image 20240207131715.png",
     "common_md/attachments/Pasted image 20240207113804.png",
     "common_md/image-1.png",
     "common_md/attachments/Pasted image 20240207111006.png",
@@ -157,10 +170,6 @@
     "common_md/attachments/Pasted image 20240207110849.png",
     "public/md_assets/image.png",
     "public/md_assets/attachments/Pasted image 20240207093527.png",
-    "common_md/attachments/Pasted image 20240207105153.png",
-    "common_md/image.png",
-    "common_md/attachments/Pasted image 20240207101104.png",
-    "common_md/attachments/Pasted image 20240207100521.png",
     "common_md/BIBF-AI.md",
     "common_md/Data-Analytics-Fundamentals.md",
     "common_md/deploy-a-custom-linked-blog-starter.md",
@@ -195,7 +204,6 @@
     "node_modules/date-fns/docs/upgradeGuide.md",
     "node_modules/date-fns/docs/unicodeTokens.md",
     "node_modules/date-fns/docs/timeZones.md",
-    "node_modules/date-fns/docs/release.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

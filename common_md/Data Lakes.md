@@ -143,8 +143,7 @@ The Data Catalog is a crucial component of AWS Glue, serving as a metadata repos
 
 ### Crawl and Catalogue data 
 
-AWS Glue consists of a central metadata repository known as the AWS Glue Data Catalog, an ETL engine that automatically generates Python or Scala code, and a flexible scheduler that handles dependency resolution, job monitoring, and retries
-
+AWS Glue consists of a central metadata repository known as the AWS Glue Data Catalog, an ETL engine that automatically generates Python or Scala code, and a flexible scheduler that handles dependency resolution, job monitoring, and retriesr
 
 AWS Glue Data Catalog The AWS Glue Data Catalog provides a uniform repository where disparate systems can store and find metadata to keep track of data in the data lake. The catalog contains metadata describing and referencing the data lake stores and native storage location. When the data is cataloged, it is immediately available for search and query using Amazon Athena, Amazon EMR, and Amazon Redshift Spectrum.
 
@@ -153,3 +152,87 @@ AWS Glue Crawler AWS Glue Crawlers can scan data in all kinds of repositories, c
 #### Crawler
 
 ![](attachments/Pasted%20image%2020240207113804.png)
+
+
+## Building a data Lake with AWS Lake Formation
+
+
+![](attachments/Pasted%20image%2020240207131715.png)
+
+
+![](attachments/Pasted%20image%2020240207132626.png)
+
+
+![](attachments/Pasted%20image%2020240207141558.png)
+
+
+![](attachments/Pasted%20image%2020240207141558.png)
+
+
+## Data processing and analytics
+
+### Data preparation
+
+![](attachments/Pasted%20image%2020240207141924.png)
+
+### Data cleansing and preparation
+
+Data cleansing is the process of identifying and correcting errors or inconsistencies in data to improve its quality. It involves various techniques to clean, transform, and standardize data, making it suitable for analysis and reporting. Here are some common data cleansing tasks:
+
+
+#### 1. Removing Duplicates:
+
+- **Description:** Identifying and removing duplicate records from a dataset.
+- **Example:** A customer database contains multiple entries for the same customer due to data entry errors or system issues.
+- **Techniques:** Using SQL queries, data deduplication tools, or custom scripts to identify and eliminate duplicate records.
+- **Benefits:** Reducing data redundancy, improving data accuracy, and ensuring consistency in reporting.
+- **Challenges:** Identifying duplicates accurately, especially when dealing with large datasets or complex data structures.
+- **Tools:** SQL, Python (pandas library), data deduplication software.
+- **Best Practices:** Establishing unique identifiers for records, implementing data validation rules, and regularly monitoring data quality.
+- **Considerations:** Balancing the need for data deduplication with the risk of losing valuable information.
+
+#### 2. Standardizing Data:
+
+- **Description:** Converting data into a consistent format or structure to facilitate analysis and comparison.
+- **Example:** Standardizing date formats, currency symbols, or units of measurement across different datasets.
+- **Techniques:** Using data transformation functions, regular expressions, or lookup tables to standardize data elements.
+- **Benefits:** Enhancing data uniformity, enabling accurate aggregation and reporting, and simplifying data integration.
+- **Challenges:** Dealing with variations in data formats, handling exceptions, and maintaining data standardization over time.
+- **Tools:** ETL tools, scripting languages, data quality software.
+- **Best Practices:** Creating data standardization guidelines, leveraging automation for repetitive tasks, and documenting data transformation processes.
+- **Considerations:** Adapting standardization rules to specific data domains or business requirements.
+
+
+#### 3. Handling Missing Values:
+
+- **Description:** Identifying and addressing missing or null values in a dataset.
+- **Example:** A sales database contains missing entries for customer addresses, product prices, or order dates.
+- **Techniques:** Imputing missing values, removing incomplete records, or flagging missing data for further analysis.
+- **Benefits:** Improving data completeness, reducing bias in analysis, and ensuring the accuracy of statistical calculations.
+- **Challenges:** Determining the cause of missing data, selecting appropriate imputation methods, and avoiding unintended biases.
+- **Tools:** Statistical software, machine learning algorithms, data profiling tools.
+- **Best Practices:** Understanding the nature of missing data, validating imputation methods, and documenting data quality issues.
+- **Considerations:** Balancing the impact of missing data on analysis with the potential risks of imputation.
+
+
+#### 4. Data Transformation:
+
+- **Description:** Converting data from one format, structure, or representation to another to meet specific requirements.
+- **Example:** Converting raw transaction data into a summarized format for reporting or analysis.
+- **Techniques:** Using data mapping, aggregation, or normalization to transform data elements.
+- **Benefits:** Enabling data integration, supporting analytical queries, and preparing data for downstream processes.
+- **Challenges:** Handling complex transformations, maintaining data lineage, and ensuring data consistency.
+- **Tools:** ETL tools, scripting languages, data integration platforms.
+- **Best Practices:** Defining clear transformation rules, validating transformation logic, and testing data quality after transformation.
+- **Considerations:** Addressing the impact of data transformation on data governance, compliance, and security.
+
+## Additional Lake Formation cofiguration 
+
+## Blueprints
+Blueprints structurally sit on top of AWS Glue, using its service to fulfill tasks. Lake Formation is tightly integrated with AWS Glue. The benefits of this integration are observed across features such as blueprints. Blueprints are essentially templates for standard transformation activities that can involve multiple jobs to perform a specified set of actions. From these blueprints, you instantiate Lake Formation workflows. The workflows then perform jobs and tasks as defined.
+
+## creating workflows
+
+Workflows generate AWS Glue crawlers, jobs, and triggers to orchestrate the loading and updating of data. You can configure a workflow to run on demand or on a schedule. Workflows that you create in Lake Formation are visible in the AWS Glue console. Each node in a workflow is a job, crawler, or trigger. To monitor progress and troubleshoot, you can track the status of each node in the workflow.
+
+
