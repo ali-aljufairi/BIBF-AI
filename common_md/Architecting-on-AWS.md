@@ -111,7 +111,7 @@ This module provides an overview of AWS architecture best practices. Key topics 
 
 - Shared Responsibility Model - AWS is responsible for security of the cloud and you are responsible for security in the cloud. Understand where responsibilities lie for security configurations.  
 
-- Deployment Options - Choices for deploying workloads on AWS include lift and shift, replatforming, refactoring, and cloud-native rearchitecting. Consider which option aligns with your goals.
+- Deployment Options - Choices for deploying workloads on AWS include lift and shift, replatforming, refactoring, and cloud-native rearchtinging. Consider which option aligns with your goals.
 
 - Multi-Account Strategy - Separate accounts for development/testing, staging, and production environments provide improved security and control. Consider an organizational structure.
 
@@ -133,7 +133,7 @@ This module dives deeper into security best practices on AWS. Key areas covered 
 
 ## Module 3: Networking
 
-This module covers networking fundamentals important for architecting on AWS. Key topics include:
+This module covers networking fundamentals important for architected on AWS. Key topics include:
 
 - Virtual Private Cloud (VPC) - The fundamental networking primitive that allows you to define your own virtual network topology on AWS including IP address ranges, subnets, route tables, and network gateways. 
 

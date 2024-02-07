@@ -26,7 +26,7 @@ const Header = () => {
 
           <h2 className="shrink-0 mr-4 text-2xl  text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
             <Link href="/notes" className="block hover:underline" aria-label="notes">
-              notes  
+              Notes  
             </Link>
           </h2>
           <ul className="flex grow justify-end flex-wrap items-center">
