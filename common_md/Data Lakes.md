@@ -226,13 +226,34 @@ Data cleansing is the process of identifying and correcting errors or inconsiste
 - **Best Practices:** Defining clear transformation rules, validating transformation logic, and testing data quality after transformation.
 - **Considerations:** Addressing the impact of data transformation on data governance, compliance, and security.
 
-## Additional Lake Formation cofiguration 
+## Additional Lake Formation configuration  
 
-## Blueprints
+### Blueprints
 Blueprints structurally sit on top of AWS Glue, using its service to fulfill tasks. Lake Formation is tightly integrated with AWS Glue. The benefits of this integration are observed across features such as blueprints. Blueprints are essentially templates for standard transformation activities that can involve multiple jobs to perform a specified set of actions. From these blueprints, you instantiate Lake Formation workflows. The workflows then perform jobs and tasks as defined.
 
-## creating workflows
+### Creating workflows
 
 Workflows generate AWS Glue crawlers, jobs, and triggers to orchestrate the loading and updating of data. You can configure a workflow to run on demand or on a schedule. Workflows that you create in Lake Formation are visible in the AWS Glue console. Each node in a workflow is a job, crawler, or trigger. To monitor progress and troubleshoot, you can track the status of each node in the workflow.
 
 
+![](attachments/Pasted%20image%2020240207151207.png)
+
+## Modern data architecture
+
+![](attachments/Pasted%20image%2020240207154943.png)
+
+Scalable data lakes – This course has focused on the business value of data
+lakes and how to build data lakes with AWS Lake Formation. Business insight is
+driven by data of all types: structured, semi-structured, and unstructured.
+Organizations have large volumes of data generated continuously. To be able to
+extract value, data must be trusted and convenient to find by those roles that
+need access. Key AWS services include the following: • Amazon Simple Storage
+Service (Amazon S3) – Highly durable, scalable, secure, fast, and inexpensive
+storage service.
+
+• Lake Formation – Integrated data lake service that makes it convenient to ingest, clean, catalog, transform, and secure data and make it available for analysis and machine learning (ML).
+
+• Amazon Athena – Interactive analytics service that makes it convenient to analyze data in Amazon S3 using Python or standard SQL
+
+
+![](attachments/Pasted%20image%2020240207155301.png)
