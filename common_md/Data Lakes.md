@@ -31,9 +31,11 @@
 
 ![](attachments/Pasted%20image%2020240207095533.png)
 
+
 ### Analytics Functionality vs Aws
 
 ![](attachments/Pasted%20image%2020240207100450.png)
+
 
 
 ![](attachments/Pasted%20image%2020240207100521.png)
@@ -127,3 +129,27 @@ The Data Catalog is a crucial component of AWS Glue, serving as a metadata repos
 - **CSV:** Suitable for simple, tabular data storage and exchange, especially when human readability is a priority.
 
 - **Parquet:** Ideal for big data processing, analytics, and data warehousing, where storage efficiency, fast query performance, and schema evolution are crucial.
+
+### Difference type of data ingestion in AWS
+
+
+![](attachments/Pasted%20image%2020240207110849.png)
+
+![](attachments/Pasted%20image%2020240207110914.png)
+
+
+![](attachments/Pasted%20image%2020240207111006.png)
+
+
+### Crawl and Catalogue data 
+
+AWS Glue consists of a central metadata repository known as the AWS Glue Data Catalog, an ETL engine that automatically generates Python or Scala code, and a flexible scheduler that handles dependency resolution, job monitoring, and retries
+
+
+AWS Glue Data Catalog The AWS Glue Data Catalog provides a uniform repository where disparate systems can store and find metadata to keep track of data in the data lake. The catalog contains metadata describing and referencing the data lake stores and native storage location. When the data is cataloged, it is immediately available for search and query using Amazon Athena, Amazon EMR, and Amazon Redshift Spectrum.
+
+AWS Glue Crawler AWS Glue Crawlers can scan data in all kinds of repositories, classify it, extract schema information from it, and store the metadata automatically in the AWS Glue Data Catalog. AWS Glue Studio is designed to work with both tabular and semi-structured data. Crawlers run as AWS Glue jobs and can be triggered by the scheduler component of AWS Glue.
+
+#### Crawler
+
+![](attachments/Pasted%20image%2020240207113804.png)
