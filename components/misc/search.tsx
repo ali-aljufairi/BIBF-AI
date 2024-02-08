@@ -37,17 +37,20 @@ function Search({ visible, setVisible }) {
   useEffect(() => {
     const handleKeydown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault(); // Prevent default browser behavior
         setVisible(true);
       }
       if (e.key === 'Escape') {
         setVisible(false);
       }
     }
+
     document.addEventListener("keydown", handleKeydown);
+
     return () => {
       document.removeEventListener("keydown", handleKeydown);
-    }
-  }, [])
+    };
+  }, []);
 
   useOutsideAlerter(containerRef, (e: MouseEvent) => {
     setVisible(false);
@@ -72,9 +75,9 @@ function Search({ visible, setVisible }) {
         <div className="w-full">
           <label className="block text-sm sr-only" htmlFor="search">Search</label>
           <div className="relative flex items-center">
-            <input ref={inputRef} id="search" type="search" className="form-input w-full text-gray-800 px-3 py-2 pl-10" placeholder="Search my notes" onChange={handleChangeInput} />
+            <input ref={inputRef} id="search" type="search" className="form-input w-full text-Pufr-800 px-3 py-2 pl-10" placeholder="Search my notes" onChange={handleChangeInput} />
             <button type="submit" className="absolute inset-0 right-auto" aria-label="Search">
-              <svg className="w-4 h-4 fill-current text-gray-400 mx-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-4 h-4 fill-current text-Pufr-300 mx-3 shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zM7 2C4.243 2 2 4.243 2 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zM15.707 14.293L13.314 11.9a8.019 8.019 0 01-1.414 1.414l2.393 2.393a.997.997 0 001.414 0 .999.999 0 000-1.414z" />
               </svg>
             </button>
