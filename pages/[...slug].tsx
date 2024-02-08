@@ -6,8 +6,20 @@ import type PostType from '../interfaces/post'
 import path from 'path'
 import PostSingle from '../components/blog/post-single'
 import Layout from '../components/misc/layout'
+import Notes from './notes'
 import { NextSeo } from 'next-seo'
 
+interface notesProps {
+  allPages: Page[];
+}
+
+interface Page {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+}
 type Items = {
   title: string,
   excerpt: string,
@@ -40,19 +52,21 @@ export default function Post({ post, backlinks }: Props) {
               type: 'article',
               images: [{
                 url: (post.ogImage?.url) ? post.ogImage.url : "https://fleetingnotes.app/favicon/512.png",
-                width: (post.ogImage?.url) ? null: 512,
-                height: (post.ogImage?.url) ? null: 512,
+                width: (post.ogImage?.url) ? null : 512,
+                height: (post.ogImage?.url) ? null : 512,
                 type: null
               }]
             }}
           />
-          <PostSingle
-            title={post.title}
-            content={post.content}
-            date={post.date}
-            author={post.author}
-            backlinks={backlinks}
-          />
+
+            <PostSingle
+              title={post.title}
+              content={post.content}
+              date={post.date}
+              author={post.author}
+              backlinks={backlinks}
+            />
+          
         </Layout>
       )}
     </>
@@ -99,13 +113,11 @@ export async function getStaticProps({ params }: Params) {
 export async function getStaticPaths() {
   const posts = await getAllPosts(['slug'])
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug.split(path.sep),
-        },
-      } 
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug.split(path.sep),
+      },
+    })),
     fallback: false,
   }
 }

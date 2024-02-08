@@ -1,14 +1,17 @@
-// pages/allPages.tsx
+// Import necessary libraries and styles
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/api';
-import Footer from '../components/misc/footer';
+import { useState } from 'react';
 import Header from '../components/misc/header';
+import Footer from '../components/misc/footer';
 
-interface notesProps {
+// Define the interface for page properties
+interface NotesProps {
   allPages: Page[];
 }
 
+// Define the interface for a page
 interface Page {
   slug: string;
   title: string;
@@ -17,41 +20,55 @@ interface Page {
   author: string;
 }
 
-const AllPages: React.FC<notesProps> = ({ allPages }) => {
-  const handleMouseMove = (e: React.MouseEvent) => {
-    // Add logic for the light following the cursor effect if needed
-    // You can use the e.pageX and e.pageY to get the cursor position
+// Define the Notes component
+const Notes: React.FC<NotesProps> = ({ allPages }) => {
+  const [hoveredTitle, setHoveredTitle] = useState<string | null>(null);
+
+  const handleCardHover = (title: string) => {
+    setHoveredTitle(title);
+  };
+
+  const handleCardLeave = () => {
+    setHoveredTitle(null);
   };
 
   return (
-    <div>
+    <>
       <Header />
-      <div className="flex flex-wrap justify-center items-center">
-        {allPages.map((page) => (
-          <div
-            key={page.slug}
-            className="card m-4 p-6 shadow-md transition-transform transform hover:scale-105"
-            onMouseMove={handleMouseMove}
-          >
-            <h2 className="text-2xl font-bold">{page.title}</h2>
-            <p className="mt-2 text-gray-600">{page.excerpt}</p>
-            <Link href={`/posts/${page.slug}`} passHref>
-              {/* Place your Link content here if needed */}
+      <div className="flex justify-center items-center h-screen">
+        {/* Wrapper div for centering */}
+        <div className="flex flex-wrap justify-center items-center">
+          {allPages.map((page) => (
+            <Link key={page.slug} href={`${page.slug}`} passHref>
+              <div
+                className={`card m-4 p-6 shadow-md transition-transform transform hover:scale-105 relative ${
+                  hoveredTitle === page.title ? 'bg-Pufr-600 text-white' : ''
+                }`}
+                onMouseEnter={() => handleCardHover(page.title)}
+                onMouseLeave={handleCardLeave}
+              >
+                {/* Animated border */}
+                {hoveredTitle === page.title && (
+                  <div className="absolute inset-0 border-4 border-white animate-pulse"></div>
+                )}
+                <h2 className="text-2xl font-bold">{page.title}</h2>
+                <p className="mt-2 text-gray-600">{page.excerpt}</p>
+              </div>
             </Link>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
+// Define the static props function
 export const getStaticProps: GetStaticProps = async () => {
-  const allPages = getAllPosts([
-    "slug", "title", "content", "author", "date"
-  ]);
+  const allPages = getAllPosts(['slug', 'title', 'content', 'author', 'date']);
 
   return { props: { allPages } };
 };
 
-export default AllPages;
+// Export the component as default
+export default Notes;
