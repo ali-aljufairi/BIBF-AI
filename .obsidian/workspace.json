@@ -20,14 +20,41 @@
             }
           },
           {
+            "id": "ba3ffa5ac598eb96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "870a3973b356f8ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "ea2c5c6bed36d5ce",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -94,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Data Lakes.md"
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md"
               }
             }
           }
@@ -156,8 +183,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "00a94b4704046da4",
+  "active": "ea2c5c6bed36d5ce",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
+    "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
+    "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
+    "common_md/Data Lakes.md",
     "pages/notes.tsx",
     "pages/Allpages.tsx",
     "components/misc/notes.tsx",
@@ -171,7 +202,6 @@
     "public/md_assets/attachments/Pasted image 20240207131715.png",
     "public/md_assets/attachments/Pasted image 20240207113804.png",
     "public/md_assets/attachments/Pasted image 20240207111006.png",
-    "common_md/Data Lakes.md",
     "common_md/BIBF-AI.md",
     "common_md/Data-Analytics-Fundamentals.md",
     "common_md/deploy-a-custom-linked-blog-starter.md",
@@ -190,7 +220,6 @@
     "node_modules/acorn-node/test",
     "node_modules/autoprefixer/bin/autoprefixer",
     "node_modules/autoprefixer/bin",
-    "node_modules/class-variance-authority/node_modules/clsx/dist/clsx.mjs",
     "common_md/Polices.md",
     "common_md/install-linked-blog-starter-locally.md",
     "common_md/linked-blog-starter-does-not-reinvent-wheel.md",
@@ -202,8 +231,6 @@
     "node_modules/date-fns/docs/i18nContributionGuide.md",
     "node_modules/date-fns/docs/webpack.md",
     "node_modules/date-fns/docs/upgradeGuide.md",
-    "node_modules/date-fns/docs/unicodeTokens.md",
-    "node_modules/date-fns/docs/timeZones.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

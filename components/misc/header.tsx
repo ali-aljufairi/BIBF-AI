@@ -15,7 +15,7 @@ const Header = () => {
   }, [top]);
 
   return (
-    <header className={`fixed w-full z-30 md:bg-slate-900 transition duration-300 ease-in-out ${!top && ' bg-Pufr-100 backdrop-blur-sm shadow-lg'}`}>
+    <header className={`fixed w-full z-30 md:bg-slate-900 transition duration-300 ease-in-out ${!top && ' bg-slate-900 backdrop-blur-sm shadow-lg'}`}>
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           <h2 className="shrink-0 mr-4 text-2xl text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
@@ -29,7 +29,7 @@ const Header = () => {
               Notes
             </Link>
           </h2>
-          
+
           {/* Move the Search button and ⌘k to the left of the search icon */}
           <ul className="flex grow justify-end flex-wrap items-center">
             <li className="flex items-center">
