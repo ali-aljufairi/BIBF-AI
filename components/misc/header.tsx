@@ -30,6 +30,11 @@ const Header = () => {
             </Link>
           </h2>
 
+          <h2 className="shrink-0 mr-4 text-2xl text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
+            <Link href="/QuizPage" className="block hover:underline" aria-label="notes">
+              Quiz
+            </Link>
+          </h2>
           {/* Move the Search button and ⌘k to the left of the search icon */}
           <ul className="flex grow justify-end flex-wrap items-center">
             <li className="flex items-center">

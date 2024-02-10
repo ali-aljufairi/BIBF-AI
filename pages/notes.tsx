@@ -36,8 +36,6 @@ return (
     <>
       <Header />
       <div className="relative">
-        {/* Background circle effect */}
-
         {/* Centered content */}
         <div className="flex justify-center items-center h-screen relative z-10">
           {/* Wrapper div for centering */}
@@ -51,7 +49,6 @@ return (
                   onMouseEnter={() => handleCardHover(page.title)}
                   onMouseLeave={handleCardLeave}
                 >
-                  {/* Animated border */}
                   {hoveredTitle === page.title && (
                     <div className="absolute inset-0 border-4 border-Pufr-300 animate-pulse"></div>
                   )}
