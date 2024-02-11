@@ -23,11 +23,9 @@
             "id": "ba3ffa5ac598eb96",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md"
               }
             }
           },
@@ -35,11 +33,9 @@
             "id": "870a3973b356f8ad",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md"
               }
             }
           },
@@ -47,9 +43,11 @@
             "id": "ea2c5c6bed36d5ce",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md"
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -121,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md"
+                "file": "common_md/Machine Learning Pipeline on AWS.md"
               }
             }
           }
@@ -185,23 +183,27 @@
   },
   "active": "ea2c5c6bed36d5ce",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
-    "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
-    "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
+    "common_md/attachments/Pasted image 20240211144426.png",
+    "common_md/attachments/Pasted image 20240211143757.png",
+    "common_md/attachments/Pasted image 20240211143654.png",
+    "common_md/attachments/Pasted image 20240211133720.png",
+    "common_md/attachments/Pasted image 20240211133638.png",
+    "common_md/attachments/Pasted image 20240211133549.png",
     "common_md/Data Lakes.md",
+    "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
+    "common_md/Machine Learning Pipeline on AWS.md",
+    "common_md/attachments/Pasted image 20240211133434.png",
+    "common_md/attachments/Pasted image 20240211133245.png",
+    "common_md/attachments/Pasted image 20240211133220.png",
+    "common_md/attachments/Pasted image 20240211133202.png",
+    "common_md/attachments/Pasted image 20240211132602.png",
+    "Untitled.canvas",
+    "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
+    "common_md/Machine Learning Pipeline on AWS .md",
+    "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
     "pages/notes.tsx",
     "pages/Allpages.tsx",
     "components/misc/notes.tsx",
-    "public/md_assets/image-1.png",
-    "public/md_assets/attachments/Pasted image 20240207155301.png",
-    "public/md_assets/attachments/Pasted image 20240207154943.png",
-    "public/md_assets/attachments/Pasted image 20240207151207.png",
-    "public/md_assets/attachments/Pasted image 20240207141924.png",
-    "public/md_assets/attachments/Pasted image 20240207141558.png",
-    "public/md_assets/attachments/Pasted image 20240207132626.png",
-    "public/md_assets/attachments/Pasted image 20240207131715.png",
-    "public/md_assets/attachments/Pasted image 20240207113804.png",
-    "public/md_assets/attachments/Pasted image 20240207111006.png",
     "common_md/BIBF-AI.md",
     "common_md/Data-Analytics-Fundamentals.md",
     "common_md/deploy-a-custom-linked-blog-starter.md",
@@ -228,10 +230,6 @@
     "node_modules/date-fns/CHANGELOG.md",
     "node_modules/next/dist/compiled/react-refresh/README.md",
     "node_modules/next/dist/compiled/react-is/README.md",
-    "node_modules/date-fns/docs/i18nContributionGuide.md",
-    "node_modules/date-fns/docs/webpack.md",
-    "node_modules/date-fns/docs/upgradeGuide.md",
-    "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
   ]
