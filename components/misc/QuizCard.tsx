@@ -15,7 +15,7 @@ interface QuizQuestion {
   question: string;
   answers: string[];
   correct_answer: string;
-  Image ?: string;
+  Image?: string;
 }
 
 interface QuizCardProps {
@@ -23,8 +23,7 @@ interface QuizCardProps {
 }
 
 const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
-
-  const { question, answers, correct_answer , Image } = questionData;
+  const { question, answers, correct_answer, Image } = questionData;
 
   const [selectedAnswers, setSelectedAnswers] = useState<AnswerIndex[]>([]);
 
@@ -36,7 +35,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
     });
 
     return answerIndexMap;
-  }
+  };
 
   const answerIndexMap = mapAnswersToIndexes();
 
@@ -47,29 +46,27 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
 
     const alreadySelected = selectedAnswers.includes(answerIndex!);
 
-    setSelectedAnswers(prev =>
+    setSelectedAnswers((prev) =>
       alreadySelected
-        ? prev.filter(idx => idx !== answerIndex)
+        ? prev.filter((idx) => idx !== answerIndex)
         : [...prev, answerIndex!]
     );
-  }
+  };
 
   const isCorrect = (index: AnswerIndex) => {
     const answerLetter = AnswerIndex[index];
     return correctAnswers.includes(answerLetter);
-  }
+  };
 
   const renderChoices = () =>
     answers.map((choice, index) => {
-
       const isSelected = selectedAnswers.includes(index);
 
       const choiceBgColor = isSelected && isCorrect(index)
         ? "bg-green-600"
         : isSelected
-          ? "bg-red-600"
-          : "bg-slate-900";
-      
+        ? "bg-red-600"
+        : "bg-slate-900";
 
       return (
         <div
@@ -91,9 +88,9 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
           {/* Display a message or style as needed */}
         </div>
       )}
+    {Image && <img src={`${process.env.PUBLIC_URL}/${Image}`} alt={`Question ${questionData.question_number}`} className="my-4 rounded-lg" />}
     </div>
   );
-}
+};
 
-
-export default QuizCard; 
+export default QuizCard;

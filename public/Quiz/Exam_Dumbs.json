@@ -8,7 +8,7 @@
       "C. The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.",
       "D. The precision of the model is 86%, which is greater than the accuracy of the model."
     ],
-    "Image": "public/Quiz/Images/1.png",
+    "Image": "Images/1.png",
     "correct_answer": "C"
   },
   {
@@ -164,7 +164,7 @@
       "C. Support vector machine (SVM) with non-linear kernel",
       "D. Single perceptron with tanh activation function"
     ],
-    "Image": "public/Quiz/Images/14.png",
+    "Image": "Images/14.png",
     "correct_answer": "C"
   },
   {
@@ -275,7 +275,7 @@
       "C. Naive Bayesian classifier",
       "D. Single Perceptron with sigmoidal activation function"
     ],
-    "Image": "public/Quiz/Images/25.png",
+    "Image": "components/Images/25.png",
     "correct_answer": "C"
   },
   {
@@ -358,7 +358,7 @@
       "C. Tokenization",
       "D. Normalization transformation"
     ],
-    "Image": "public/Quiz/Images/32.png",
+    "Image": "components/Images/32.png",
     "correct_answer": "B"
   },
   {
@@ -949,7 +949,7 @@
       "C. The true class frequency for Romance is 0.78 and the predicted class frequency for Adventure is (0.47-0.32)",
       "D. The true class frequency for Romance is 77.56%  0.78 and the predicted class frequency for Adventure is 20.85%  0.32"
     ],
-    "Image": "public/Quiz/Images/85.png",
+    "Image": "components/Images/85.png",
     "correct_answer": "B"
   },
   {
@@ -1039,7 +1039,7 @@
       "C. Support vector machine (SVM) with a radial basis function kernel",
       "D. Single perceptron with a Tanh activation function"
     ],
-    "Image": "public/Quiz/Images/93.png",
+    "Image": "components/Images/93.png",
     "correct_answer": "B"
   },
   {
@@ -1064,7 +1064,7 @@
       "C. Increasing the number of epochs",
       "D. Adding another layer with the 100 neurons"
     ],
-    "Image": "public/Quiz/Images/95.png",
+    "Image": "components/Images/95.png",
     "correct_answer": "A"
   },
   {
@@ -1076,7 +1076,7 @@
       "C. Linear regression is appropriate. The residuals have a zero mean.",
       "D. Linear regression is appropriate. The residuals have constant variance."
     ],
-    "Image": "public/Quiz/Images/96.png",
+    "Image": "components/Images/96.png",
     "correct_answer": "A"
   },
   {
@@ -1145,7 +1145,7 @@
       "C. 7",
       "D. 10"
     ],
-    "Image": "public/Quiz/Images/102.png",
+    "Image": "components/Images/102.png",
     "correct_answer": "B"
   },
   {
@@ -1190,7 +1190,7 @@
       "C. Polynomial transformation",
       "D. Sinusoidal transformation"
     ],
-    "Image": "public/Quiz/Images/106.png",
+    "Image": "components/Images/106.png",
     "correct_answer": "B"
   },
   {
@@ -1202,7 +1202,7 @@
       "C. Update the objective to binary:logistic.",
       "D. Lower the min_child_weight parameter value."
     ],
-    "Image": "public/Quiz/Images/107.png",
+    "Image": "components/Images/107.png",
     "correct_answer": "B"
   },
   {
@@ -1337,7 +1337,7 @@
       "C. Use AWS Batch jobs to separate the dataset into a target time series dataset, a related time series dataset, and an item metadata dataset. Upload them directly to Forecast from a local machine.",
       "D. Use a Jupyter notebook in Amazon SageMaker to transform the data into the optimized protobuf recordIO format. Upload the dataset in this format to Amazon S3."
     ],
-    "Image": "public/Quiz/Images/119.png",
+    "Image": "components/Images/119.png",
     "correct_answer": "B"
   },
   {
@@ -1383,7 +1383,7 @@
       "D. Change the XGBoost eval_metric parameter to optimize based on Area Under the ROC Curve (AUC).",
       "E. Decrease the XGBoost max_depth parameter because the model is currently overfitting the data."
     ],
-    "Image": "public/Quiz/Images/123.png",
+    "Image": "components/Images/123.png",
     "correct_answer": "BD"
   },
   {
@@ -1462,7 +1462,7 @@
       "C. Identify the 10% of users with the least interaction data. Split off all interaction data from these users for the test set.",
       "D. Randomly select 10% of the users. Split off all interaction data from these users for the test set."
     ],
-    "Image": "public/Quiz/Images/130.png",
+    "Image": "components/Images/130.png",
     "correct_answer": "B"
   },
   {
