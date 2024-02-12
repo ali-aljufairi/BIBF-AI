@@ -1,4 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
+
+enum AnswerIndex {
+  A = 0,
+  B = 1,
+  C = 2,
+  D = 3,
+  E = 4,
+  F = 5,
+  G = 6,
+}
 
 interface QuizQuestion {
   question_number: string;
@@ -12,55 +22,77 @@ interface QuizCardProps {
 }
 
 const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
+
   const { question, answers, correct_answer } = questionData;
 
-  const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
+  const [selectedAnswers, setSelectedAnswers] = useState<AnswerIndex[]>([]);
 
-  const handleAnswerSelect = (answer: string): void => {
-    const isAnswerSelected = selectedAnswers.includes(answer);
+  const mapAnswersToIndexes = (): Map<string, AnswerIndex> => {
+    const answerIndexMap = new Map<string, AnswerIndex>();
 
-    setSelectedAnswers((prevSelected) =>
-      isAnswerSelected
-        ? prevSelected.filter((selected) => selected !== answer)
-        : [...prevSelected, answer]
+    answers.forEach((answer, index) => {
+      answerIndexMap.set(answer, index as AnswerIndex);
+    });
+
+    return answerIndexMap;
+  }
+
+  const answerIndexMap = mapAnswersToIndexes();
+
+  const correctAnswers = correct_answer.split("");
+
+  const handleAnswerSelect = (answer: string) => {
+    const answerIndex = answerIndexMap.get(answer);
+
+    const alreadySelected = selectedAnswers.includes(answerIndex!);
+
+    setSelectedAnswers(prev =>
+      alreadySelected
+        ? prev.filter(idx => idx !== answerIndex)
+        : [...prev, answerIndex!]
     );
-  };
+  }
 
-  useEffect(() => {
-    console.log('Selected Answers:', selectedAnswers);
-    console.log('Correct Answer:', correct_answer);
-  }, [selectedAnswers]);
+  const isCorrect = (index: AnswerIndex) => {
+    const answerLetter = AnswerIndex[index];
+    return correctAnswers.includes(answerLetter);
+  }
 
-const renderChoices = (): JSX.Element[] => {
-  return answers.map((choice, index) => {
-    const isSelected = selectedAnswers.includes(choice);
-    const isCorrect = choice.includes(correct_answer); // Check if the correct answer is present in the choice
+  const renderChoices = () =>
+    answers.map((choice, index) => {
 
-    let bgColorClass = isSelected ? (isCorrect ? 'bg-green-500' : 'bg-red-500') : 'bg-slate-900';
+      const isSelected = selectedAnswers.includes(index);
 
-    return (
-      <div
-        key={index}
-        className={`${bgColorClass} text-white p-2 m-2 cursor-pointer`}
-        onClick={() => handleAnswerSelect(choice)}
-      >
-        {choice}
-      </div>
-    );
-  });
-};
+      const choiceBgColor = isSelected && isCorrect(index)
+        ? "bg-green-600"
+        : isSelected
+          ? "bg-red-600"
+          : "bg-slate-900";
+      
+
+      return (
+        <div
+          key={index}
+          className={`${choiceBgColor} p-3 rounded-2xl`}
+          onClick={() => handleAnswerSelect(choice)}
+        >
+          {choice}
+        </div>
+      );
+    });
 
   return (
-    <div className="bg-slate-900 p-4 rounded-md shadow-md">
+    <div className="bg-slate-900 p-4 rounded-lg shadow-md m-4">
       <div className="text-Pufr-300">{question}</div>
-      <div className="flex flex-wrap">{renderChoices()}</div>
+      <div className="flex flex-wrap text-Pufr-100 my-5  ">{renderChoices()}</div>
       {selectedAnswers.length > 0 && (
-        <div className="mt-4">
+        <div className="my-5">
           {/* Display a message or style as needed */}
         </div>
       )}
     </div>
   );
-};
+}
 
-export default QuizCard;
+
+export default QuizCard; 

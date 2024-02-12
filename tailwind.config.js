@@ -29,7 +29,10 @@ module.exports = {
           700: "#11182C",
           800: "#1C2645",
           900: "#1D2644",
-          950: "#1E2643"
+          950: "#1E2643",
+          1000: "#7F81B8",
+          1500: "#1f4faf"
+
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

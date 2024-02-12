@@ -12,6 +12,18 @@
     "correct_answer": "C"
   },
   {
+    "question_number": "21",
+    "question": "A Machine Learning Specialist is configuring Amazon SageMaker so multiple Data Scientists can access notebooks, train models, and deploy endpoints. To ensure the best operational performance, the Specialist needs to be able to track how often the Scientists are deploying models, GPU and CPU utilization on the deployed SageMaker endpoints, and all errors that are generated when an endpoint is invoked.Which services are integrated with Amazon SageMaker to track this information? (Choose two.)",
+    "answers": [
+      "A. AWS CloudTrail",
+      "B. AWS Health",
+      "C. AWS Trusted Advisor",
+      "D. Amazon CloudWatch",
+      "E. AWS Config"
+    ],
+    "correct_answer": "AD"
+  },
+  {
     "question_number": "2",
     "question": "A Machine Learning Specialist is designing a system for improving sales for a company. The objective is to use the large amount of information the company has on users' behavior and product preferences to predict which products users would like based on the users' similarity to other users.What should the Specialist do to meet this objective?",
     "answers": [
@@ -220,18 +232,6 @@
       "D. Download word embeddings pre-trained on a large corpus."
     ],
     "correct_answer": "D"
-  },
-  {
-    "question_number": "21",
-    "question": "A Machine Learning Specialist is configuring Amazon SageMaker so multiple Data Scientists can access notebooks, train models, and deploy endpoints. To ensure the best operational performance, the Specialist needs to be able to track how often the Scientists are deploying models, GPU and CPU utilization on the deployed SageMaker endpoints, and all errors that are generated when an endpoint is invoked.Which services are integrated with Amazon SageMaker to track this information? (Choose two.)",
-    "answers": [
-      "A. AWS CloudTrail",
-      "B. AWS Health",
-      "C. AWS Trusted Advisor",
-      "D. Amazon CloudWatch",
-      "E. AWS Config"
-    ],
-    "correct_answer": "AD"
   },
   {
     "question_number": "22",
