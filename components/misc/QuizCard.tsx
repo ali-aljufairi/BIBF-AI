@@ -15,6 +15,7 @@ interface QuizQuestion {
   question: string;
   answers: string[];
   correct_answer: string;
+  Image ?: string;
 }
 
 interface QuizCardProps {
@@ -23,7 +24,7 @@ interface QuizCardProps {
 
 const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
 
-  const { question, answers, correct_answer } = questionData;
+  const { question, answers, correct_answer , Image } = questionData;
 
   const [selectedAnswers, setSelectedAnswers] = useState<AnswerIndex[]>([]);
 

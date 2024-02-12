@@ -17,11 +17,11 @@ const QuizPage: React.FC = () => {
     setCurrentQuestionIndex((prevIndex) => Math.max(0, prevIndex - 1));
   };
 
-  return (
+return (
     <>
       <Header />
       <div className="flex flex-col justify-center items-center h-screen">
-        <div className="max-w-screen-md p-4 bg-slate-900 rounded-2xl shadow-md">
+        <div className="max-w-screen-md p-3 bg-slate-900 rounded-2xl shadow-md sm:w-full md:w-3/4 lg:w-1/2 xl:w-1/3 overflow-y-auto">
           {currentQuestionIndex < questions.length ? (
             <QuizCard key={currentQuestionIndex} questionData={questions[currentQuestionIndex]} />
           ) : (
