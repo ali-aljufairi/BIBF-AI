@@ -8,7 +8,7 @@
       "C. The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.",
       "D. The precision of the model is 86%, which is greater than the accuracy of the model."
     ],
-    "Image": "Images/1.png",
+    "Image_Path": "/images/1.png",
     "correct_answer": "C"
   },
   {
@@ -164,7 +164,7 @@
       "C. Support vector machine (SVM) with non-linear kernel",
       "D. Single perceptron with tanh activation function"
     ],
-    "Image": "Images/14.png",
+    "Image_Path": "/images/14.png",
     "correct_answer": "C"
   },
   {
@@ -275,7 +275,7 @@
       "C. Naive Bayesian classifier",
       "D. Single Perceptron with sigmoidal activation function"
     ],
-    "Image": "components/Images/25.png",
+    "Image_Path": "components//images/25.png",
     "correct_answer": "C"
   },
   {
@@ -315,7 +315,7 @@
   },
   {
     "question_number": "29",
-    "question": "An insurance company is developing a new device for vehicles that uses a camera to observe drivers' behavior and alert them when they appear distracted. The company created approximately 10,000 training images in a controlled environment that a Machine Learning Specialist will use to train and evaluate machine learning models.During the model evaluation, the Specialist notices that the training error rate diminishes faster as the number of epochs increases and the model is not accurately inferring on the unseen test images.Which of the following should be used to resolve this issue? (Choose two.)",
+    "question": "An insurance company is developing a new device for vehicles that uses a camera to observe drivers' behavior and alert them when they appear distracted. The company created approximately 10,000 training /images in a controlled environment that a Machine Learning Specialist will use to train and evaluate machine learning models.During the model evaluation, the Specialist notices that the training error rate diminishes faster as the number of epochs increases and the model is not accurately inferring on the unseen test /images.Which of the following should be used to resolve this issue? (Choose two.)",
     "answers": [
       "A. Add vanishing gradient to the model.",
       "B. Perform data augmentation on the training data.",
@@ -358,7 +358,7 @@
       "C. Tokenization",
       "D. Normalization transformation"
     ],
-    "Image": "components/Images/32.png",
+    "Image_Path": "components//images/32.png",
     "correct_answer": "B"
   },
   {
@@ -532,7 +532,7 @@
   },
   {
     "question_number": "48",
-    "question": "A Machine Learning Specialist is training a model to identify the make and model of vehicles in images. The Specialist wants to use transfer learning and an existing model trained on images of general objects. The Specialist collated a large custom dataset of pictures containing different vehicle makes and models.What should the Specialist do to initialize the model to re-train it with the custom data?",
+    "question": "A Machine Learning Specialist is training a model to identify the make and model of vehicles in /images. The Specialist wants to use transfer learning and an existing model trained on /images of general objects. The Specialist collated a large custom dataset of pictures containing different vehicle makes and models.What should the Specialist do to initialize the model to re-train it with the custom data?",
     "answers": [
       "A. Initialize the model with random weights in all layers including the last fully connected layer.",
       "B. Initialize the model with pre-trained weights in all layers and replace the last fully connected layer.",
@@ -543,7 +543,7 @@
   },
   {
     "question_number": "49",
-    "question": "An office security agency conducted a successful pilot using 100 cameras installed at key locations within the main office. Images from the cameras were uploaded to Amazon S3 and tagged using Amazon Rekognition, and the results were stored in Amazon ES. The agency is now looking to expand the pilot into a full production system using thousands of video cameras in its office locations globally. The goal is to identify activities performed by non-employees in real timeWhich solution should the agency consider?",
+    "question": "An office security agency conducted a successful pilot using 100 cameras installed at key locations within the main office. /images from the cameras were uploaded to Amazon S3 and tagged using Amazon Rekognition, and the results were stored in Amazon ES. The agency is now looking to expand the pilot into a full production system using thousands of video cameras in its office locations globally. The goal is to identify activities performed by non-employees in real timeWhich solution should the agency consider?",
     "answers": [
       "A. Use a proxy server at each local office and for each camera, and stream the RTSP feed to a unique Amazon Kinesis Video Streams video stream. On each stream, use Amazon Rekognition Video and create a stream processor to detect faces from a collection of known employees, and alert when non-employees are detected.",
       "B. Use a proxy server at each local office and for each camera, and stream the RTSP feed to a unique Amazon Kinesis Video Streams video stream. On each stream, use Amazon Rekognition Image to detect faces from a collection of known employees and alert when non-employees are detected.",
@@ -631,9 +631,9 @@
   },
   {
     "question_number": "57",
-    "question": "A Machine Learning Specialist is required to build a supervised image-recognition model to identify a cat. The ML Specialist performs some tests and records the following results for a neural network-based image classifier:Total number of images available = 1,000Test set images = 100 (constant test set)The ML Specialist notices that, in over 75% of the misclassified images, the cats were held upside down by their owners.Which techniques can be used by the ML Specialist to improve this specific test error?",
+    "question": "A Machine Learning Specialist is required to build a supervised image-recognition model to identify a cat. The ML Specialist performs some tests and records the following results for a neural network-based image classifier:Total number of /images available = 1,000Test set /images = 100 (constant test set)The ML Specialist notices that, in over 75% of the misclassified /images, the cats were held upside down by their owners.Which techniques can be used by the ML Specialist to improve this specific test error?",
     "answers": [
-      "A. Increase the training data by adding variation in rotation for training images.",
+      "A. Increase the training data by adding variation in rotation for training /images.",
       "B. Increase the number of epochs for model training",
       "C. Increase the number of layers for the neural network.",
       "D. Increase the dropout rate for the second-to-last layer."
@@ -878,8 +878,8 @@
     "question_number": "79",
     "question": "A trucking company is collecting live image data from its fleet of trucks across the globe. The data is growing rapidly and approximately 100 GB of new data is generated every day. The company wants to explore machine learning uses cases while ensuring the data is only accessible to specific IAM users.Which storage option provides the most processing flexibility and will allow access control with IAM?",
     "answers": [
-      "A. Use a database, such as Amazon DynamoDB, to store the images, and set the IAM policies to restrict access to only the desired IAM users.",
-      "B. Use an Amazon S3-backed data lake to store the raw images, and set up the permissions using bucket policies.",
+      "A. Use a database, such as Amazon DynamoDB, to store the /images, and set the IAM policies to restrict access to only the desired IAM users.",
+      "B. Use an Amazon S3-backed data lake to store the raw /images, and set up the permissions using bucket policies.",
       "C. Setup up Amazon EMR with Hadoop Distributed File System (HDFS) to store the files, and restrict access to the EMR instances using IAM policies.",
       "D. Configure Amazon EFS with IAM policies to make the data available to Amazon EC2 instances owned by the IAM users."
     ],
@@ -949,7 +949,7 @@
       "C. The true class frequency for Romance is 0.78 and the predicted class frequency for Adventure is (0.47-0.32)",
       "D. The true class frequency for Romance is 77.56%  0.78 and the predicted class frequency for Adventure is 20.85%  0.32"
     ],
-    "Image": "components/Images/85.png",
+    "Image_Path": "components//images/85.png",
     "correct_answer": "B"
   },
   {
@@ -1039,18 +1039,18 @@
       "C. Support vector machine (SVM) with a radial basis function kernel",
       "D. Single perceptron with a Tanh activation function"
     ],
-    "Image": "components/Images/93.png",
+    "Image_Path": "components//images/93.png",
     "correct_answer": "B"
   },
   {
     "question_number": "94",
-    "question": "A health care company is planning to use neural networks to classify their X-ray images into normal and abnormal classes. The labeled data is divided into a training set of 1,000 images and a test set of 200 images. The initial training of a neural network model with 50 hidden layers yielded 99% accuracy on the training set, but only 55% accuracy on the test set.What changes should the Specialist consider to solve this issue? (Choose three.)",
+    "question": "A health care company is planning to use neural networks to classify their X-ray /images into normal and abnormal classes. The labeled data is divided into a training set of 1,000 /images and a test set of 200 /images. The initial training of a neural network model with 50 hidden layers yielded 99% accuracy on the training set, but only 55% accuracy on the test set.What changes should the Specialist consider to solve this issue? (Choose three.)",
     "answers": [
       "A. Choose a higher number of layers",
       "B. Choose a lower number of layers",
       "C. Choose a smaller learning rate",
       "D. Enable dropout",
-      "E. Include all the images from the test set in the training set",
+      "E. Include all the /images from the test set in the training set",
       "F. Enable early stopping"
     ],
     "correct_answer": "BDF"
@@ -1064,7 +1064,7 @@
       "C. Increasing the number of epochs",
       "D. Adding another layer with the 100 neurons"
     ],
-    "Image": "components/Images/95.png",
+    "Image_Path": "components//images/95.png",
     "correct_answer": "A"
   },
   {
@@ -1076,7 +1076,7 @@
       "C. Linear regression is appropriate. The residuals have a zero mean.",
       "D. Linear regression is appropriate. The residuals have constant variance."
     ],
-    "Image": "components/Images/96.png",
+    "Image_Path": "components//images/96.png",
     "correct_answer": "A"
   },
   {
@@ -1094,7 +1094,7 @@
   },
   {
     "question_number": "98",
-    "question": "A machine learning specialist works for a fruit processing company and needs to build a system that categorizes apples into three types. The specialist has collected a dataset that contains 150 images for each type of apple and applied transfer learning on a neural network that was pretrained on ImageNet with this dataset.The company requires at least 85% accuracy to make use of the model.After an exhaustive grid search, the optimal hyperparameters produced the following: 68% accuracy on the training set 67% accuracy on the validation setWhat can the machine learning specialist do to improve the system's accuracy?",
+    "question": "A machine learning specialist works for a fruit processing company and needs to build a system that categorizes apples into three types. The specialist has collected a dataset that contains 150 /images for each type of apple and applied transfer learning on a neural network that was pretrained on ImageNet with this dataset.The company requires at least 85% accuracy to make use of the model.After an exhaustive grid search, the optimal hyperparameters produced the following: 68% accuracy on the training set 67% accuracy on the validation setWhat can the machine learning specialist do to improve the system's accuracy?",
     "answers": [
       "A. Upload the model to an Amazon SageMaker notebook instance and use the Amazon SageMaker HPO feature to optimize the model's hyperparameters.",
       "B. Add more data to the training set and retrain the model using transfer learning to reduce the bias.",
@@ -1105,11 +1105,11 @@
   },
   {
     "question_number": "99",
-    "question": "A company uses camera images of the tops of items displayed on store shelves to determine which items were removed and which ones still remain. After several hours of data labeling, the company has a total of 1,000 hand-labeled images covering 10 distinct items. The training results were poor.Which machine learning approach fulfills the company's long-term needs?",
+    "question": "A company uses camera /images of the tops of items displayed on store shelves to determine which items were removed and which ones still remain. After several hours of data labeling, the company has a total of 1,000 hand-labeled /images covering 10 distinct items. The training results were poor.Which machine learning approach fulfills the company's long-term needs?",
     "answers": [
-      "A. Convert the images to grayscale and retrain the model",
+      "A. Convert the /images to grayscale and retrain the model",
       "B. Reduce the number of distinct items from 10 to 2, build the model, and iterate",
-      "C. Attach different colored labels to each item, take the images again, and build the model",
+      "C. Attach different colored labels to each item, take the /images again, and build the model",
       "D. Augment training data for each item using image variants like inversions and translations, build the model, and iterate."
     ],
     "correct_answer": "D"
@@ -1145,12 +1145,12 @@
       "C. 7",
       "D. 10"
     ],
-    "Image": "components/Images/102.png",
+    "Image_Path": "components//images/102.png",
     "correct_answer": "B"
   },
   {
     "question_number": "103",
-    "question": "A media company with a very large archive of unlabeled images, text, audio, and video footage wishes to index its assets to allow rapid identification of relevant content by the Research team. The company wants to use machine learning to accelerate the efforts of its in-house researchers who have limited machine learning expertise.Which is the FASTEST route to index the assets?",
+    "question": "A media company with a very large archive of unlabeled /images, text, audio, and video footage wishes to index its assets to allow rapid identification of relevant content by the Research team. The company wants to use machine learning to accelerate the efforts of its in-house researchers who have limited machine learning expertise.Which is the FASTEST route to index the assets?",
     "answers": [
       "A. Use Amazon Rekognition, Amazon Comprehend, and Amazon Transcribe to tag data into distinct categories/classes.",
       "B. Create a set of Amazon Mechanical Turk Human Intelligence Tasks to label all footage.",
@@ -1190,7 +1190,7 @@
       "C. Polynomial transformation",
       "D. Sinusoidal transformation"
     ],
-    "Image": "components/Images/106.png",
+    "Image_Path": "components//images/106.png",
     "correct_answer": "B"
   },
   {
@@ -1202,7 +1202,7 @@
       "C. Update the objective to binary:logistic.",
       "D. Lower the min_child_weight parameter value."
     ],
-    "Image": "components/Images/107.png",
+    "Image_Path": "components//images/107.png",
     "correct_answer": "B"
   },
   {
@@ -1240,12 +1240,12 @@
   },
   {
     "question_number": "111",
-    "question": "An agricultural company is interested in using machine learning to detect specific types of weeds in a 100-acre grassland field. Currently, the company uses tractor-mounted cameras to capture multiple images of the field as 10  10 grids. The company also has a large training dataset that consists of annotated images of popular weed classes like broadleaf and non-broadleaf docks.The company wants to build a weed detection model that will detect specific types of weeds and the location of each type within the field. Once the model is ready, it will be hosted on Amazon SageMaker endpoints. The model will perform real-time inferencing using the images captured by the cameras.Which approach should a Machine Learning Specialist take to obtain accurate predictions?",
+    "question": "An agricultural company is interested in using machine learning to detect specific types of weeds in a 100-acre grassland field. Currently, the company uses tractor-mounted cameras to capture multiple /images of the field as 10  10 grids. The company also has a large training dataset that consists of annotated /images of popular weed classes like broadleaf and non-broadleaf docks.The company wants to build a weed detection model that will detect specific types of weeds and the location of each type within the field. Once the model is ready, it will be hosted on Amazon SageMaker endpoints. The model will perform real-time inferencing using the /images captured by the cameras.Which approach should a Machine Learning Specialist take to obtain accurate predictions?",
     "answers": [
-      "A. Prepare the images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize images into various weed classes.",
-      "B. Prepare the images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.",
-      "C. Prepare the images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.",
-      "D. Prepare the images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize images into various weed classes."
+      "A. Prepare the /images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize /images into various weed classes.",
+      "B. Prepare the /images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.",
+      "C. Prepare the /images in RecordIO format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an object- detection single-shot multibox detector (SSD) algorithm.",
+      "D. Prepare the /images in Apache Parquet format and upload them to Amazon S3. Use Amazon SageMaker to train, test, and validate the model using an image classification algorithm to categorize /images into various weed classes."
     ],
     "correct_answer": "C"
   },
@@ -1273,7 +1273,7 @@
   },
   {
     "question_number": "114",
-    "question": "The chief editor for a product catalog wants the research and development team to build a machine learning system that can be used to detect whether or not individuals in a collection of images are wearing the company's retail brand. The team has a set of training data.Which machine learning algorithm should the researchers use that BEST meets their requirements?",
+    "question": "The chief editor for a product catalog wants the research and development team to build a machine learning system that can be used to detect whether or not individuals in a collection of /images are wearing the company's retail brand. The team has a set of training data.Which machine learning algorithm should the researchers use that BEST meets their requirements?",
     "answers": [
       "A. Latent Dirichlet Allocation (LDA)",
       "B. Recurrent neural network (RNN)",
@@ -1337,7 +1337,7 @@
       "C. Use AWS Batch jobs to separate the dataset into a target time series dataset, a related time series dataset, and an item metadata dataset. Upload them directly to Forecast from a local machine.",
       "D. Use a Jupyter notebook in Amazon SageMaker to transform the data into the optimized protobuf recordIO format. Upload the dataset in this format to Amazon S3."
     ],
-    "Image": "components/Images/119.png",
+    "Image_Path": "components//images/119.png",
     "correct_answer": "B"
   },
   {
@@ -1383,7 +1383,7 @@
       "D. Change the XGBoost eval_metric parameter to optimize based on Area Under the ROC Curve (AUC).",
       "E. Decrease the XGBoost max_depth parameter because the model is currently overfitting the data."
     ],
-    "Image": "components/Images/123.png",
+    "Image_Path": "components//images/123.png",
     "correct_answer": "BD"
   },
   {
@@ -1427,7 +1427,7 @@
       "A. Configure Amazon Textract to route low-confidence predictions to Amazon SageMaker Ground Truth. Perform a manual review on those words before performing a business validation.",
       "B. Use an Amazon Textract synchronous operation instead of an asynchronous operation.",
       "C. Configure Amazon Textract to route low-confidence predictions to Amazon Augmented AI (Amazon A2I). Perform a manual review on those words before performing a business validation.",
-      "D. Use Amazon Rekognition's feature to detect text in an image to extract the data from scanned images. Use this information to process the loan applications."
+      "D. Use Amazon Rekognition's feature to detect text in an image to extract the data from scanned /images. Use this information to process the loan applications."
     ],
     "correct_answer": "C"
   },
@@ -1462,7 +1462,7 @@
       "C. Identify the 10% of users with the least interaction data. Split off all interaction data from these users for the test set.",
       "D. Randomly select 10% of the users. Split off all interaction data from these users for the test set."
     ],
-    "Image": "components/Images/130.png",
+    "Image_Path": "components//images/130.png",
     "correct_answer": "B"
   },
   {
@@ -1484,7 +1484,7 @@
       "A. Configure Amazon Textract to route low-confidence predictions to Amazon SageMaker Ground Truth. Perform a manual review on those words before performing a business validation.",
       "B. Use an Amazon Textract synchronous operation instead of an asynchronous operation.",
       "C. Configure Amazon Textract to route low-confidence predictions to Amazon Augmented AI (Amazon A2I). Perform a manual review on those words before performing a business validation.",
-      "D. Use Amazon Rekognition's feature to detect text in an image to extract the data from scanned images. Use this information to process the loan applications."
+      "D. Use Amazon Rekognition's feature to detect text in an image to extract the data from scanned /images. Use this information to process the loan applications."
     ],
     "correct_answer": "C"
   },
@@ -1503,7 +1503,7 @@
     "question_number": "127",
     "question": "A medical imaging company wants to train a computer vision model to detect areas of concern on patients' CT scans. The company has a large collection of unlabeled CT scans that are linked to each patient and stored in an Amazon S3 bucket. The scans must be accessible to authorized users only. A machine learning engineer needs to build a labeling pipeline.Which set of steps should the engineer take to build the labeling pipeline with the LEAST effort?",
     "answers": [
-      "A. Create a workforce with AWS Identity and Access Management (IAM). Build a labeling tool on Amazon EC2 Queue images for labeling by using Amazon Simple Queue Service (Amazon SQS). Write the labeling instructions.",
+      "A. Create a workforce with AWS Identity and Access Management (IAM). Build a labeling tool on Amazon EC2 Queue /images for labeling by using Amazon Simple Queue Service (Amazon SQS). Write the labeling instructions.",
       "B. Create an Amazon Mechanical Turk workforce and manifest file. Create a labeling job by using the built-in image classification task type in Amazon SageMaker Ground Truth. Write the labeling instructions.",
       "C. Create a private workforce and manifest file. Create a labeling job by using the built-in bounding box task type in Amazon SageMaker Ground Truth. Write the labeling instructions.",
       "D. Create a workforce with Amazon Cognito. Build a labeling web application with AWS Amplify. Build a labeling workflow backend using AWS Lambda. Write the labeling instructions."
@@ -1531,12 +1531,12 @@
   },
   {
     "question_number": "133",
-    "question": "A company is converting a large number of unstructured paper receipts into images. The company wants to create a model based on natural language processing(NLP) to find relevant entities such as date, location, and notes, as well as some custom entities such as receipt numbers.The company is using optical character recognition (OCR) to extract text for data labeling. However, documents are in different structures and formats, and the company is facing challenges with setting up the manual workflows for each document type. Additionally, the company trained a named entity recognition (NER) model for custom entity detection using a small sample size. This model has a very low confidence score and will require retraining with a large dataset.Which solution for text extraction and entity detection will require the LEAST amount of effort?",
+    "question": "A company is converting a large number of unstructured paper receipts into /images. The company wants to create a model based on natural language processing(NLP) to find relevant entities such as date, location, and notes, as well as some custom entities such as receipt numbers.The company is using optical character recognition (OCR) to extract text for data labeling. However, documents are in different structures and formats, and the company is facing challenges with setting up the manual workflows for each document type. Additionally, the company trained a named entity recognition (NER) model for custom entity detection using a small sample size. This model has a very low confidence score and will require retraining with a large dataset.Which solution for text extraction and entity detection will require the LEAST amount of effort?",
     "answers": [
-      "A. Extract text from receipt images by using Amazon Textract. Use the Amazon SageMaker BlazingText algorithm to train on the text for entities and custom entities.",
-      "B. Extract text from receipt images by using a deep learning OCR model from the AWS Marketplace. Use the NER deep learning model to extract entities.",
-      "C. Extract text from receipt images by using Amazon Textract. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection.",
-      "D. Extract text from receipt images by using a deep learning OCR model from the AWS Marketplace. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection."
+      "A. Extract text from receipt /images by using Amazon Textract. Use the Amazon SageMaker BlazingText algorithm to train on the text for entities and custom entities.",
+      "B. Extract text from receipt /images by using a deep learning OCR model from the AWS Marketplace. Use the NER deep learning model to extract entities.",
+      "C. Extract text from receipt /images by using Amazon Textract. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection.",
+      "D. Extract text from receipt /images by using a deep learning OCR model from the AWS Marketplace. Use Amazon Comprehend for entity detection, and use Amazon Comprehend custom entity recognition for custom entity detection."
     ],
     "correct_answer": "C"
   },
@@ -1564,11 +1564,11 @@
   },
   {
     "question_number": "136",
-    "question": "A library is developing an automatic book-borrowing system that uses Amazon Rekognition. Images of library members' faces are stored in an Amazon S3 bucket.When members borrow books, the Amazon Rekognition CompareFaces API operation compares real faces against the stored faces in Amazon S3.The library needs to improve security by making sure that images are encrypted at rest. Also, when the images are used with Amazon Rekognition. they need to be encrypted in transit. The library also must ensure that the images are not used to improve Amazon Rekognition as a service.How should a machine learning specialist architect the solution to satisfy these requirements?",
+    "question": "A library is developing an automatic book-borrowing system that uses Amazon Rekognition. /images of library members' faces are stored in an Amazon S3 bucket.When members borrow books, the Amazon Rekognition CompareFaces API operation compares real faces against the stored faces in Amazon S3.The library needs to improve security by making sure that /images are encrypted at rest. Also, when the /images are used with Amazon Rekognition. they need to be encrypted in transit. The library also must ensure that the /images are not used to improve Amazon Rekognition as a service.How should a machine learning specialist architect the solution to satisfy these requirements?",
     "answers": [
-      "A. Enable server-side encryption on the S3 bucket. Submit an AWS Support ticket to opt out of allowing images to be used for improving the service, and follow the process provided by AWS Support.",
-      "B. Switch to using an Amazon Rekognition collection to store the images. Use the IndexFaces and SearchFacesByImage API operations instead of the CompareFaces API operation.",
-      "C. Switch to using the AWS GovCloud (US) Region for Amazon S3 to store images and for Amazon Rekognition to compare faces. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN.",
+      "A. Enable server-side encryption on the S3 bucket. Submit an AWS Support ticket to opt out of allowing /images to be used for improving the service, and follow the process provided by AWS Support.",
+      "B. Switch to using an Amazon Rekognition collection to store the /images. Use the IndexFaces and SearchFacesByImage API operations instead of the CompareFaces API operation.",
+      "C. Switch to using the AWS GovCloud (US) Region for Amazon S3 to store /images and for Amazon Rekognition to compare faces. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN.",
       "D. Enable client-side encryption on the S3 bucket. Set up a VPN connection and only call the Amazon Rekognition API operations through the VPN."
     ],
     "correct_answer": "B"
@@ -1685,12 +1685,12 @@
   },
   {
     "question_number": "147",
-    "question": "A manufacturing company uses machine learning (ML) models to detect quality issues. The models use images that are taken of the company's product at the end of each production step. The company has thousands of machines at the production site that generate one image per second on average.The company ran a successful pilot with a single manufacturing machine. For the pilot, ML specialists used an industrial PC that ran AWS IoT Greengrass with a long-running AWS Lambda function that uploaded the images to Amazon S3. The uploaded images invoked a Lambda function that was written in Python to perform inference by using an Amazon SageMaker endpoint that ran a custom model. The inference results were forwarded back to a web service that was hosted at the production site to prevent faulty products from being shipped.The company scaled the solution out to all manufacturing machines by installing similarly configured industrial PCs on each production machine. However, latency for predictions increased beyond acceptable limits. Analysis shows that the internet connection is at its capacity limit.How can the company resolve this issue MOST cost-effectively?",
+    "question": "A manufacturing company uses machine learning (ML) models to detect quality issues. The models use /images that are taken of the company's product at the end of each production step. The company has thousands of machines at the production site that generate one image per second on average.The company ran a successful pilot with a single manufacturing machine. For the pilot, ML specialists used an industrial PC that ran AWS IoT Greengrass with a long-running AWS Lambda function that uploaded the /images to Amazon S3. The uploaded /images invoked a Lambda function that was written in Python to perform inference by using an Amazon SageMaker endpoint that ran a custom model. The inference results were forwarded back to a web service that was hosted at the production site to prevent faulty products from being shipped.The company scaled the solution out to all manufacturing machines by installing similarly configured industrial PCs on each production machine. However, latency for predictions increased beyond acceptable limits. Analysis shows that the internet connection is at its capacity limit.How can the company resolve this issue MOST cost-effectively?",
     "answers": [
-      "A. Set up a 10 Gbps AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the images. Increase the size of the instances and the number of instances that are used by the SageMaker endpoint.",
-      "B. Extend the long-running Lambda function that runs on AWS IoT Greengrass to compress the images and upload the compressed files to Amazon S3. Decompress the files by using a separate Lambda function that invokes the existing Lambda function to run the inference pipeline.",
-      "C. Use auto scaling for SageMaker. Set up an AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the images.",
-      "D. Deploy the Lambda function and the ML models onto the AWS IoT Greengrass core that is running on the industrial PCs that are installed on each machine. Extend the long-running Lambda function that runs on AWS IoT Greengrass to invoke the Lambda function with the captured images and run the inference on the edge component that forwards the results directly to the web service."
+      "A. Set up a 10 Gbps AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the /images. Increase the size of the instances and the number of instances that are used by the SageMaker endpoint.",
+      "B. Extend the long-running Lambda function that runs on AWS IoT Greengrass to compress the /images and upload the compressed files to Amazon S3. Decompress the files by using a separate Lambda function that invokes the existing Lambda function to run the inference pipeline.",
+      "C. Use auto scaling for SageMaker. Set up an AWS Direct Connect connection between the production site and the nearest AWS Region. Use the Direct Connect connection to upload the /images.",
+      "D. Deploy the Lambda function and the ML models onto the AWS IoT Greengrass core that is running on the industrial PCs that are installed on each machine. Extend the long-running Lambda function that runs on AWS IoT Greengrass to invoke the Lambda function with the captured /images and run the inference on the edge component that forwards the results directly to the web service."
     ],
     "correct_answer": "D"
   },

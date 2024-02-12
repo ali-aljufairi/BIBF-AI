@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image  from "next/image";
 
 enum AnswerIndex {
   A = 0,
@@ -15,7 +16,7 @@ interface QuizQuestion {
   question: string;
   answers: string[];
   correct_answer: string;
-  Image?: string;
+  Image_Path?: string;
 }
 
 interface QuizCardProps {
@@ -23,7 +24,7 @@ interface QuizCardProps {
 }
 
 const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
-  const { question, answers, correct_answer, Image } = questionData;
+  const { question, answers, correct_answer, Image_Path } = questionData;
 
   const [selectedAnswers, setSelectedAnswers] = useState<AnswerIndex[]>([]);
 
@@ -82,13 +83,16 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
   return (
     <div className="bg-slate-900 p-4 rounded-lg shadow-md m-4">
       <div className="text-Pufr-300">{question}</div>
+       {Image_Path && (
+        <div className="my-5">
+          <Image src={Image_Path} alt="Quiz Image" width={300} height={200} />
+        </div>
+      )}
       <div className="flex flex-wrap text-Pufr-100 my-5  ">{renderChoices()}</div>
       {selectedAnswers.length > 0 && (
         <div className="my-5">
-          {/* Display a message or style as needed */}
         </div>
       )}
-    {Image && <img src={`${process.env.PUBLIC_URL}/${Image}`} alt={`Question ${questionData.question_number}`} className="my-4 rounded-lg" />}
     </div>
   );
 };
