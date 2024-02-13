@@ -3,7 +3,6 @@ import QuizCard from '../components/misc/QuizCard';
 import Header from '../components/misc/header';
 import Footer from '../components/misc/footer';
 
-
 const questions = require('../public/Quiz/Exam_Dumbs.json');
 
 const QuizPage: React.FC = () => {

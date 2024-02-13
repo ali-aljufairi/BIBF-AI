@@ -179,3 +179,104 @@ Amazon SageMaker is a fully-managed service used to build, train and deploy ML m
 #### SageMaker Deploytme
 
 ![](attachments/Pasted%20image%2020240211144426.png)
+
+
+
+
+## Module 3 : Problem Formulation
+
+### Problem Formulation
+
+![](attachments/Pasted%20image%2020240212095115.png)
+
+![](attachments/Pasted%20image%2020240212100001.png)
+
+#### Define Success 
+
+- ** Model Performance metrics**: 
+    - **Example**:  The model should have an accuracy of 90% in predicting whether a customer will buy a Kindle
+        - Accuracy
+        - Precision
+        - Recall
+        - F1 score
+        - AUC
+
+- **Business Metrics**:
+    - **Example**: The model should increase the number of Kindles sold by 10%
+        - Revenue
+        - Customer satisfaction
+        - Customer retention
+        - Customer acquisition
+        
+## Module 4: Data Preoprocessing 
+        
+![](attachments/Pasted%20image%2020240212101253.png)
+
+![](attachments/Pasted%20image%2020240212101357.png)
+
+### Python libraries for data preprocessing
+
+- **Pandas**: Data manipulation and analysis which provides data structures and functions to manipulate numerical tables and time series data.
+ ```python
+import pandas as pd
+```
+
+
+- **Numpy**: A library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+```python
+import numpy as np
+```
+
+- **Matplotlib**: A plotting library for the Python programming language and its numerical mathematics extension NumPy.
+```python
+import matplotlib.pyplot as plt
+```
+
+- **Seaborn**: A Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+```python
+import seaborn as sns
+```
+
+### Statistics for data preprocessing
+
+- **Mean**: The average of the numbers
+- **Median**: The middle number
+- **Mode**: The number that appears most often
+- **Standard Deviation**: A measure of the amount of variation or dispersion of a set of values
+- **Variance**: A measure of the amount of variation or dispersion of a set of values
+- **Correlation**: A measure of the strength and direction of the relationship between two variables
+- **Covariance**: A measure of the relationship between two random variables
+
+###  Dealing with outliers
+
+- **Outliers**: An observation that lies an abnormal distance from other values in a random sample from a population
+- **Aritificial Outliers**: Outliers that are created by errors in data collection or entry
+- **Natural Outliers**: Outliers that are part of the population
+    - ** Tranformation**: Logarithmic, square root, cube root, reciprocal, square, cube, exponential, and power transformations
+    - ** impute a value**: Replace the outlier with a value that is within the range of the data
+
+
+- **Methods to detect outliers**:
+    - **Boxplot**
+    - **Z-score**
+    - **IQR score**
+    - **Scatter plot**
+    - **Histogram**
+    - **DBSCAN**
+    - **Isolation Forest**
+    - **Local Outlier Factor**
+    - **Elliptic Envelope**
+    - **One-Class SVM**
+
+![](attachments/Pasted%20image%2020240212104430.png)
+
+![](attachments/Pasted%20image%2020240212104453.png)
+
+
+![](attachments/Pasted%20image%2020240212104529.png)
+
+
+![](attachments/Pasted%20image%2020240212104911.png)
+
+
+![](attachments/Pasted%20image%2020240212104934.png)
