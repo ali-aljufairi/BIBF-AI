@@ -2,7 +2,6 @@
 
 
 
-
 ## Course Objectives
 
  - Select and justify the appropriate ML approach to a problem
@@ -280,3 +279,146 @@ import seaborn as sns
 
 
 ![](attachments/Pasted%20image%2020240212104934.png)
+
+
+
+## Module 5: Model Training
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Module 6: Model Training 
+
+
+### Overfitting and Underfitting and Balanced 
+
+![](attachments/Pasted%20image%2020240213095515.png)
+
+- **Overfitting**: The model is too complex and learns the training data too well
+
+- **Underfitting**: The model is too simple and does not learn the training data well
+
+- **Balanced**: The model learns the training data well and generalizes to new data
+
+### Bias and Variance
+![](attachments/Pasted%20image%2020240213095643.png)
+
+- **Bias**: The error introduced by approximating a real-world problem, which may be extremely complicated, by a much simpler model
+
+- **Variance**: The error introduced by attempting to approximate a real-world problem by a much simpler model
+
+### Confusion Matrix
+
+
+![](attachments/Pasted%20image%2020240213100710.png)
+
+- **True Positive (TP)**: The number of positive cases that were correctly predicted
+
+- **True Negative (TN)**: The number of negative cases that were correctly predicted
+
+- **False Positive (FP)**: The number of negative cases that were incorrectly predicted as positive
+
+- **False Negative (FN)**: The number of positive cases that were incorrectly predicted as negative
+
+### Precision, Recall, F1 Score, and AUC
+
+- **Precision**: The number of true positive cases divided by the number of true positive and false positive cases `(TP / (TP + FP))`
+
+
+![](attachments/Pasted%20image%2020240213101820.png)
+
+
+
+- **Accuracy**: The number of true positive and true negative cases divided by the total number of cases `(TP + TN) / (TP + TN + FP + FN)`
+
+![](attachments/Pasted%20image%2020240213101739.png)
+
+- **Recall**: The number of true positive cases divided by the number of true positive and false negative cases `(TP / (TP + FN))`
+![](attachments/Pasted%20image%2020240213101852.png)
+- **F1 Score**: The harmonic mean of precision and recall `2 * (precision * recall) / (precision + recall)`
+
+
+- **AUC**: The area under the receiver operating characteristic curve, which is a plot of the true positive rate against the false positive rate
+
+- **ROC Curve**: A plot of the true positive rate against the false positive rate
+
+
+- *AUC-ROC*  curve is a performance measurement for classification problem at various threshold settings. ROC is a probability curve and AUC represents degree or measure of separability. It tells how much model is capable of distinguishing between classes. Higher the AUC, better the model is at predicting 0s as 0s and 1s as 1s. By analogy, the Higher the AUC, the better the model is at distinguishing between patients with disease and no disease.
+
+#### Types of Problems Score
+
+![](attachments/Pasted%20image%2020240213102541.png)
+
+
+##### R2
+
+![](attachments/Pasted%20image%2020240213142302.png)
+
+
+## Module 7: Model Tuning and Feature Engineering
+
+
+#### Feature Engineering components
+
+- **Feature Selection**: Selecting the most important features
+
+- **Feature Extraction**: Extracting new features from existing features
+
+- **Feature Transformation**: Transforming features to improve model performance
+
+- **Feature Scaling**: Scaling features to improve model performance
+
+
+![](attachments/Pasted%20image%2020240213143051.png)
+
+### Techniques
+
+![](attachments/Pasted%20image%2020240213143317.png)
+
+###  Why we choose feature engineering
+
+- **Improve model performance**: Feature engineering can improve the performance of a model
+
+- **Reduce overfitting**: Feature engineering can reduce overfitting by removing irrelevant features
+
+- **Reduce underfitting**: Feature engineering can reduce underfitting by adding relevant features
+
+- **Improve interpretability**: Feature engineering can improve the interpretability of a model by creating features that are easier to understand
+
+### Why change numerical to small number
+
+- **Reduce computational cost**: Smaller numbers require less memory and less computation
+
+- ** Make the model more aware of the scale of the data**: The model will be more aware of the scale of the data and will be able to learn more effectively
+
+> **Note** : so the model think that the small number is more important than the large number
+
+### why change numerical to categorical
+
+- make more sense to the model  example:
+  Age: 0-18, 19-30, 31-50, 51-70, 71-100 
+This will make more sense to the model than the original numerical data
+
+
+### Scaling transformation techniques
+
+
+- **Min-Max Scaling**: Scales the data to a fixed range, usually 0 to 1
+- **Standardization**: Scales the data to have a mean of 0 and a standard deviation of 1
+- **Max Abs Scaling**: Scales the data to a fixed range, usually -1 to 1 or 0 to 1
+- **Normalization**: Scales the data to have a magnitude of 1
+
+
