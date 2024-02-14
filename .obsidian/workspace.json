@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Building Data Anayltics.md",
                 "mode": "source",
                 "source": false
               }
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Building Data Anayltics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Building Data Anayltics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md"
+                "file": "common_md/Building Data Anayltics.md"
               }
             }
           }
@@ -183,17 +183,18 @@
   },
   "active": "ea2c5c6bed36d5ce",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240214035656.png",
+    "common_md/image.png",
+    "common_md/attachments/Pasted image 20240214035606.png",
+    "common_md/attachments/Pasted image 20240214035324.png",
+    "common_md/attachments/Pasted image 20240214034417.png",
+    "common_md/attachments/Pasted image 20240214033700.png",
+    "common_md/attachments/Pasted image 20240214033246.png",
+    "common_md/attachments/Pasted image 20240214033128.png",
+    "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/attachments/Pasted image 20240212104934.png",
     "common_md/attachments/Pasted image 20240212104911.png",
     "common_md/attachments/Pasted image 20240212104529.png",
-    "common_md/attachments/Pasted image 20240212104453.png",
-    "common_md/attachments/Pasted image 20240212104430.png",
-    "common_md/attachments/Pasted image 20240212101357.png",
-    "common_md/attachments/Pasted image 20240212101253.png",
-    "common_md/attachments/Pasted image 20240212100001.png",
-    "common_md/attachments/Pasted image 20240212095115.png",
-    "public/Images/96.png",
-    "public/Images/95.png",
     "public/Images",
     "public/Quiz/Images",
     "public/Quiz/Exam_Dumbs.json",
@@ -204,7 +205,6 @@
     "components/misc/QuizCard.tsx",
     "common_md/Data Lakes.md",
     "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
-    "common_md/Machine Learning Pipeline on AWS.md",
     "Untitled.canvas",
     "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
     "common_md/Machine Learning Pipeline on AWS .md",
