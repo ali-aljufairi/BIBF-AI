@@ -2,7 +2,7 @@
 
 In this guide, we'll explore how to build batch data analytics solutions using Amazon EMR (Elastic MapReduce). Amazon EMR is a cloud-based big data platform that allows you to process large datasets efficiently. We'll cover various modules to help you understand the key components and best practices for designing and implementing batch analytics solutions.
 
-## Module I: Introduction to Amazon EMR
+## Module 1: Introduction to Amazon EMR
 
 ### What is Amazon EMR?
 
@@ -172,14 +172,33 @@ for Spark SQL queries, and is used by Amazon EMR to store table metadata for Spa
 - Write HiveQL queries to analyze data.
 - Optimize Hive performance by tuning settings.
 
+
+### Batch Data Processing with Hive SQL:
+
+- Use Hive to process and analyze large datasets.
+- Write SQL-like queries to perform data transformations.
+- Leverage Hive's partitioning and bucketing for efficient processing.
+
+### Benefits of Hbase on EMR:
+
+- **Fast Query Execution**: Hive optimizes queries for efficient execution on EMR clusters.
+
+- **Scalability**: Hive can handle large-scale data processing and analytics.
+
+- **Fault Tolerance**: EMR provides fault-tolerant infrastructure for Hive processing.
+
+
 ## Module 5: Serverless Data Processing
 
-### AWS Lambda and Step Functions:
+You can use serverless services, practices, and strategies to build more agile applications that help you innovate and respond to change faster. AWS handles infrastructure management tasks, such as capacity provisioning and patching, so you can focus on writing code that serves your customers. This module explores how serverless technology can support data processing, cataloging, and analytics at scale.
 
-- Use AWS Lambda for serverless event-driven data processing.
-- Orchestrate Lambda functions using AWS Step Functions.
-- Combine Lambda, Step Functions, and EMR for complex workflows.
+- Move from idea to market faster – By eliminating operational overhead, your teams can release quickly, get feedback, and iterate to get to market faster.
+-  Adapt at scale – With technologies that automatically scale from zero to peak demands, you can adapt to customer needs faster than ever.
+-  Build better applications with less effort – Serverless applications have built-in service integrations. You can focus on building your application instead of configuring it.
+-  Pay for use – Serverless has a pay-for-value billing model. You never pay for over-provisioning, and resource use is optimized on your behalf.
 
+
+![](attachments/Pasted%20image%2020240215072022.png)
 ## Module 6: Security and Monitoring of Ama zon EMR Clusters
 
 ### Security Best Practices:
@@ -189,6 +208,10 @@ for Spark SQL queries, and is used by Amazon EMR to store table metadata for Spa
 - Implement network security using VPCs and security groups.
 
 ### Monitoring and Logging:
+
+![](attachments/Pasted%20image%2020240215072315.png)
+
+
 
 - Use Amazon CloudWatch for monitoring EMR clusters.
 - Monitor resource utilization, job progress, and failures.
@@ -202,6 +225,13 @@ for Spark SQL queries, and is used by Amazon EMR to store table metadata for Spa
 - Design fault-tolerant and scalable architectures.
 - Consider data partitioning and bucketing for efficient processing.
 
+
+
+![](attachments/Pasted%20image%2020240215072413.png)
+
+![](attachments/Pasted%20image%2020240215072428.png)
+
+![](attachments/Pasted%20image%2020240215072454.png)
 ## Module B: Developing Modern Data Architectures on AWS
 
 ### Beyond EMR:
