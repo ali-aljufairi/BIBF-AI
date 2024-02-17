@@ -52,7 +52,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -119,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Building Data Anayltics.md",
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Building Data Anayltics.md",
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Building Data Anayltics.md"
+                "file": "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md"
               }
             }
           }
@@ -181,8 +181,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ea2c5c6bed36d5ce",
+  "active": "870a3973b356f8ad",
   "lastOpenFiles": [
+    "common_md/Building Data Anayltics.md",
     "common_md/attachments/Pasted image 20240215072454.png",
     "common_md/attachments/Pasted image 20240215072428.png",
     "common_md/attachments/Pasted image 20240215072413.png",
@@ -193,7 +194,6 @@
     "common_md/attachments/Pasted image 20240213142302.png",
     "common_md/attachments/Pasted image 20240213102541.png",
     "common_md/attachments/Pasted image 20240213101852.png",
-    "common_md/attachments/Pasted image 20240213101820.png",
     "common_md/Machine Learning Pipeline on AWS.md",
     "public/Images",
     "public/Quiz/Images",
