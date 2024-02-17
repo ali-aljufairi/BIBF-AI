@@ -422,3 +422,81 @@ This will make more sense to the model than the original numerical data
 - **Normalization**: Scales the data to have a magnitude of 1
 
 
+### one hot encoding
+
+- **One-Hot Encoding**: A method of converting categorical data into a format that can be provided to ML algorithms to do a better job in prediction. It is a process of converting categorical data into a binary matrix format.
+
+
+![](attachments/Pasted%20image%2020240217190503.png)
+
+sometimes it's not efficient to do this  so you could try 
+
+  - **Group By somthing Similar
+  
+
+
+### Hyperparameter Tuning   
+
+
+- **Hyperparameters**: Parameters that are set before the model is 
+
+![](attachments/Pasted%20image%2020240217193855.png)
+
+
+#### Hyperparameter Tuning seearch  methods
+
+- **Grid Search**: A method of hyperparameter tuning that searches through a specified subset of hyperparameters
+
+- **Random Search**: A method of hyperparameter tuning that searches through a random subset of hyperparameters
+
+- **Bayesian Optimization**: A method of hyperparameter tuning that uses a probabilistic model to search through a subset of hyperparameters
+
+
+![](attachments/Pasted%20image%2020240217194715.png)
+
+
+![](attachments/Pasted%20image%2020240217194820.png)
+
+
+## Model 8  Model Deployment
+
+![](attachments/Pasted%20image%2020240217195806.png)
+
+#### Types of inferences 
+
+![](attachments/Pasted%20image%2020240217200753.png)
+
+
+#### Inferecing vs. Training
+![](attachments/Pasted%20image%2020240217200903.png)
+
+
+1. **Blue-Green Deployment and Canary Deployment**:
+    - **Blue-Green Deployment**:
+        - **What is it?** Blue-green deployment is a release management strategy used in software deployment. It involves maintaining two identical production environments: one called "Blue" (the active environment) and the other "Green" (the inactive environment).
+        - **How does it work?**
+            1. **Preparation**: Set up a staging environment (Green) that mirrors the production environment (Blue).
+            2. **Deployment**: Deploy the new version of your application to the inactive environment (Green).
+            3. **Testing**: Thoroughly test the new version in the inactive environment to ensure stability.
+            4. **Switch**: Once confident, switch users to the Green environment, making it the new active production environment.
+        - **Goal**: Minimize downtime and reduce risk during software updates.
+    - **Canary Deployment**:
+        - **What is it?** Canary deployment gradually rolls out new software versions to a controlled subset of users before deploying to everyone.
+        - **How does it work?**
+            1. **Incremental Rollout**: Deploy the new version to a percentage of users (the "canaries").
+            2. **Monitoring**: Monitor canaries' feedback and performance.
+            3. **Iterate**: Address any issues that arise. If successful, proceed with a full-scale release.
+        - **Goal**: Identify and fix issues early, minimizing widespread problems or outages.
+
+2. **Amazon SageMaker**:
+    - **What is it?** Amazon SageMaker is a fully managed machine learning (ML) service provided by AWS.
+    - **Features**:
+        - **Build, Train, and Deploy**: Data scientists and developers can build, train, and deploy ML models in a production-ready hosted environment.
+        - **UI Experience**: SageMaker provides a user-friendly interface for ML workflows across multiple integrated development environments (IDEs).
+        - **Managed ML Algorithms**: Efficiently run ML algorithms against large data in a distributed environment.
+        - **Flexible Training Options**: Supports custom algorithms and frameworks.
+        - **Secure and Scalable Deployment**: Easily deploy models from the SageMaker console.
+    - **Use Cases**: SageMaker is ideal for various ML tasks, including image classification, natural language processing, and time series forecasting.
+    - **Point Clouds and SageMaker**:
+        - **Amazon SageMaker Ground Truth** simplifies labeling objects in 3D point clouds for ML training datasets.
+        - It supports sensor fusion of camera and LiDAR data, making it useful for applications like autonomous vehicles.

@@ -40,7 +40,7 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
           {allPages.map((page) => (
             <Link key={page.slug} href={`${page.slug}`} passHref>
               <div
-                className={`card m-4 my-4 p-6 shadow-md transition-transform transform hover:scale-105 relative ${hoveredTitle === page.title ? 'bg-Pufr-600 text-white' : ''
+                className={`card m-4 my-4 p-6 shadow-md text-center transition-transform transform hover:scale-105 relative ${hoveredTitle === page.title ? 'bg-Pufr-600 text-white' : ''
                   }`}
                 onMouseEnter={() => handleCardHover(page.title)}
                 onMouseLeave={handleCardLeave}
