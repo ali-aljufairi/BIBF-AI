@@ -35,7 +35,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Parctical Data Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Parctical Data Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Parctical Data Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md"
+                "file": "common_md/Parctical Data Science.md"
               }
             }
           }
@@ -195,6 +195,9 @@
   },
   "active": "870a3973b356f8ad",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240218103632.png",
+    "common_md/attachments/Pasted image 20240218103420.png",
+    "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/attachments/Pasted image 20240217200903.png",
     "common_md/attachments/Pasted image 20240217200753.png",
     "common_md/attachments/Pasted image 20240217195806.png",
@@ -203,14 +206,11 @@
     "common_md/attachments/Pasted image 20240217193855.png",
     "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
     "Excalidraw/Drawing 2024-02-17 19.32.17.excalidraw.md",
-    "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/attachments/Pasted image 20240217190503.png",
     "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
     "common_md/Building Data Anayltics.md",
     "common_md/attachments/Pasted image 20240215072454.png",
     "common_md/attachments/Pasted image 20240215072428.png",
-    "common_md/attachments/Pasted image 20240215072413.png",
-    "common_md/attachments/Pasted image 20240215072315.png",
     "public/Images",
     "public/Quiz/Images",
     "public/Quiz/Exam_Dumbs.json",
