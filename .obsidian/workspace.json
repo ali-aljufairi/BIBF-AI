@@ -30,18 +30,6 @@
             }
           },
           {
-            "id": "870a3973b356f8ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "common_md/Parctical Data Science.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "447732e2837545f7",
             "type": "leaf",
             "state": {
@@ -64,7 +52,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,24 +181,63 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
+  "floating": {
+    "id": "e6c2fd31b8c7d827",
+    "type": "floating",
+    "children": [
+      {
+        "id": "b8989ca8677e6ec4",
+        "type": "window",
+        "children": [
+          {
+            "id": "2d7102bd47327b38",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "870a3973b356f8ad",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "common_md/Parctical Data Science.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 0,
+        "y": 39,
+        "width": 1280,
+        "height": 1353,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
   "active": "870a3973b356f8ad",
   "lastOpenFiles": [
-    "common_md/attachments/Pasted image 20240218103632.png",
-    "common_md/attachments/Pasted image 20240218103420.png",
-    "common_md/Machine Learning Pipeline on AWS.md",
-    "common_md/attachments/Pasted image 20240217200903.png",
-    "common_md/attachments/Pasted image 20240217200753.png",
-    "common_md/attachments/Pasted image 20240217195806.png",
-    "common_md/attachments/Pasted image 20240217194820.png",
-    "common_md/attachments/Pasted image 20240217194715.png",
-    "common_md/attachments/Pasted image 20240217193855.png",
+    "common_md/attachments/Pasted image 20240219014837.png",
+    "common_md/attachments/Pasted image 20240219014825.png",
+    "common_md/attachments/Pasted image 20240219014726.png",
+    "common_md/attachments/Pasted image 20240219014638.png",
+    "common_md/attachments/Pasted image 20240219014538.png",
+    "common_md/attachments/Pasted image 20240219014149.png",
+    "common_md/attachments/Pasted image 20240219013014.png",
+    "common_md/attachments/Pasted image 20240219012152.png",
+    "common_md/attachments/Pasted image 20240219003357.png",
+    "common_md/attachments/Pasted image 20240218235758.png",
+    "common_md/attachments/Pasted image 20240218235532.png",
     "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
-    "Excalidraw/Drawing 2024-02-17 19.32.17.excalidraw.md",
-    "common_md/attachments/Pasted image 20240217190503.png",
+    "common_md/Parctical Data Science.md",
     "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
+    "Untitled.canvas",
+    "common_md/Machine Learning Pipeline on AWS.md",
+    "Excalidraw/Drawing 2024-02-17 19.32.17.excalidraw.md",
     "common_md/Building Data Anayltics.md",
-    "common_md/attachments/Pasted image 20240215072454.png",
-    "common_md/attachments/Pasted image 20240215072428.png",
     "public/Images",
     "public/Quiz/Images",
     "public/Quiz/Exam_Dumbs.json",
@@ -220,7 +247,6 @@
     "pages/Quiz.tsx",
     "components/misc/QuizCard.tsx",
     "common_md/Data Lakes.md",
-    "Untitled.canvas",
     "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
     "common_md/Machine Learning Pipeline on AWS .md",
     "pages/notes.tsx",
@@ -241,7 +267,6 @@
     "common_md/linked-blog-starter-does-not-reinvent-wheel.md",
     "node_modules/date-fns/README.md",
     "node_modules/date-fns/LICENSE.md",
-    "node_modules/date-fns/CHANGELOG.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
   ]
