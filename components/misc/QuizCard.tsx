@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image  from "next/image";
+import Image from "next/image";
 
 enum AnswerIndex {
   A = 0,
@@ -66,8 +66,8 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
       const choiceBgColor = isSelected && isCorrect(index)
         ? "bg-green-600"
         : isSelected
-        ? "bg-red-600"
-        : "bg-slate-900";
+          ? "bg-red-600"
+          : "bg-slate-900";
 
       return (
         <div
@@ -83,7 +83,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
   return (
     <div className="bg-slate-900 p-4 rounded-lg shadow-md m-4">
       <div className="text-Pufr-300">{question}</div>
-       {Image_Path && (
+      {Image_Path && (
         <div className="my-5">
           <Image src={Image_Path} alt="Quiz Image" width={300} height={200} />
         </div>
