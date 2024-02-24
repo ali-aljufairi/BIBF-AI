@@ -105,7 +105,7 @@
 ### Data Streams vs Firehose
 **Streams**
 •Going to write custom code (producer / consumer)
-•Real time (~200 mslatency for classic, ~70 mslatency for enhanced fan-out)
+•Real time (~200 ms latency for classic, ~70 m slatency for enhanced fan-out)
 •Automatic scaling with On-demand Mode
 •Data Storage for 1 to 365 days, replay capability, multi consumers
 
@@ -122,7 +122,7 @@
 
 **Use cases**
 
-•Streaming ETL:select columns, make simple transformations, on streaming data
+•Streaming ETL: select columns, make simple transformations, on streaming data
 •Continuous metric generation:live leaderboard for a mobile game
 •Responsive analytics:look for certain criteria and build alerting (filtering)
 
@@ -164,3 +164,5 @@
 - Kinesis Data Analytics: analyze data streams with SQL or Flink
 
 - Kinesis Video Streams: store and analyze video streams
+
+## Glue Data 
