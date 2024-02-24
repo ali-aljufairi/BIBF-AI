@@ -52,6 +52,10 @@
 
 #### Kinesis Data Streams
 
+
+
+
+
 **Provisioned mode**: In this mode, you need to specify the number of shards while creating the stream. You can increase or decrease the number of shards in the stream as per your requirement.
 
   - You choose the number of shards when you create the stream.
@@ -67,3 +71,33 @@
 
 
 
+![](attachments/Pasted%20image%2020240224155019.png)
+
+
+###### Kinesis Streams Overview
+
+- Streams are divided in ordered Shards / Partitions
+- Data retention is 24 hours by default, can go up to 365 days
+- Ability to reprocess / replay data
+- Multiple applications can consume the same stream
+- Once data is inserted in Kinesis, it can’t be deleted (immutability)
+- Records can be up to 1MB in size
+
+
+
+
+#### Kinesis Data Firehose
+
+
+![](attachments/Pasted%20image%2020240224155427.png)
+###### Kinesis Firhose Overview
+
+•Fully Managed Service, no administration
+•Near Real Time (60 secnds latency minimum for non full batches)
+•Data Ingestion into Redshift / Amazon S3 / ElasticSearch / Splunk
+•Automatic scaling
+•Supports many data formats
+•Data Conversions from CSV / JSON to Parquet / ORC (only for S3)
+•Data Transformation through AWS Lambda (ex: CSV => JSON)
+•Supports compression when target is Amazon S3 (GZIP, ZIP, and SNAPPY)
+•Pay for the amount of data going through Firehose
