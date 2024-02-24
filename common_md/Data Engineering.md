@@ -101,3 +101,66 @@
 •Data Transformation through AWS Lambda (ex: CSV => JSON)
 •Supports compression when target is Amazon S3 (GZIP, ZIP, and SNAPPY)
 •Pay for the amount of data going through Firehose
+
+### Data Streams vs Firehose
+**Streams**
+•Going to write custom code (producer / consumer)
+•Real time (~200 mslatency for classic, ~70 mslatency for enhanced fan-out)
+•Automatic scaling with On-demand Mode
+•Data Storage for 1 to 365 days, replay capability, multi consumers
+
+
+**Firehose**
+•Fully managed, send to S3, Splunk, Redshift, ElasticSearch
+•Serverless data transformations with Lambda
+•Nearreal time (lowest buffer time is 1 minute)
+•Automated Scaling
+•No data storage
+
+### Kinesis Data Analytics
+
+
+**Use cases**
+
+•Streaming ETL:select columns, make simple transformations, on streaming data
+•Continuous metric generation:live leaderboard for a mobile game
+•Responsive analytics:look for certain criteria and build alerting (filtering)
+
+**Features**
+•Pay only for resources consumed (but it’s not cheap)
+•Serverless; scales automatically
+•Use IAM permissions to access streaming source and destination(s)
+•SQL or Flink to write the computation
+•Schema discovery
+•Lambda can be used for pre-processing
+
+![](attachments/Pasted%20image%2020240224162100.png)
+
+#### Kinesis Data Analytics + Lambda
+
+- Aws Lambda can be a destination aws well
+
+- Allows lots of flexibility for post-processing
+  - Ex: send an alert if a certain condition is met
+  - Ex: send data to a third party service
+  - Ex: store data in a database
+
+
+![](attachments/Pasted%20image%2020240224162137.png)
+
+
+### Kinesis Anaylytics
+
+![](attachments/Pasted%20image%2020240224162816.png)
+
+
+### Kinesis Summary - Machine Learning
+
+
+- Kinesis Data Streams: real-time data streaming at scale
+
+- Kinesis Data Firehose: load data streams into AWS data stores near real-time
+
+- Kinesis Data Analytics: analyze data streams with SQL or Flink
+
+- Kinesis Video Streams: store and analyze video streams
