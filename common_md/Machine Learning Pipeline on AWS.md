@@ -500,3 +500,7 @@ sometimes it's not efficient to do this  so you could try
     - **Point Clouds and SageMaker**:
         - **Amazon SageMaker Ground Truth** simplifies labeling objects in 3D point clouds for ML training datasets.
         - It supports sensor fusion of camera and LiDAR data, making it useful for applications like autonomous vehicles.
+
+#### Checkout
+
+https://stanford-cs329s.github.io/syllabus.html

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Data Lakes.md"
+                "file": "common_md/Machine Learning Pipeline on AWS.md"
               }
             }
           }
@@ -150,8 +149,8 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
-    "common_md/Parctical Data Science.md",
     "common_md/Data Lakes.md",
+    "common_md/Parctical Data Science.md",
     "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
     "common_md/attachments/Pasted image 20240219014837.png",
     "common_md/attachments/Pasted image 20240219014825.png",
