@@ -48,5 +48,5 @@
 
 - **Kinesis Video Streams**: Kinesis Video Streams makes it easy to securely stream video from connected devices to AWS for analytics, machine learning (ML), and other processing. Kinesis Video Streams automatically provisions and elastically scales all the infrastructure needed to ingest streaming video data from millions of devices. It also durably stores, encrypts, and indexes video data in your streams, and allows you to access your data through easy-to-use APIs.
 
-
+![](attachments/Pasted%20image%2020240224111007.png)
 

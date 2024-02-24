@@ -9,7 +9,7 @@
  - Apply the steps of the Ml pipeline to solve the problem
  - Describe Best practices for training and deploying ML models pipeline in AWS
  - Identify the stpes to apply the ML to  business problems
- 
+
 ##  Course Outline
 
 ![](attachments/Pasted%20image%2020240211104659.png)
