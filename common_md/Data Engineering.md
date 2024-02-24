@@ -50,3 +50,20 @@
 
 ![](attachments/Pasted%20image%2020240224111007.png)
 
+#### Kinesis Data Streams
+
+**Provisioned mode**: In this mode, you need to specify the number of shards while creating the stream. You can increase or decrease the number of shards in the stream as per your requirement.
+
+  - You choose the number of shards when you create the stream.
+  - Each shard gets a capacity of 1MB/sec data input and 2MB/sec data output.
+  - You pay per shard-hour and for the amount of data you ingest and the amount of data you read from the stream.
+  
+
+**On-demand mode**: In this mode, you don’t need to specify the number of shards while creating the stream. Kinesis Data Streams automatically scales the number of shards based on the amount of data in the stream.
+
+-  You don’t need to specify the number of shards when you create the stream.
+-  Kinesis Data Streams automatically scales the number of shards based on the amount of data in the stream.
+- You pay for the amount of data you ingest and the amount of data you read from the stream.
+
+
+

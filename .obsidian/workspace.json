@@ -18,19 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "4c05eaccaed0ca47",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md",
+                "file": "common_md/Data Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md",
+                "file": "common_md/Data Engineering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md"
+                "file": "common_md/Data Engineering.md"
               }
             }
           }
@@ -159,10 +148,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4c05eaccaed0ca47",
+  "active": "00a94b4704046da4",
   "lastOpenFiles": [
-    "common_md/Data Engineering.md",
     "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md",
+    "common_md/Data Engineering.md",
     "Excalidraw/Drawing 2024-02-24 14.26.58.excalidraw.md",
     "common_md/attachments/Pasted image 20240224111007.png",
     "common_md/Machine Learning Pipeline on AWS.md",
