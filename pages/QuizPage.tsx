@@ -3,21 +3,31 @@ import QuizCard from '../components/misc/QuizCard';
 import Header from '../components/misc/header';
 import Footer from '../components/misc/footer';
 
+// Import the questions from the JSON file in the public folder which is the root of the project
 const questions = require('../public/Quiz/Exam_Dumbs.json');
 
+
+//  Create the QuizPage component as a functional component
 const QuizPage: React.FC = () => {
+  
+  //  Use the useState hook to manage the state of the currentQuestionIndex
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 
+  //  Create a function to handle the next question
   const handleNextQuestion = (): void => {
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
   };
 
+
+  //  Create a function to handle the back question and type void
   const handleBackQuestion = (): void => {
     setCurrentQuestionIndex((prevIndex) => Math.max(0, prevIndex - 1));
   };
 
-return (
+  return (
     <>
+    
+      {/* header Compontent */}
       <Header />
       <div className="flex flex-col justify-center items-center h-screen">
         <div className="max-w-screen-md p-3 bg-slate-900 rounded-2xl shadow-md sm:w-full md:w-3/4 lg:w-1/2 xl:w-1/3 overflow-y-auto">
@@ -55,4 +65,5 @@ return (
   );
 };
 
+//  Export the QuizPage component as the default export but there is different way to export the component
 export default QuizPage;
