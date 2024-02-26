@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "common_md/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "common_md/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Data Lakes.md",
+                "file": "common_md/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Data Lakes.md"
+                "file": "common_md/Untitled.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "common_md/IoT-Analytics.md",
+    "common_md/Untitled.md",
+    "common_md/Data Lakes.md",
     "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
     "common_md/Parctical Data Science.md",
     "common_md/Building Data Anayltics.md",
@@ -177,7 +180,6 @@
     "pages/QuizPage.tsx",
     "pages/Quiz.tsx",
     "components/misc/QuizCard.tsx",
-    "common_md/Data Lakes.md",
     "Untitled.canvas",
     "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
     "common_md/Machine Learning Pipeline on AWS .md",
@@ -188,14 +190,12 @@
     "common_md/deploy-a-custom-linked-blog-starter.md",
     "common_md/Cloud Essential.md",
     "common_md/Architecting-on-AWS.md",
-    "common_md/IoT-Analytics.md",
     "common_md/accepted-markdown-metadata.md",
     "common_md/hadoop.md",
     "common_md/Day1.md",
     "Excalidraw/Drawing 2024-02-06 11.06.26.excalidraw.md",
     "Excalidraw/Drawing 2024-02-04 09.09.06.excalidraw.md",
     "common_md/Polices.md",
-    "common_md/install-linked-blog-starter-locally.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
   ]
