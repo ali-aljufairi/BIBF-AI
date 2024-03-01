@@ -168,7 +168,7 @@ Even if you have enough space, how long will it take to process 140 TB of data?
 
 ### Glue ETL
 
-- Transforms your data , cleans it, normalizes it, and prepares it for loading into data warehous
+- Transforms your data , cleans it, normalizes it, and prepares it for loading into data warehouse
   - Fully managed, cost-effective, serverless, and easy to use
   - Generate ETL code in Python or Scala , you can modify the code
 
@@ -182,7 +182,38 @@ Even if you have enough space, how long will it take to process 140 TB of data?
   - Find matches ML : identify duplicate records in your dataset,even when
    the records don't have a common unique identifier
 
-- **Formart Conversion**
+- **Format Conversion**
   - Convert data to Parquet or ORC for performance
   - Convert data to Apache Avro or JSON for schema evolution
-  - Convert data to Apache Avro or XML for schema evolution
+  - Convert data to CSV or XML for schema evolution
+  
+
+### AWS Glue DataBrew
+
+
+- AWS Glue DataBrew is a visual data preparation tool that enables you to clean and normalize data without writing code.
+
+- Reduces ML and analytics data preparation time by up to 80%.
+
+
+
+## Database  Options
+
+![](attachments/Pasted%20image%2020240301113923.png)
+
+
+![](attachments/Pasted%20image%2020240301114324.png)
+
+![](attachments/Pasted%20image%2020240301114428.png)
+
+## Possible Machine Learning Architecture
+
+![](attachments/Pasted%20image%2020240301114303.png)
+
+
+![](attachments/Pasted%20image%2020240301114533.png)
+
+![](attachments/Pasted%20image%2020240301114542.png)
+
+
+![](attachments/Pasted%20image%2020240301114558.png)
