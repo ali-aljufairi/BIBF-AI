@@ -217,3 +217,6 @@ Even if you have enough space, how long will it take to process 140 TB of data?
 
 
 ![](attachments/Pasted%20image%2020240301114558.png)
+
+
+[Exploratory Data Anaylis](Exploratory%20Data%20Anaylis.md)
