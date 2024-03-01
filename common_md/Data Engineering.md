@@ -1,6 +1,6 @@
-# Data Engineering  
+# Data Engineering
 
-## S3 
+## S3
 
 ### S3 Storage Classes
 
@@ -10,7 +10,6 @@
 - **S3 One Zone-IA**: For long-lived, infrequently accessed, non-critical data.
 - **S3 Glacier**: For long-term archive and digital preservation.
 - **S3 Glacier Deep Archive**: For long-term archive and digital preservation with retrieval times in hours.
-
 
 ### Lifecycle Policies
 
@@ -34,11 +33,9 @@
 
 - **Versioning**: Versioning is a means of keeping multiple variants of an object in the same bucket. You can use versioning to preserve, retrieve, and restore every version of every object stored in your Amazon S3 bucket. With versioning, you can easily recover from both unintended user actions and application failures.
 
-
-
 ## AWS kinesis Overview
 
-###  kinds of Kinesis
+### kinds of Kinesis
 
 - **Kinesis Data Streams**: Kinesis Data Streams is a massively scalable and durable real-time data streaming service. It can continuously capture gigabytes of data per second from hundreds of thousands of sources such as website clickstreams, financial transactions, social media feeds, IT logs, and location-tracking events.
 
@@ -52,27 +49,19 @@
 
 #### Kinesis Data Streams
 
-
-
-
-
 **Provisioned mode**: In this mode, you need to specify the number of shards while creating the stream. You can increase or decrease the number of shards in the stream as per your requirement.
 
-  - You choose the number of shards when you create the stream.
-  - Each shard gets a capacity of 1MB/sec data input and 2MB/sec data output.
-  - You pay per shard-hour and for the amount of data you ingest and the amount of data you read from the stream.
-  
+- You choose the number of shards when you create the stream.
+- Each shard gets a capacity of 1MB/sec data input and 2MB/sec data output.
+- You pay per shard-hour and for the amount of data you ingest and the amount of data you read from the stream.
 
 **On-demand mode**: In this mode, you don’t need to specify the number of shards while creating the stream. Kinesis Data Streams automatically scales the number of shards based on the amount of data in the stream.
 
--  You don’t need to specify the number of shards when you create the stream.
--  Kinesis Data Streams automatically scales the number of shards based on the amount of data in the stream.
+- You don’t need to specify the number of shards when you create the stream.
+- Kinesis Data Streams automatically scales the number of shards based on the amount of data in the stream.
 - You pay for the amount of data you ingest and the amount of data you read from the stream.
 
-
-
 ![](attachments/Pasted%20image%2020240224155019.png)
-
 
 ###### Kinesis Streams Overview
 
@@ -83,13 +72,10 @@
 - Once data is inserted in Kinesis, it can’t be deleted (immutability)
 - Records can be up to 1MB in size
 
-
-
-
 #### Kinesis Data Firehose
 
-
 ![](attachments/Pasted%20image%2020240224155427.png)
+
 ###### Kinesis Firhose Overview
 
 •Fully Managed Service, no administration
@@ -103,12 +89,12 @@
 •Pay for the amount of data going through Firehose
 
 ### Data Streams vs Firehose
+
 **Streams**
 •Going to write custom code (producer / consumer)
 •Real time (~200 ms latency for classic, ~70 m slatency for enhanced fan-out)
 •Automatic scaling with On-demand Mode
 •Data Storage for 1 to 365 days, replay capability, multi consumers
-
 
 **Firehose**
 •Fully managed, send to S3, Splunk, Redshift, ElasticSearch
@@ -118,7 +104,6 @@
 •No data storage
 
 ### Kinesis Data Analytics
-
 
 **Use cases**
 
@@ -145,17 +130,13 @@
   - Ex: send data to a third party service
   - Ex: store data in a database
 
-
 ![](attachments/Pasted%20image%2020240224162137.png)
-
 
 ### Kinesis Anaylytics
 
 ![](attachments/Pasted%20image%2020240224162816.png)
 
-
 ### Kinesis Summary - Machine Learning
-
 
 - Kinesis Data Streams: real-time data streaming at scale
 
@@ -165,4 +146,43 @@
 
 - Kinesis Video Streams: store and analyze video streams
 
-## Glue Data 
+## Glue Data Catalog
+
+![](attachments/Pasted%20image%2020240301104417.png)
+
+### Glue Data Catalog
+
+Crawlers connect to a data store, progresses through a prioritized list of classifiers to determine the schema for your data, and then creates metadata tables in the Data Catalog.
+
+- Works with S3, RDS, Redshift, and any JDBC data store
+
+### Why not use python scripts and use Glue and ETL ?
+
+You are nike you have 140 TB of data and you want to do ETL how do you do it?
+
+Downloading 140 TB of data does your computer have enough space? how long will it take?
+
+Even if you have enough space, how long will it take to process 140 TB of data?
+
+> That's why you use Glue and ETL because data is already in the cloud because you won't have data center in your office and you are not IBM or Oracle or Microsoft your data is already in the cloud and you want to process it's much faster to use Glue and ETL than to download the data and process it on your computer.
+
+### Glue ETL
+
+- Transforms your data , cleans it, normalizes it, and prepares it for loading into data warehous
+  - Fully managed, cost-effective, serverless, and easy to use
+  - Generate ETL code in Python or Scala , you can modify the code
+
+
+- Bundled with a lot of pre-built transformations
+  - Join, filter, etc
+  - You can also use your own scripts
+  - Map - add fields, remove fields, etc
+
+- Machine Learning Transformations
+  - Find matches ML : identify duplicate records in your dataset,even when
+   the records don't have a common unique identifier
+
+- **Formart Conversion**
+  - Convert data to Parquet or ORC for performance
+  - Convert data to Apache Avro or JSON for schema evolution
+  - Convert data to Apache Avro or XML for schema evolution
