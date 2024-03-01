@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Data Engineering.md",
+                "file": "common_md/Parctical Data Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -108,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Data Engineering.md",
+                "file": "common_md/Parctical Data Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Data Engineering.md",
+                "file": "common_md/Parctical Data Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Data Engineering.md"
+                "file": "common_md/Parctical Data Science.md"
               }
             }
           }
@@ -172,6 +171,13 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "common_md/MLOPS Engineering.md",
+    "common_md/Cloud Essential.md",
+    "common_md/Building Data Analytics.md",
+    "common_md/Untitled.md",
+    "common_md/Architecting-on-AWS.md",
+    "common_md/BIBF-AI.md",
+    "common_md/Data Engineering.md",
     "public/favicon/favicon-114x114.png",
     "public/favicon/favicon-76x76.png",
     "public/favicon/favicon-72x72.png",
@@ -182,14 +188,10 @@
     "public/favicon/favicon-180x180.png",
     "public/favicon/favicon-152x152.png",
     "public/favicon/favicon-150x150.png",
-    "public/favicon/favicon-144x144.png",
     "public/favicon/manifest.json",
     "public/favicon/favicon.ico",
     "common_md/Exploratory Data Anaylis.md",
-    "common_md/Data Engineering.md",
     "Excalidraw/Drawing 2024-03-01 11.15.52.excalidraw.md",
-    "common_md/Untitled.md",
-    "common_md/MLOPS Engineering.md",
     "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md",
     "Excalidraw/Drawing 2024-02-24 14.26.58.excalidraw.md",
     "common_md/Machine Learning Pipeline on AWS.md",
@@ -199,7 +201,6 @@
     "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
     "Untitled.canvas",
     "Excalidraw/Drawing 2024-02-17 19.32.17.excalidraw.md",
-    "common_md/Building Data Anayltics.md",
     "public/Images",
     "public/Quiz/Images",
     "public/Quiz/Exam_Dumbs.json",
@@ -210,11 +211,8 @@
     "components/misc/QuizCard.tsx",
     "Excalidraw/Drawing 2024-02-09 20.22.53.excalidraw.md",
     "common_md/Machine Learning Pipeline on AWS .md",
-    "common_md/BIBF-AI.md",
     "common_md/Data-Analytics-Fundamentals.md",
     "common_md/deploy-a-custom-linked-blog-starter.md",
-    "common_md/Cloud Essential.md",
-    "common_md/Architecting-on-AWS.md",
     "common_md/IoT-Analytics.md",
     "common_md/accepted-markdown-metadata.md",
     "common_md/hadoop.md",

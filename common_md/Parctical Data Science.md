@@ -1,3 +1,8 @@
+---
+title: Parctical Data Science
+---
+
+
 # Practical Data Science 
 
 

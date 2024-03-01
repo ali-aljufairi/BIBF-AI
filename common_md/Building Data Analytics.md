@@ -1,3 +1,5 @@
+
+
 # Building Batch Data Analytics Solutions on AWS
 
 In this guide, we'll explore how to build batch data analytics solutions using Amazon EMR (Elastic MapReduce). Amazon EMR is a cloud-based big data platform that allows you to process large datasets efficiently. We'll cover various modules to help you understand the key components and best practices for designing and implementing batch analytics solutions.
