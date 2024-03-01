@@ -134,7 +134,7 @@ The analyzed dataset may then be filtered and adjusted to improve the quality fo
 
 ![](attachments/Pasted%20image%2020240219014726.png)
 
-
+	
 ### Methodology of MLOps
 
 ![](attachments/Pasted%20image%2020240219014825.png)
