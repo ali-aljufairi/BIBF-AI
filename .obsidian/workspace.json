@@ -41,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Parctical Data Science.md",
+                "file": "common_md/Exploratory Data Anaylis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Parctical Data Science.md",
+                "file": "common_md/Exploratory Data Anaylis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Parctical Data Science.md"
+                "file": "common_md/Exploratory Data Anaylis.md"
               }
             }
           }
@@ -170,8 +171,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "00a94b4704046da4",
+  "active": "8cefb7b549ab24b0",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240301214202.png",
+    "common_md/Parctical Data Science.md",
     "common_md/MLOPS Engineering.md",
     "common_md/Cloud Essential.md",
     "common_md/Building Data Analytics.md",
@@ -197,7 +200,6 @@
     "Excalidraw/Drawing 2024-02-24 14.26.58.excalidraw.md",
     "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/Data Lakes.md",
-    "common_md/Parctical Data Science.md",
     "Excalidraw/Drawing 2024-02-09 20.22.45.excalidraw.md",
     "Excalidraw/Drawing 2024-02-09 20.22.49.excalidraw.md",
     "Untitled.canvas",

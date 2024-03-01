@@ -47,11 +47,8 @@
   
   - **Polar Plot**: A polar plot is a type of 2D plot that shows data in polar coordinates.
   
-  - **Contourf Plot**: A contourf plot is a type of 2D plot that shows filled contours.
-  
   - **3D Surface Plot**: A 3D surface plot is a type of 3D plot that shows a surface.
   
-  - **3D Wireframe Plot**: A 3D wireframe plot is a type of 3D plot that shows a wireframe.
   
   - **3D Bar Plot
 
@@ -71,3 +68,9 @@
   
   - **Cross-Sectional**: Cross-sectional data is data collected by observing many subjects (such as individuals, firms, countries, or regions) at the same point of time, or without regard to differences in time.
   - **Time Series**: Time series data is a sequence of data points in chronological order, such as daily closing stock prices or monthly temperatures.
+  
+  
+
+## Type of data  distribution
+
+![](attachments/Pasted%20image%2020240301214202.png)
