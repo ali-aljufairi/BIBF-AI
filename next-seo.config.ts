@@ -4,7 +4,7 @@ const description = "Host your second brain with NextJS"
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
   titleTemplate: "%s",
-  defaultTitle: "Linked Blog Starter | My Second Brain",
+  defaultTitle: "Blog to help you PASS AWS Machine Learning Specialty Exam | My Second Brain",
   description,
 
   openGraph: {

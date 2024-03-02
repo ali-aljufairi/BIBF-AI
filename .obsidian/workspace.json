@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "8cefb7b549ab24b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "common_md/Exploratory Data Anaylis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "aeec297f7868d90a",
             "type": "leaf",
             "state": {
@@ -41,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Exploratory Data Anaylis.md",
+                "file": "common_md/Parctical Data Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Exploratory Data Anaylis.md",
+                "file": "common_md/Parctical Data Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Exploratory Data Anaylis.md"
+                "file": "common_md/Parctical Data Science.md"
               }
             }
           }
@@ -171,8 +158,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8cefb7b549ab24b0",
+  "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "common_md/Exploratory Data Anaylis.md",
+    "common_md/Exploratory Data Analysis.md",
     "common_md/attachments/Pasted image 20240301214202.png",
     "common_md/Parctical Data Science.md",
     "common_md/MLOPS Engineering.md",
@@ -191,10 +180,8 @@
     "public/favicon/favicon-192x192.png",
     "public/favicon/favicon-180x180.png",
     "public/favicon/favicon-152x152.png",
-    "public/favicon/favicon-150x150.png",
     "public/favicon/manifest.json",
     "public/favicon/favicon.ico",
-    "common_md/Exploratory Data Anaylis.md",
     "Excalidraw/Drawing 2024-03-01 11.15.52.excalidraw.md",
     "Excalidraw/Drawing 2024-02-24 14.36.07.excalidraw.md",
     "Excalidraw/Drawing 2024-02-24 14.26.58.excalidraw.md",

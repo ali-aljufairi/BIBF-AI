@@ -74,3 +74,7 @@
 ## Type of data  distribution
 
 ![](attachments/Pasted%20image%2020240301214202.png)
+
+
+
+
