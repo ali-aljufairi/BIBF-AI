@@ -9,7 +9,7 @@ const questions = require('../public/Quiz/Exam_Dumbs.json');
 
 //  Create the QuizPage component as a functional component
 const QuizPage: React.FC = () => {
-  
+
   //  Use the useState hook to manage the state of the currentQuestionIndex
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 
@@ -26,7 +26,7 @@ const QuizPage: React.FC = () => {
 
   return (
     <>
-    
+
       {/* header Compontent */}
       <Header />
       <div className="flex flex-col justify-center items-center h-screen">
