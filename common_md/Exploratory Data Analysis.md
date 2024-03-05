@@ -99,6 +99,114 @@ SPICE (Super-fast, Parallel, In-memory Calculation Engine) is a general purpose,
 ![](attachments/Pasted%20image%2020240305102328.png)
 
 
+![](attachments/Pasted%20image%2020240305234634.png)
+
+
+![](attachments/Pasted%20image%2020240305234647.png)
+
+
+![](attachments/Pasted%20image%2020240305234656.png)
+
+
+
+
+![](attachments/Pasted%20image%2020240305234705.png)
+
+![](attachments/Pasted%20image%2020240305234713.png)
+
+![](attachments/Pasted%20image%2020240305234720.png)
+
+
+
+## The Curse of Dimensionality
+
+![](attachments/Pasted%20image%2020240305234843.png)
+
+## Imputing Missing Data : Mean, Median, Mode Replacement
+
+Replacing missing data with the mean, median, or mode is a common method for handling missing data. This method is also known as univariate imputation. Univariate imputation is the process of replacing missing data with a statistical estimate of the missing value.
+
+
+## Imputing Missing Data : Random Sample Imputation
+
+Random sample imputation is a technique where we take random observations from the dataset and we use this observation to replace the NaN values. It consists of taking random observation from the dataset and we use this observation to replace the NaN values.
+
+
+## Imputing Missing Data : Capturing NaN values with a new feature
+
+This technique involves replacing the NaN values with a new feature which captures the NaN values. It is a good method when the data is not missing at random.
+
+
+
+## Imputing Missing Data : Machine Learning Algorithm
+
+This technique involves replacing the NaN values with a new feature which captures the NaN values. It is a good method when the data is not missing at random.
+
+KNN: Find K “nearest” (most similar) rows and average their values
+Assumes numerical data, not categorical There are ways to handle categorical data (Hamming distance), but categorical data is probably better served by…
+
+Deep Learning
+Build a machine learning model to impute data for your machine learning model!
+Works well for categorical data. Really well. But it’s complicated.
+
+Regression
+Find linear or non-linear relationships between the missing feature and other features
+Most advanced technique: MICE (Multiple Imputation by Chained Equations)
+
+
+
+## unbalanced data
+
+Unbalanced data typically refers to a problem with classification problems where the classes are not represented equally.
+
+
+**Random Under-Sampling**: Randomly remove samples from the majority class.
+
+**Random Over-Sampling**: Randomly duplicate samples from the minority class.
+
+
+**SMOTE (Synthetic Minority Over-sampling Technique)**: Generate synthetic samples from the minority class.
+
+
+**Cluster-Based Over Sampling**: Generate synthetic samples by generating clusters of the minority class.
+
+
+## Handling outliers
+
+**Removing outliers**: Remove the outliers from the dataset.
+
+![](attachments/Pasted%20image%2020240306000532.png)
+
+
+
+
+![](attachments/Pasted%20image%2020240306000552.png)
+
+
+
+![](attachments/Pasted%20image%2020240306000605.png)
+
+
+![](attachments/Pasted%20image%2020240306000612.png)
+
+
+
+![](attachments/Pasted%20image%2020240306000618.png)
+
+
+
+
+## SageMaker Ground Truth
+
+
+
+[Machine Learning Pipeline on AWS](Machine%20Learning%20Pipeline%20on%20AWS.md)
+
+
+
+
+
+## Next Steps
 https://rxhl.notion.site/AWS-Machine-Learning-Specialty-4c51dfb5ae1e476284e215305b7a5d5b
 
 
