@@ -75,3 +75,31 @@
 
 ![](attachments/Pasted%20image%2020240301214202.png)
 
+## Amazon Athena
+
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+
+## Amazon QuickSight
+
+Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to deliver insights to everyone in your organization. As a fully managed service, QuickSight lets you easily create and publish interactive dashboards that include ML Insights.
+
+
+## For more Details visit 
+
+[Architecting-on-AWS](Architecting-on-AWS.md)
+
+[Data Lakes](Data%20Lakes.md)
+
+
+
+## SPICE 
+
+SPICE (Super-fast, Parallel, In-memory Calculation Engine) is a general purpose, distributed, shared-nothing, parallel processing framework for in-memory analytics. SPICE is designed to be a highly available, fault-tolerant, and self-healing system that provides high throughput and low latency for data processing and analytics.
+
+![](attachments/Pasted%20image%2020240305102328.png)
+
+
+https://rxhl.notion.site/AWS-Machine-Learning-Specialty-4c51dfb5ae1e476284e215305b7a5d5b
+
+
+

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Parctical Data Science.md",
+                "file": "common_md/Exploratory Data Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Athena",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +75,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Parctical Data Science.md",
+                "file": "common_md/Exploratory Data Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Parctical Data Science.md",
+                "file": "common_md/Exploratory Data Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Parctical Data Science.md"
+                "file": "common_md/Exploratory Data Analysis.md"
               }
             }
           }
@@ -160,13 +161,16 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
-    "common_md/Exploratory Data Anaylis.md",
+    "common_md/attachments/Pasted image 20240305102328.png",
+    "common_md/attachments/Pasted image 20240305102325.png",
+    "common_md/Building Data Analytics.md",
     "common_md/Exploratory Data Analysis.md",
-    "common_md/attachments/Pasted image 20240301214202.png",
+    "public/md_assets/attachments/Pasted image 20240301214202.png",
     "common_md/Parctical Data Science.md",
+    "common_md/Exploratory Data Anaylis.md",
+    "common_md/attachments/Pasted image 20240301214202.png",
     "common_md/MLOPS Engineering.md",
     "common_md/Cloud Essential.md",
-    "common_md/Building Data Analytics.md",
     "common_md/Untitled.md",
     "common_md/Architecting-on-AWS.md",
     "common_md/BIBF-AI.md",
@@ -178,8 +182,6 @@
     "public/favicon/favicon-57x57.png",
     "public/favicon/favicon-310x310.png",
     "public/favicon/favicon-192x192.png",
-    "public/favicon/favicon-180x180.png",
-    "public/favicon/favicon-152x152.png",
     "public/favicon/manifest.json",
     "public/favicon/favicon.ico",
     "Excalidraw/Drawing 2024-03-01 11.15.52.excalidraw.md",
@@ -206,7 +208,6 @@
     "common_md/IoT-Analytics.md",
     "common_md/accepted-markdown-metadata.md",
     "common_md/hadoop.md",
-    "common_md/Day1.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
   ]
