@@ -1,14 +1,46 @@
 [
   {
-    "question_number": "1",
-    "question": "A large mobile network operating company is building a machine learning model to predict customers who are likely to unsubscribe from the service. The company plans to offer an incentive for these customers as the cost of churn is far greater than the cost of the incentive.The model produces the following confusion matrix after evaluating on a test dataset of 100 customers:Based on the model evaluation results, why is this a viable model for production?",
+    "question_number": "16",
+    "question": "During mini-batch training of a neural network for a classification problem, a Data Scientist notices that training accuracy oscillates.What is the MOST likely cause of this issue?",
     "answers": [
-      "A. The model is 86% accurate and the cost incurred by the company as a result of false negatives is less than the false positives.",
-      "B. The precision of the model is 86%, which is less than the accuracy of the model.",
-      "C. The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.",
-      "D. The precision of the model is 86%, which is greater than the accuracy of the model."
+      "A. The class distribution in the dataset is imbalanced.",
+      "B. Dataset shuffling is disabled.",
+      "C. The batch size is too big.",
+      "D. The learning rate is very high."
     ],
-    "Image_Path": "/images/1.png",
+    "correct_answer": "D"
+  },
+  {
+    "question_number": "12",
+    "question": "A Machine Learning Specialist is working with a large company to leverage machine learning within its products. The company wants to group its customers into categories based on which customers will and will not churn within the next 6 months. The company has labeled the data available to the Specialist.Which machine learning model type should the Specialist use to accomplish this task?",
+    "answers": [
+      "A. Linear regression",
+      "B. Classification",
+      "C. Clustering",
+      "D. Reinforcement learning"
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question_number": "8",
+    "question": "A manufacturing company has structured and unstructured data stored in an Amazon S3 bucket. A Machine Learning Specialist wants to use SQL to run queries on this data.Which solution requires the LEAST effort to be able to query this data?",
+    "answers": [
+      "A. Use AWS Data Pipeline to transform the data and Amazon RDS to run queries.",
+      "B. Use AWS Glue to catalogue the data and Amazon Athena to run queries.",
+      "C. Use AWS Batch to run ETL on the data and Amazon Aurora to run the queries.",
+      "D. Use AWS Lambda to transform the data and Amazon Kinesis Data Analytics to run queries."
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "question_number": "144",
+    "question": "A machine learning specialist stores IoT soil sensor data in Amazon DynamoDB table and stores weather event data as JSON files in Amazon S3. The dataset inDynamoDB is 10 GB in size and the dataset in Amazon S3 is 5 GB in size. The specialist wants to train a model on this data to help predict soil moisture levels as a function of weather events using Amazon SageMaker.Which solution will accomplish the necessary transformation to train the Amazon SageMaker model with the LEAST amount of administrative overhead?",
+    "answers": [
+      "A. Launch an Amazon EMR cluster. Create an Apache Hive external table for the DynamoDB table and S3 data. Join the Hive tables and write the results out to Amazon S3.",
+      "B. Crawl the data using AWS Glue crawlers. Write an AWS Glue ETL job that merges the two tables and writes the output to an Amazon Redshift cluster.",
+      "C. Enable Amazon DynamoDB Streams on the sensor table. Write an AWS Lambda function that consumes the stream and appends the results to the existing weather files in Amazon S3.",
+      "D. Crawl the data using AWS Glue crawlers. Write an AWS Glue ETL job that merges the two tables and writes the output in CSV format to Amazon S3."
+    ],
     "correct_answer": "C"
   },
   {
@@ -90,17 +122,6 @@
     "correct_answer": "B"
   },
   {
-    "question_number": "8",
-    "question": "A manufacturing company has structured and unstructured data stored in an Amazon S3 bucket. A Machine Learning Specialist wants to use SQL to run queries on this data.Which solution requires the LEAST effort to be able to query this data?",
-    "answers": [
-      "A. Use AWS Data Pipeline to transform the data and Amazon RDS to run queries.",
-      "B. Use AWS Glue to catalogue the data and Amazon Athena to run queries.",
-      "C. Use AWS Batch to run ETL on the data and Amazon Aurora to run the queries.",
-      "D. Use AWS Lambda to transform the data and Amazon Kinesis Data Analytics to run queries."
-    ],
-    "correct_answer": "B"
-  },
-  {
     "question_number": "9",
     "question": "A Machine Learning Specialist is developing a custom video recommendation model for an application. The dataset used to train this model is very large with millions of data points and is hosted in an Amazon S3 bucket. The Specialist wants to avoid loading all of this data onto an Amazon SageMaker notebook instance because it would take hours to move and will exceed the attached 5 GB Amazon EBS volume on the notebook instance.Which approach allows the Specialist to use all the data to train the model?",
     "answers": [
@@ -132,17 +153,6 @@
       "D. Random Cut Forest (RCF) over random subsamples to identify patterns in the customer database."
     ],
     "correct_answer": "C"
-  },
-  {
-    "question_number": "12",
-    "question": "A Machine Learning Specialist is working with a large company to leverage machine learning within its products. The company wants to group its customers into categories based on which customers will and will not churn within the next 6 months. The company has labeled the data available to the Specialist.Which machine learning model type should the Specialist use to accomplish this task?",
-    "answers": [
-      "A. Linear regression",
-      "B. Classification",
-      "C. Clustering",
-      "D. Reinforcement learning"
-    ],
-    "correct_answer": "B"
   },
   {
     "question_number": "13",
@@ -177,17 +187,6 @@
       "D. Create a VPC endpoint and use security groups to restrict access to the given VPC endpoint and an Amazon EC2 instance"
     ],
     "correct_answer": "A"
-  },
-  {
-    "question_number": "16",
-    "question": "During mini-batch training of a neural network for a classification problem, a Data Scientist notices that training accuracy oscillates.What is the MOST likely cause of this issue?",
-    "answers": [
-      "A. The class distribution in the dataset is imbalanced.",
-      "B. Dataset shuffling is disabled.",
-      "C. The batch size is too big.",
-      "D. The learning rate is very high."
-    ],
-    "correct_answer": "D"
   },
   {
     "question_number": "17",
@@ -1726,5 +1725,17 @@
       "D. Use Amazon SageMaker Studio to rebuild the model. Create a notebook that uses the XGBoost training container to perform model training. Deploy the model at an endpoint. Use Amazon SageMaker Processing to post-analyze the model and create a feature importance explainability chart automatically for the credit team."
     ],
     "correct_answer": "C"
-  }
+  },
+  {
+    "question_number": "1",
+    "question": "A large mobile network operating company is building a machine learning model to predict customers who are likely to unsubscribe from the service. The company plans to offer an incentive for these customers as the cost of churn is far greater than the cost of the incentive.The model produces the following confusion matrix after evaluating on a test dataset of 100 customers:Based on the model evaluation results, why is this a viable model for production?",
+    "answers": [
+      "A. The model is 86% accurate and the cost incurred by the company as a result of false negatives is less than the false positives.",
+      "B. The precision of the model is 86%, which is less than the accuracy of the model.",
+      "C. The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.",
+      "D. The precision of the model is 86%, which is greater than the accuracy of the model."
+    ],
+    "Image_Path": "/images/1.png",
+    "correct_answer": "C"
+  },
 ]

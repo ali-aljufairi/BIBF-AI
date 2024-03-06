@@ -192,7 +192,7 @@ Amazon SageMaker is a fully-managed service used to build, train and deploy ML m
 
 #### Define Success 
 
-- ** Model Performance metrics**: 
+- **Model Performance metrics**: 
     - **Example**:  The model should have an accuracy of 90% in predicting whether a customer will buy a Kindle
         - Accuracy
         - Precision
@@ -282,25 +282,11 @@ import seaborn as sns
 
 
 
-## Module 5: Model Training
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Module 6: Model Training 
+## Module 5: Model Training 
 
 
 ### Overfitting and Underfitting and Balanced 

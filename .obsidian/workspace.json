@@ -35,12 +35,8 @@
             "id": "aeec297f7868d90a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -73,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "F1 score",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -95,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -111,7 +108,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +124,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,9 +145,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -175,52 +168,52 @@
   },
   "active": "aeec297f7868d90a",
   "lastOpenFiles": [
-    "node_modules/mdast-util-to-hast/license",
-    "node_modules/mdast-util-to-hast/lib",
-    "node_modules/mdast-util-to-hast",
-    "node_modules/mdast-util-definitions/lib/index.js",
-    "node_modules/mdast-util-definitions/package.json",
-    "node_modules/mdast-util-definitions/license",
-    "node_modules/mdast-util-definitions/readme.md",
-    "node_modules/mdast-util-definitions/index.js",
-    "node_modules/mdast-util-definitions/lib",
-    "node_modules/mdast-util-definitions",
-    "node_modules/unist-util-generated/lib/index.js",
-    "node_modules/unist-util-generated/package.json",
-    "public/md_assets/attachments/Pasted image 20240305234656.png",
-    "node_modules/@tsparticles/interaction-external-trail/README.md",
-    "node_modules/@tsparticles/updater-roll/README.md",
-    "node_modules/@tsparticles/updater-twinkle/README.md",
-    "node_modules/@tsparticles/updater-wobble/README.md",
-    "node_modules/@tsparticles/updater-tilt/README.md",
-    "node_modules/@tsparticles/updater-destroy/README.md",
-    "node_modules/@tsparticles/plugin-emitters-shape-square/README.md",
-    "public/md_assets/attachments/Pasted image 20240305234647.png",
-    "public/md_assets/attachments/Pasted image 20240305234634.png",
-    "public/md_assets/attachments/Pasted image 20240305234603.png",
-    "public/md_assets/attachments/Pasted image 20240305102328.png",
-    "public/md_assets/attachments/Pasted image 20240305102325.png",
-    "node_modules/mime/CHANGELOG.md",
-    "Excalidraw/Drawing 2024-03-01 11.15.52.excalidraw.md",
-    "common_md/Deep learning and Machine learning.md",
-    "common_md/BIBF-AI.md",
-    "node_modules/@tsparticles/shape-line/README.md",
-    "node_modules/@tsparticles/updater-size/README.md",
-    "common_md/Architecting-on-AWS.md",
     "common_md/Machine Learning Pipeline on AWS.md",
-    "common_md/MLOPS Engineering.md",
-    "common_md/Exploratory Data Analysis.md",
-    "public/md_assets/attachments/Pasted image 20240306000618.png",
-    "public/md_assets/attachments/Pasted image 20240306000612.png",
-    "public/md_assets/attachments/Pasted image 20240306000605.png",
-    "public/md_assets/attachments/Pasted image 20240306000552.png",
-    "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/README.md",
-    "node_modules/@cspotcode/source-map-support/README.md",
-    "node_modules/@cspotcode/source-map-support/LICENSE.md",
-    "node_modules/ts-node/node_modules/diff/release-notes.md",
-    "node_modules/ts-node/node_modules/diff/README.md",
-    "node_modules/ts-node/node_modules/diff/CONTRIBUTING.md",
-    "node_modules/ts-node/node_modules/arg/LICENSE.md",
+    "node_modules/joi/dist/joi-browser.min.js",
+    "node_modules/joi/dist",
+    "node_modules/remark-rehype/lib/index.js",
+    "node_modules/remark-rehype/lib/index.d.ts",
+    "node_modules/remark-rehype/readme.md",
+    "node_modules/remark-rehype/license",
+    "node_modules/remark-rehype/package.json",
+    "node_modules/remark-rehype/index.js",
+    "node_modules/remark-rehype/lib",
+    "node_modules/remark-rehype/index.d.ts",
+    "node_modules/remark-rehype",
+    "node_modules/mdast-util-gfm-table/readme.md",
+    "node_modules/mdast-util-gfm/readme.md",
+    "node_modules/remark-parse/readme.md",
+    "node_modules/zwitch/readme.md",
+    "node_modules/yallist/README.md",
+    "node_modules/wrappy/README.md",
+    "node_modules/webidl-conversions/README.md",
+    "node_modules/webidl-conversions/LICENSE.md",
+    "node_modules/web-namespaces/readme.md",
+    "node_modules/vary/README.md",
+    "node_modules/vary/HISTORY.md",
+    "node_modules/utils-merge/README.md",
+    "node_modules/trim-lines/readme.md",
+    "node_modules/toidentifier/README.md",
+    "node_modules/toidentifier/HISTORY.md",
+    "node_modules/thenify-all/README.md",
+    "node_modules/thenify-all/History.md",
+    "node_modules/temp-dir/readme.md",
+    "node_modules/supports-color/readme.md",
+    "node_modules/statuses/README.md",
+    "node_modules/statuses/HISTORY.md",
+    "node_modules/sisteransi/readme.md",
+    "node_modules/signal-exit/README.md",
+    "node_modules/shebang-regex/readme.md",
+    "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/loader.png",
+    "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/chevron-left.png",
+    "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/chevron-right.png",
+    "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/close.png",
+    "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/alert-triangle.png",
+    "node_modules/react-native/Libraries/NewAppScreen/components/logo.png",
+    "node_modules/react-use-measure/test/public/logo512.png",
+    "node_modules/react-use-measure/test/public/logo192.png",
+    "node_modules/@react-native-community/cli-debugger-ui/build/ui/assets/orange-icon.png",
+    "node_modules/@react-native-community/cli-debugger-ui/build/ui/assets/blue-icon.png",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

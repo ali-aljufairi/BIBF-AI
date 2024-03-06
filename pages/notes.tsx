@@ -2,6 +2,7 @@
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/api';
+import  ParticlesAnimation  from './ParticlesAnimation'
 import { useState } from 'react';
 import Header from '../components/misc/header';
 import Footer from '../components/misc/footer';
@@ -35,6 +36,7 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
   return (
     <>
       <Header />
+      <ParticlesAnimation />
         <div className="flex flex-col min-h-screen justify-center items-center">
           <div className="m-10  flex flex-wrap justify-center items-center">
             {allPages.map((page) => (
