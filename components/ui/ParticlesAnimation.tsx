@@ -4,8 +4,6 @@ import { loadSlim } from "@tsparticles/slim";
 import {
   type Container,
   type ISourceOptions,
-  MoveDirection,
-  OutMode,
 } from "@tsparticles/engine";
 
 const ParticlesAnimation = () => {
@@ -27,7 +25,7 @@ const ParticlesAnimation = () => {
     () => ({
       background: {
         color: {
-          value: "#0d47a1",
+          value: "#ffff",
         },
       },
       fpsLimit: 120,
@@ -44,20 +42,20 @@ const ParticlesAnimation = () => {
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 5,
           },
           repulse: {
-            distance: 200,
+            distance: 100,
             duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#9cacd8",
         },
         links: {
-          color: "#ffffff",
+          color: "#0f172a",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -73,7 +71,7 @@ const ParticlesAnimation = () => {
           density: {
             enable: true,
           },
-          value: 80,
+          value: 120,
         },
         opacity: {
           value: 0.5,
@@ -82,7 +80,7 @@ const ParticlesAnimation = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 },
+          value: { min: 1, max: 6 },
         },
       },
       detectRetina: true,

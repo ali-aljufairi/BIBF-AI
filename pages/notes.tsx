@@ -2,7 +2,7 @@
 import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { getAllPosts } from '../lib/api';
-import  ParticlesAnimation  from './ParticlesAnimation'
+import  ParticlesAnimation  from '../components/ui/ParticlesAnimation'
 import { useState } from 'react';
 import Header from '../components/misc/header';
 import Footer from '../components/misc/footer';
@@ -57,7 +57,6 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
             ))}
           </div>
         </div>
-        <Footer />
     </>
 
   );
