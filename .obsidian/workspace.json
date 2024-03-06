@@ -13,34 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/BIBF-AI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "621f117d14cf7014",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "common_md/Deep learning and Machine learning.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "aeec297f7868d90a",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -108,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "common_md/Deep learning and Machine learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "common_md/Deep learning and Machine learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "common_md/Deep learning and Machine learning.md"
+              }
             }
           }
         ]
@@ -166,21 +148,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aeec297f7868d90a",
+  "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240306234600.png",
+    "common_md/image.png",
+    "node_modules/@react-spring/animated/package.json",
+    "node_modules/@react-spring/core/package.json",
+    "node_modules/@react-spring/types/package.json",
+    "node_modules/@react-spring/shared/package.json",
+    "node_modules/@react-spring/web/package.json",
+    "node_modules/class-variance-authority/node_modules/clsx/clsx.d.ts",
+    "node_modules/class-variance-authority/node_modules/clsx/package.json",
+    "node_modules/class-variance-authority/dist/types.d.ts",
+    "node_modules/class-variance-authority/dist/index.mjs.map",
+    "node_modules/class-variance-authority/dist/index.mjs",
+    "common_md/attachments/Pasted image 20240306231605.png",
+    "common_md/BIBF-AI.md",
+    "common_md/Deep learning and Machine learning.md",
     "node_modules/tailwindcss-animate/README.md",
-    "node_modules/tailwindcss-animate/LICENSE",
-    "node_modules/tailwindcss-animate/package.json",
-    "node_modules/tailwindcss-animate/index.js",
-    "node_modules/tailwindcss-animate/index.d.ts",
-    "node_modules/tailwindcss-animate",
-    "node_modules/classnames/index.js",
     "node_modules/classnames/README.md",
-    "node_modules/classnames/LICENSE",
-    "node_modules/classnames/package.json",
     "node_modules/classnames/HISTORY.md",
-    "node_modules/classnames/index.d.ts",
-    "node_modules/classnames/dedupe.js",
     "node_modules/decode-named-character-reference/readme.md",
     "node_modules/hast-util-from-html/readme.md",
     "node_modules/strip-bom-string/README.md",
@@ -201,9 +188,6 @@
     "node_modules/web-namespaces/readme.md",
     "node_modules/vary/README.md",
     "node_modules/vary/HISTORY.md",
-    "node_modules/utils-merge/README.md",
-    "node_modules/trim-lines/readme.md",
-    "node_modules/toidentifier/README.md",
     "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/loader.png",
     "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/chevron-left.png",
     "node_modules/react-native/Libraries/LogBox/UI/LogBoxImages/chevron-right.png",
@@ -212,8 +196,6 @@
     "node_modules/react-native/Libraries/NewAppScreen/components/logo.png",
     "node_modules/react-use-measure/test/public/logo512.png",
     "node_modules/react-use-measure/test/public/logo192.png",
-    "node_modules/@react-native-community/cli-debugger-ui/build/ui/assets/orange-icon.png",
-    "node_modules/@react-native-community/cli-debugger-ui/build/ui/assets/blue-icon.png",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

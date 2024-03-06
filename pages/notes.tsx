@@ -5,7 +5,6 @@ import { getAllPosts } from '../lib/api';
 import  ParticlesAnimation  from '../components/ui/ParticlesAnimation'
 import { useState } from 'react';
 import Header from '../components/misc/header';
-import Footer from '../components/misc/footer';
 
 // Define the interface for page properties
 interface NotesProps {
@@ -67,7 +66,6 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
 // Define the static props function
 export const getStaticProps: GetStaticProps = async () => {
   const allPages = getAllPosts(['slug', 'title', 'content', 'author', 'date']);
-
   return { props: { allPages } };
 };
 
