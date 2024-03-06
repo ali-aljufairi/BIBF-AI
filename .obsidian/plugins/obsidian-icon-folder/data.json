@@ -30,6 +30,5 @@
   "common_md": "LiFolder",
   "common_md/attachments": "LiImage",
   "components": "FabReact",
-  "node_modules": "FabNodeJs",
   "styles": "FabCss3"
 }
