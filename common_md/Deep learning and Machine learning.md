@@ -85,10 +85,11 @@ with tf.Session() as sess:
 - They are designed to process data with grid-like topology, such as images.
 - They use a special type of neuron called a convolutional neuron, which applies a convolution operation to the input data.
 
+![](attachments/Pasted%20image%2020240307001302.png)
 
 > Convolution is just  a fancy way of saying that we are going to divide the input data into overlapping chunks and perform the same operation on each chunk.
 
-
+![](attachments/Pasted%20image%2020240307001323.png)
 
 ### Recurrent Neural Networks (RNNs)
 
@@ -97,10 +98,60 @@ with tf.Session() as sess:
  - **Sequence-to-vector**: Sentiment analysis.
  - **Vector-to-sequence**: Image captioning.
 
-
+![](attachments/Pasted%20image%2020240307001339.png)
 
 ## Types of Activation function
 
 ![](attachments/Pasted%20image%2020240306234600.png)
 
 Activation functions are crucial elements in neural networks as they introduce non-linearity into the computations. Without activation functions, the neural network would essentially behave like a single linear function, severely limiting its ability to learn and model complex relationships between inputs and outputs. By applying non-linear activation functions to the weighted sums from each layer, the network gains the capability to capture intricate patterns and representations, enabling it to tackle sophisticated tasks effectively.
+
+
+## Neural Network
+
+[play with this](https://playground.tensorflow.org/)
+
+The game is simple just make this
+
+
+![](attachments/Pasted%20image%2020240307000553.png)
+
+Be like this 
+
+![](attachments/Pasted%20image%2020240307000739.png)
+
+### Checklist in the website to do
+- [ ] Press Train
+- [ ] Change learning Rate
+- [ ] Change Activation layer
+- [ ] Regulatzation 
+- [ ] Regularization Rate
+- [ ] Problem Type
+
+## Modern Natural Language Processing
+
+
+![](attachments/Pasted%20image%2020240307001453.png)
+
+
+
+
+
+
+## Transfer Learning
+
+![](attachments/Pasted%20image%2020240307001514.png)
+
+
+
+### Batch size
+![](attachments/Pasted%20image%2020240307001605.png)
+
+> Smaller Batch Size is more Effective
+
+
+### Confusion Matrix
+
+Go Read 
+
+[Machine Learning Pipeline on AWS](Machine%20Learning%20Pipeline%20on%20AWS.md)
