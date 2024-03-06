@@ -161,6 +161,7 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
+    "pages/wav-byackground.tsx",
     "components/ui/wav-byackground.tsx",
     "components/ui",
     "node_modules/simplex-noise/LICENSE",
@@ -180,7 +181,6 @@
     "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/trace-mapping.d.ts",
     "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/strip-filename.d.ts",
     "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/types.d.ts",
-    "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/sourcemap-segment.d.ts",
     "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/README.md",
     "node_modules/@cspotcode/source-map-support/README.md",
     "node_modules/@cspotcode/source-map-support/LICENSE.md",
