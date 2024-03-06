@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Exploratory Data Analysis.md",
+                "file": "common_md/BIBF-AI.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Athena",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,8 +75,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Exploratory Data Analysis.md",
+                "file": "common_md/BIBF-AI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Exploratory Data Analysis.md",
+                "file": "common_md/BIBF-AI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Exploratory Data Analysis.md"
+                "file": "common_md/BIBF-AI.md"
               }
             }
           }
@@ -161,13 +160,21 @@
   },
   "active": "00a94b4704046da4",
   "lastOpenFiles": [
-    "pages/wav-byackground.tsx",
-    "components/ui/wav-byackground.tsx",
-    "components/ui",
-    "node_modules/simplex-noise/LICENSE",
-    "node_modules/simplex-noise",
-    "tailwind.config.js",
-    "tailwind.config.ts",
+    "common_md/Architecting-on-AWS.md",
+    "common_md/Machine Learning Pipeline on AWS.md",
+    "common_md/MLOPS Engineering.md",
+    "common_md/BIBF-AI.md",
+    "common_md/Exploratory Data Analysis.md",
+    "node_modules/simplex-noise/dist/esm/simplex-noise.js.map",
+    "node_modules/simplex-noise/dist/esm/simplex-noise.js",
+    "node_modules/simplex-noise/dist/esm/simplex-noise.d.ts",
+    "node_modules/simplex-noise/dist/esm/package.json",
+    "node_modules/simplex-noise/dist/cjs/simplex-noise.js.map",
+    "node_modules/simplex-noise/dist/cjs/simplex-noise.js",
+    "node_modules/simplex-noise/dist/cjs/simplex-noise.d.ts",
+    "node_modules/simplex-noise/dist/esm",
+    "node_modules/simplex-noise/dist/cjs",
+    "node_modules/simplex-noise/dist",
     "public/md_assets/attachments/Pasted image 20240306000618.png",
     "public/md_assets/attachments/Pasted image 20240306000612.png",
     "public/md_assets/attachments/Pasted image 20240306000605.png",
@@ -177,10 +184,6 @@
     "public/md_assets/attachments/Pasted image 20240305234720.png",
     "public/md_assets/attachments/Pasted image 20240305234713.png",
     "public/md_assets/attachments/Pasted image 20240305234705.png",
-    "node_modules/create-require/LICENSE",
-    "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/trace-mapping.d.ts",
-    "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/strip-filename.d.ts",
-    "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/dist/types/types.d.ts",
     "node_modules/@cspotcode/source-map-support/node_modules/@jridgewell/trace-mapping/README.md",
     "node_modules/@cspotcode/source-map-support/README.md",
     "node_modules/@cspotcode/source-map-support/LICENSE.md",
@@ -202,11 +205,7 @@
     "node_modules/@tsconfig/node14/README.md",
     "node_modules/yn/readme.md",
     "node_modules/v8-compile-cache-lib/README.md",
-    "node_modules/v8-compile-cache-lib/CHANGELOG.md",
     "common_md/attachments/Pasted image 20240306000618.png",
-    "common_md/Building Data Analytics.md",
-    "common_md/Exploratory Data Analysis.md",
-    "common_md/Parctical Data Science.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

@@ -184,7 +184,7 @@ Unbalanced data typically refers to a problem with classification problems where
 
 
 
-![](attachments/Pasted%20image%2020240306000605.png)
+
 
 
 ![](attachments/Pasted%20image%2020240306000612.png)
