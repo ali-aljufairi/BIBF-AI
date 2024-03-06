@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "621f117d14cf7014",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "common_md/Deep learning and Machine learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "aeec297f7868d90a",
             "type": "leaf",
             "state": {
@@ -29,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/BIBF-AI.md",
+                "file": "common_md/Deep learning and Machine learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/BIBF-AI.md",
+                "file": "common_md/Deep learning and Machine learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/BIBF-AI.md"
+                "file": "common_md/Deep learning and Machine learning.md"
               }
             }
           }
@@ -158,23 +171,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "00a94b4704046da4",
+  "active": "621f117d14cf7014",
   "lastOpenFiles": [
+    "common_md/BIBF-AI.md",
+    "common_md/Deep learning and Machine learning.md",
+    "components/ui/particleBackground.tsx",
+    "node_modules/@next/swc-android-arm64",
+    "node_modules/@next/swc-android-arm-eabi",
+    "node_modules/fsevents",
+    "node_modules/@next/swc-win32-ia32-msvc",
+    "node_modules/@next/swc-win32-arm64-msvc",
+    "node_modules/@next/swc-linux-x64-musl",
+    "node_modules/@next/swc-linux-x64-gnu",
+    "node_modules/@next/swc-linux-arm64-musl",
+    "node_modules/@next/swc-linux-arm64-gnu",
+    "node_modules/@tsparticles/shape-line/README.md",
+    "node_modules/@tsparticles/updater-size/README.md",
     "common_md/Architecting-on-AWS.md",
     "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/MLOPS Engineering.md",
-    "common_md/BIBF-AI.md",
     "common_md/Exploratory Data Analysis.md",
-    "node_modules/simplex-noise/dist/esm/simplex-noise.js.map",
-    "node_modules/simplex-noise/dist/esm/simplex-noise.js",
-    "node_modules/simplex-noise/dist/esm/simplex-noise.d.ts",
-    "node_modules/simplex-noise/dist/esm/package.json",
-    "node_modules/simplex-noise/dist/cjs/simplex-noise.js.map",
-    "node_modules/simplex-noise/dist/cjs/simplex-noise.js",
-    "node_modules/simplex-noise/dist/cjs/simplex-noise.d.ts",
-    "node_modules/simplex-noise/dist/esm",
-    "node_modules/simplex-noise/dist/cjs",
-    "node_modules/simplex-noise/dist",
     "public/md_assets/attachments/Pasted image 20240306000618.png",
     "public/md_assets/attachments/Pasted image 20240306000612.png",
     "public/md_assets/attachments/Pasted image 20240306000605.png",
@@ -202,9 +218,6 @@
     "node_modules/@tsconfig/node16/README.md",
     "node_modules/@tsconfig/node12/README.md",
     "node_modules/@tsconfig/node10/README.md",
-    "node_modules/@tsconfig/node14/README.md",
-    "node_modules/yn/readme.md",
-    "node_modules/v8-compile-cache-lib/README.md",
     "common_md/attachments/Pasted image 20240306000618.png",
     "Untitled.canvas",
     "Untitled 2.canvas",

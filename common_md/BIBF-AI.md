@@ -16,7 +16,6 @@ The goal is to create an open platform where trainees can contribute and access 
 
 The website will host machine learning tutorials, examples, explanations of concepts, summaries of sessions, handy tips and tricks, etc. related to the curriculum.
 
-
 - Session-wise notes from lectures
 - Cheat sheets  
 - Revision notes

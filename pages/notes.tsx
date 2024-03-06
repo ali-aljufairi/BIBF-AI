@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { getAllPosts } from '../lib/api';
 import { useState } from 'react';
 import Header from '../components/misc/header';
-import { WavyBackground } from '../components/ui/wav-byackground';
 import Footer from '../components/misc/footer';
 
 // Define the interface for page properties
@@ -36,7 +35,6 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
   return (
     <>
       <Header />
-      <WavyBackground>
         <div className="flex flex-col min-h-screen justify-center items-center">
           <div className="m-10  flex flex-wrap justify-center items-center">
             {allPages.map((page) => (
@@ -58,7 +56,6 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
           </div>
         </div>
         <Footer />
-      </WavyBackground>
     </>
 
   );
