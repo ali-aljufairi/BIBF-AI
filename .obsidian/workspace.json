@@ -35,14 +35,16 @@
             "id": "aeec297f7868d90a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-03-01 11.15.52.excalidraw.md"
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -71,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "F1 score",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,12 +90,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -109,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Deep learning and Machine learning.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Deep learning and Machine learning.md",
+                "file": "common_md/Machine Learning Pipeline on AWS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Deep learning and Machine learning.md"
+                "file": "common_md/Machine Learning Pipeline on AWS.md"
               }
             }
           }
@@ -171,10 +173,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "621f117d14cf7014",
+  "active": "aeec297f7868d90a",
   "lastOpenFiles": [
-    "common_md/BIBF-AI.md",
+    "node_modules/mime/CHANGELOG.md",
+    "Excalidraw/Drawing 2024-03-01 11.15.52.excalidraw.md",
     "common_md/Deep learning and Machine learning.md",
+    "common_md/BIBF-AI.md",
     "components/ui/particleBackground.tsx",
     "node_modules/@next/swc-android-arm64",
     "node_modules/@next/swc-android-arm-eabi",
@@ -216,8 +220,6 @@
     "node_modules/ts-node/dist-raw/NODE-LICENSE.md",
     "node_modules/ts-node/README.md",
     "node_modules/@tsconfig/node16/README.md",
-    "node_modules/@tsconfig/node12/README.md",
-    "node_modules/@tsconfig/node10/README.md",
     "common_md/attachments/Pasted image 20240306000618.png",
     "Untitled.canvas",
     "Untitled 2.canvas",
