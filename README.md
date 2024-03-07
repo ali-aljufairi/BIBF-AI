@@ -3,13 +3,8 @@
 # BIBF-AI
 
 This website aims to serve as a repository of notes from AWS machine learning training conducted at BIBF (Bahrain Institute of Banking and Finance) through a partnership program with Tamkeen. 
-
-
-![](attachments/1701972657370_Page_4_Image_0001.png)
-  
-  
-
 The goal is to create an open platform where trainees can contribute and access a knowledge base to supplement their learning during the AWS ML certification course.
+
 
 ## Installation
 
