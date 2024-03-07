@@ -50,7 +50,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
     setSelectedAnswers((prev) =>
       alreadySelected
         ? prev.filter((idx) => idx !== answerIndex)
-        : [...prev, answerIndex!]
+        : [...prev, answerIndex!],
     );
   };
 
@@ -63,11 +63,12 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
     answers.map((choice, index) => {
       const isSelected = selectedAnswers.includes(index);
 
-      const choiceBgColor = isSelected && isCorrect(index)
-        ? "bg-green-600"
-        : isSelected
-          ? "bg-red-600"
-          : "bg-slate-900";
+      const choiceBgColor =
+        isSelected && isCorrect(index)
+          ? "bg-green-600"
+          : isSelected
+            ? "bg-red-600"
+            : "bg-slate-900";
 
       return (
         <div
@@ -88,11 +89,10 @@ const QuizCard: React.FC<QuizCardProps> = ({ questionData }) => {
           <Image src={Image_Path} alt="Quiz Image" width={300} height={200} />
         </div>
       )}
-      <div className="flex flex-wrap text-Pufr-100 my-5  ">{renderChoices()}</div>
-      {selectedAnswers.length > 0 && (
-        <div className="my-5">
-        </div>
-      )}
+      <div className="flex flex-wrap text-Pufr-100 my-5  ">
+        {renderChoices()}
+      </div>
+      {selectedAnswers.length > 0 && <div className="my-5"></div>}
     </div>
   );
 };

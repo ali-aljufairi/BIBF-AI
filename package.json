@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
     "copyimages": "node ./lib/modules/copy-images.mjs",
     "predev": "npm run copyimages",
     "dev": "next",
@@ -53,6 +54,7 @@
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
+    "prettier": "^3.2.5",
     "tailwindcss": "^3.2.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

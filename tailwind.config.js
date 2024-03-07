@@ -1,4 +1,6 @@
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -24,7 +26,7 @@ const config = {
     },
     extend: {
       colors: {
-        "Pufr": {
+        Pufr: {
           50: "#F1F3F9",
           100: "#E2E6F3",
           200: "#C1CAE6",
@@ -94,16 +96,13 @@ const config = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    addVariablesForColors,
-  ],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
 };
 
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({

@@ -1,9 +1,7 @@
 {
   "app:toggle-left-sidebar": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "E"
     }
   ],
