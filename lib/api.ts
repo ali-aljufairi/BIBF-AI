@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 import { getFilesRecursively } from './modules/find-files-recusively.mjs'
 import { getMDExcerpt } from './markdownToHtml'
 
-const mdDir = path.join(process.cwd(), process.env.COMMON_MD_DIR)
+const mdDir = path.join(process.cwd(), process.env.COMMON_MD_DIR || '')
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md(?:#[^\)]*)?$/, '')
@@ -61,13 +61,13 @@ export function getAllPosts(fields: string[] = []) {
 }
 
 export function getLinksMapping() {
-  const linksMapping = new Map<string, string[]>();
+  const linksMapping: Record<string, string[]> = {};
   const postsMapping = new Map((getAllPosts(['slug', 'content'])).map(i => [i.slug, i.content]));
   const allSlugs = new Set(postsMapping.keys());
   postsMapping.forEach((content, slug) => {
     const mdLink = /\[[^\[\]]+\]\(([^\(\)]+)\)/g
     const matches = Array.from(content.matchAll(mdLink))
-    const linkSlugs = []
+    const linkSlugs: string[] = [] // Fix: Initialize linkSlugs as an array of strings
     for (var m of matches) {
       const linkSlug = getSlugFromHref(slug, m[1])
       if (allSlugs.has(linkSlug)) {
@@ -89,16 +89,11 @@ export function updateMarkdownLinks(markdown: string, currSlug: string) {
 
   // update image links
   markdown = markdown.replaceAll(/(\[[^\[\]]*\]\()([^\(\)]+)(\))/g, (m, m1, m2: string, m3) => {
-    const slugDir = path.join(...currSlug.split(path.sep).slice(0, -1))
-    let relLink = m2;
-    if (!m2.startsWith(slugDir)) {
-      relLink = path.join(slugDir, m2)
-    }
-    const relAssetDir = path.relative('./public', process.env.MD_ASSET_DIR)
-    const fileSlugRel = decodeURI(path.join(mdDir, relLink))
+    const relAssetDir = path.relative('./public', process.env.MD_ASSET_DIR || '')
+    const fileSlugRel = decodeURI(path.join(mdDir, m2))
     const fileSlugAbs = decodeURI(path.join(mdDir, m2))
     if (fs.existsSync(fileSlugRel)) {
-      const imgPath = path.join(relAssetDir, relLink);
+      const imgPath = path.join(relAssetDir, m2);
       return `${m1}/${imgPath}${m3}`
     } else if (fs.existsSync(fileSlugAbs)) {
       const imgPath = path.join(relAssetDir, m2);

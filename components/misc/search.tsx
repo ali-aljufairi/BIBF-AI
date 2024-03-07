@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react"
-import PostPreview from "../blog/post-preview";
-import { useRouter } from 'next/router'
+import { useEffect, useRef, useState, MutableRefObject } from "react"
 
+import PostPreview from "../blog/post-preview";
+
+import { useRouter } from 'next/router'
 
 function useOutsideAlerter(ref, callback) {
   useEffect(() => {
@@ -13,24 +14,34 @@ function useOutsideAlerter(ref, callback) {
         callback(event)
       }
     }
+
     // Bind the event listener
     document.addEventListener("mouseup", handleClickOutside);
+
     return () => {
       // Unbind the event listener on clean up
       document.removeEventListener("mouseup", handleClickOutside);
     };
   }, [ref]);
 }
+interface SearchResult {
+  item: {
+    slug: string;
+    title: string;
+    excerpt: string;
+    date: string;
+  }
+}
 
 function Search({ visible, setVisible }) {
   const router = useRouter();
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef(null);
-  const [searchResults, setSearchResults] = useState([])
+  const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
 
   useEffect(() => {
     if (visible) {
-      inputRef.current?.focus();
+      inputRef.current?.focus(); // No error now
     }
   }, [visible])
 
@@ -61,7 +72,6 @@ function Search({ visible, setVisible }) {
     setVisible(false);
   }, [router.asPath])
 
-
   async function handleChangeInput(e) {
     const res = await fetch(`/api/search?q=${e.target.value}`)
     setSearchResults(await res.json());
@@ -70,7 +80,6 @@ function Search({ visible, setVisible }) {
   return (
     <div className={`absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-y-auto overscroll-none overflow-x-hidden bg-white/95 ${visible ? "block" : "hidden"}`}>
       <div ref={containerRef} className="max-w-4xl mx-auto flex flex-wrap mt-5 px-5">
-
         {/* Search Bar */}
         <div className="w-full">
           <label className="block text-sm sr-only" htmlFor="search">Search</label>
@@ -92,7 +101,6 @@ function Search({ visible, setVisible }) {
             excerpt={res.item.excerpt}
             slug={res.item.slug}
             date={res.item.date}
-            author={res.item.author}
           />
         ))}
       </div>

@@ -26,6 +26,6 @@ export default function postHandler(req: NextApiRequest, res: NextApiResponse) {
     res.setHeader('Allow', ['GET'])
     res.status(405).send(`Method ${method} Not Allowed`)
   }
-  let searchedPosts = searcher.search(q.toString(), { returnMatchData: true });
+  let searchedPosts = searcher.search(q?.toString() ?? '', { returnMatchData: true });
   res.status(200).json(searchedPosts.slice(0, 10))
 }

@@ -6,7 +6,6 @@ import type PostType from '../interfaces/post'
 import path from 'path'
 import PostSingle from '../components/blog/post-single'
 import Layout from '../components/misc/layout'
-import Notes from './notes'
 import { NextSeo } from 'next-seo'
 
 interface notesProps {
@@ -54,7 +53,7 @@ export default function Post({ post, backlinks }: Props) {
                 url: (post.ogImage?.url) ? post.ogImage.url : "https://fleetingnotes.app/favicon/512.png",
                 width: (post.ogImage?.url) ? null : 512,
                 height: (post.ogImage?.url) ? null : 512,
-                type: null
+                type: undefined
               }]
             }}
           />
