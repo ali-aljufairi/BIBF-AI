@@ -1,14 +1,240 @@
-file and pipe 
-
-
-Linear Learner can do more than linear regises
-
-
-make sure to write about classification and regression
+## Bulit in algorthim
 
 
 
-xgboost  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      font-family: Arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-understad and see what effct hyperparameters
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <title>SageMaker Built-in Algorithms Comparison</title>
+</head>
+<body>
+
+  <h2>SageMaker Built-in Algorithms Comparison</h2>
+
+<table>
+  <tr>
+    <th>Algorithm</th>
+    <th>Use Case</th>
+    <th>Important Hyperparameters</th>
+    <th>GPU Support</th>
+    <th>CPU Inference</th>
+    <th>Explanation</th>
+    <th>Quirky Facts</th>
+  </tr>
+  <tr>
+    <td>Linear Learner</td>
+    <td>Classification and Regression</td>
+    <td>
+      <ul>
+        <li>learning_rate</li>
+        <li>l1_norm</li>
+        <li>l2_norm</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>Linear Learner is a supervised learning algorithm that can be used for both classification and regression tasks. It's a simple yet powerful algorithm that works well for high-dimensional, sparse data.</td>
+    <td>Linear Learner can handle classification problems with a large number of classes.</td>
+  </tr>
+  <tr>
+    <td>XGBoost</td>
+    <td>Classification, Regression, and Ranking</td>
+    <td>
+      <ul>
+        <li>max_depth</li>
+        <li>eta</li>
+        <li>min_child_weight</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>XGBoost is a scalable and highly efficient implementation of the gradient boosting algorithm. It's widely used for various machine learning tasks, including classification, regression, and ranking.</td>
+    <td>XGBoost stands for "Extreme Gradient Boosting" and is known for its impressive performance and speed.</td>
+  </tr>
+  <tr>
+    <td>Seq2Seq</td>
+    <td>Sequence-to-Sequence Modeling</td>
+    <td>
+      <ul>
+        <li>num_layers</li>
+        <li>encoder_layers</li>
+        <li>decoder_layers</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>Seq2Seq is a neural network architecture designed for sequence-to-sequence modeling tasks, such as machine translation, text summarization, and dialogue systems.</td>
+    <td>The Seq2Seq algorithm is inspired by the encoder-decoder architecture used in neural machine translation.</td>
+  </tr>
+  <tr>
+    <td>DeepAR</td>
+    <td>Time Series Forecasting</td>
+    <td>
+      <ul>
+        <li>context_length</li>
+        <li>prediction_length</li>
+        <li>dropout_rate</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>DeepAR is a supervised learning algorithm for forecasting scalar (one-dimensional) time series using Recurrent Neural Networks (RNNs). It's particularly useful for applications where classical forecasting models fail to capture complex patterns.</td>
+    <td>DeepAR was developed by researchers at Amazon and is specifically designed for time series forecasting.</td>
+  </tr>
+  <tr>
+    <td>BlazingText</td>
+    <td>Word Embeddings and Text Classification</td>
+    <td>
+      <ul>
+        <li>mode</li>
+        <li>vector_dim</li>
+        <li>batch_size</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>BlazingText is a highly optimized and scalable implementation of the Word2Vec and Text Classification algorithms. It's designed to handle large-scale text data efficiently.</td>
+    <td>BlazingText is built on top of the CUDA-accelerated library, enabling fast training and inference on GPUs.</td>
+  </tr>
+  <tr>
+    <td>Object2Vec</td>
+    <td>Unsupervised Embeddings for High-Dimensional Data</td>
+    <td>
+      <ul>
+        <li>enc_dim</li>
+        <li>bucket_size</li>
+        <li>gamma</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>Object2Vec is an unsupervised algorithm that learns dense vector representations (embeddings) for high-dimensional data, such as text, images, and genomic sequences.</td>
+    <td>Object2Vec is inspired by the Word2Vec algorithm and can be used for various applications, including recommendation systems and anomaly detection.</td>
+  </tr>
+  <tr>
+    <td>Object Detection</td>
+    <td>Detecting Objects in Images</td>
+    <td>
+      <ul>
+        <li>base_network</li>
+        <li>use_pretrained_model</li>
+        <li>num_classes</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>The Object Detection algorithm is designed to detect and localize objects within images. It can identify multiple objects, their bounding boxes, and class labels.</td>
+    <td>The Object Detection algorithm can be used for various applications, such as security surveillance, autonomous vehicles, and robotics.</td>
+  </tr>
+  <tr>
+    <td>Image Classification</td>
+    <td>Classifying Images</td>
+    <td>
+      <ul>
+        <li>base_network</li>
+        <li>use_pretrained_model</li>
+        <li>num_classes</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>The Image Classification algorithm is used to classify images into predefined categories or classes. It can be applied to various domains, such as object recognition, facial recognition, and medical imaging.</td>
+    <td>Image Classification algorithms often leverage transfer learning, where a pre-trained model is fine-tuned on a specific dataset.</td>
+  </tr>
+  <tr>
+    <td>Semantic Segmentation</td>
+    <td>Pixel-Level Classification of Images</td>
+    <td>
+      <ul>
+        <li>base_network</li>
+        <li>num_classes</li>
+        <li>encoder_type</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>Semantic Segmentation is a computer vision task that assigns a class label to each pixel in an image, allowing for precise object detection and delineation.</td>
+    <td>Semantic Segmentation is often used in applications like autonomous driving, medical imaging, and robotics.</td>
+  </tr>
+  <tr>
+    <td>Random Cut Forest</td>
+    <td>Unsupervised Learning and Anomaly Detection</td>
+    <td>
+      <ul>
+        <li>num_trees</li>
+        <li>sample_size</li>
+        <li>shingle_size</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training not supported</td>
+    <td>Yes</td>
+    <td>Random Cut Forest is an unsupervised learning algorithm used for anomaly detection and data clustering. It's particularly useful for high-dimensional, sparse data and can handle mixed data types.</td>
+    <td>Random Cut Forest is based on the principles of random decision forests and is well-suited for detecting anomalies in data streams.</td>
+  </tr>
+  <tr>
+    <td>LDA</td>
+    <td>Topic Modeling and Text Analysis</td>
+    <td>
+      <ul>
+        <li>num_topics</li>
+        <li>alpha</li>
+        <li>max_iterations</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training not supported</td>
+    <td>Yes</td>
+    <td>LDA (Latent Dirichlet Allocation) is an unsupervised machine learning algorithm used for topic modeling and discovering abstract "topics" within a collection of documents.</td>
+    <td>LDA is widely used in text mining, information retrieval, and natural language processing applications.</td>
+  </tr>
+  <tr>
+    <td>KNN</td>
+    <td>Classification and Regression</td>
+    <td>
+      <ul>
+        <li>k</li>
+        <li>sample_size</li>
+        <li>predictor_type</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training not supported</td>
+    <td>Yes</td>
+    <td>KNN (K-Nearest Neighbors) is a non-parametric algorithm used for classification and regression tasks. It's a simple, intuitive algorithm that classifies new data points based on their similarity to existing data points.</td>
+    <td>KNN is a lazy learner, meaning it doesn't build a model until new data needs to be classified or predicted.</td>
+  </tr>
+  <tr>
+    <td>K-Means Clustering</td>
+    <td>Unsupervised Clustering</td>
+    <td>
+      <ul>
+        <li>k</li>
+        <li>max_iterations</li>
+        <li>init_strategy</li>
+      </ul>
+    </td>
+    <td>Multi-GPU and multi-machine training supported</td>
+    <td>Yes</td>
+    <td>K-Means Clustering is an unsupervised learning algorithm used for partitioning data into K distinct clusters based on similarity measures.</td>
+    <td>K-Means Clustering is one of the most popular and widely-used clustering algorithms due to its simplicity and efficiency.</td>
+  </tr>
+</table>
+</body>
+</html>
