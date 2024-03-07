@@ -13,10 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Machine Learning Pipeline on AWS.md",
+                "file": "common_md/Architecting-on-AWS.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "b88ca5b03792b8a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "common_md/Amazon SageMaker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea6eddcf41cf9777",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "fa148faefe3b8920",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -161,22 +189,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8bb4c9520600e4f2",
+  "active": "b88ca5b03792b8a1",
   "lastOpenFiles": [
-    "README.md",
-    "common_md/Machine Learning Pipeline on AWS.md",
+    "common_md/attachments/Pasted image 20240307181223.png",
+    "common_md/attachments/Pasted image 20240307181201.png",
+    "common_md/attachments/Pasted image 20240307181118.png",
+    "common_md/attachments/Pasted image 20240307181059.png",
+    "common_md/attachments/Pasted image 20240307181047.png",
+    "common_md/attachments/Pasted image 20240307180946.png",
+    "common_md/attachments/Pasted image 20240307180917.png",
+    "common_md/attachments/Pasted image 20240307180853.png",
+    "common_md/attachments/Pasted image 20240307175820.png",
+    "common_md/attachments/Pasted image 20240307174934.png",
+    "common_md/Architecting-on-AWS.md",
     "common_md/Amazon SageMaker.md",
+    "common_md/attachments/Pasted image 20240307173123.png",
+    "Excalidraw/Drawing 2024-03-07 17.11.06.excalidraw.md",
+    "common_md/attachments/hello 2.html",
+    "common_md/attachments/hello 1.html",
+    "common_md/attachments/hello.html",
+    "common_md/Machine Learning Pipeline on AWS.md",
+    "README.md",
     "common_md/Deep learning and Machine learning.md",
-    "common_md/attachments/Pasted image 20240307001605.png",
-    "common_md/attachments/Pasted image 20240307001514.png",
-    "common_md/attachments/Pasted image 20240307001453.png",
-    "common_md/attachments/Pasted image 20240307001419.png",
-    "common_md/attachments/Pasted image 20240307001408.png",
-    "common_md/attachments/Pasted image 20240307001339.png",
-    "common_md/attachments/Pasted image 20240307001323.png",
-    "common_md/attachments/Pasted image 20240307001302.png",
-    "common_md/attachments/Pasted image 20240307000739.png",
-    "common_md/attachments/Pasted image 20240307000553.png",
     "node_modules/@react-spring/animated/package.json",
     "node_modules/@react-spring/core/package.json",
     "node_modules/@react-spring/types/package.json",
@@ -184,9 +218,6 @@
     "node_modules/@react-spring/web/package.json",
     "node_modules/class-variance-authority/node_modules/clsx/clsx.d.ts",
     "node_modules/class-variance-authority/node_modules/clsx/package.json",
-    "node_modules/class-variance-authority/dist/types.d.ts",
-    "node_modules/class-variance-authority/dist/index.mjs.map",
-    "node_modules/class-variance-authority/dist/index.mjs",
     "common_md/BIBF-AI.md",
     "node_modules/tailwindcss-animate/README.md",
     "node_modules/classnames/README.md",
@@ -206,9 +237,6 @@
     "node_modules/yallist/README.md",
     "node_modules/wrappy/README.md",
     "node_modules/webidl-conversions/README.md",
-    "node_modules/webidl-conversions/LICENSE.md",
-    "node_modules/web-namespaces/readme.md",
-    "node_modules/vary/README.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
