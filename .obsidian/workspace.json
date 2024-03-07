@@ -162,6 +162,7 @@
   },
   "active": "8bb4c9520600e4f2",
   "lastOpenFiles": [
+    "README.md",
     "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/Amazon SageMaker.md",
     "common_md/Deep learning and Machine learning.md",
@@ -207,7 +208,6 @@
     "node_modules/webidl-conversions/LICENSE.md",
     "node_modules/web-namespaces/readme.md",
     "node_modules/vary/README.md",
-    "node_modules/vary/HISTORY.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
