@@ -25,7 +25,9 @@
 
 ### Keras
 - **Keras** is a high-level neural networks API written in Python.
+
 - Originally developed as an independent library, it is now part of TensorFlow.
+
 - Key features:
     - **User-friendly**: Keras provides a simple and intuitive interface for designing neural networks.
     - **Modularity**: You can easily stack layers to create complex architectures.
@@ -124,7 +126,7 @@ Be like this
 - [ ] Press Train
 - [ ] Change learning Rate
 - [ ] Change Activation layer
-- [ ] Regulatzation 
+- [ ] Regularization 
 - [ ] Regularization Rate
 - [ ] Problem Type
 
