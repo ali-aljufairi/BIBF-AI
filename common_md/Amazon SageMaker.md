@@ -60,7 +60,7 @@ XGBoost is a popular supervised learning algorithm that's known for its speed an
   - **Speed**: It's optimized for speed and can handle large datasets.
   - **Performance**: It's known for its accuracy and performance.
   - **Regularization**: It supports L1 and L2 regularization to prevent overfitting.
-  - **Customizable**: It supports a variety of hyperparameters to customize the model.
+  - **Customizable**: It supports a variety of hyperparameter to customize the model.
   - **Classification and Regression**: It supports both classification and regression tasks.
 
 - **input**:
@@ -72,10 +72,10 @@ XGBoost is a popular supervised learning algorithm that's known for its speed an
 
 - **How is it used**:
 
-  - Models are serilized/deserialized using pickle
+  - Models are serialized/deserialized using pickle
   - can use as Framework withing SageMaker
 
-- **Important Hyperparamters**
+- **Important Hyperparameter**
 
   - num_round : Number of boosting rounds
   - max_depth : Maximum depth of the tree
@@ -96,6 +96,7 @@ XGBoost is a popular supervised learning algorithm that's known for its speed an
   - XGBoost 1.5+ offers distributed GPU training; set `use_dask_gpu_training` to true and distribution to `fully_replicated` in TrainingInput. Note: Only works with csv or parquet input.
 
 ### Seq2Seq
+---
 
 Seq2Seq is a supervised learning algorithm that's used for sequence-to-sequence tasks like machine translation, text summarization, and speech recognition. It's based on recurrent neural networks (RNNs) and is known for its ability to handle variable-length sequences.
 
@@ -153,6 +154,7 @@ Seq2Seq is a supervised learning algorithm that's used for sequence-to-sequence 
     - Multi-Gpu Does not help
 
 ### DeepAR
+--- 
 
 DeepAR is a supervised learning algorithm that's used for time series forecasting. It's based on recurrent neural networks (RNNs) and is known for its ability to handle variable-length sequences.
 
@@ -204,6 +206,7 @@ DeepAR is a supervised learning algorithm that's used for time series forecastin
     - May not need GPU for training
 
 ### BlazingText
+---
 
 ![](attachments/Pasted%20image%2020240307180853.png)
 BlazingText is a supervised learning algorithm that's used for word embeddings and text classification tasks. It's based on the Word2Vec algorithm and is known for its speed and scalability.
@@ -237,6 +240,7 @@ BlazingText is a supervised learning algorithm that's used for word embeddings a
   - Inference: CPU instances.
 
 ### Object2Vec
+---
 
 ![](attachments/Pasted%20image%2020240307180917.png)
 Object2Vec is an unsupervised learning algorithm that's used for generating vector representations of objects in a graph or network. It's based on the Word2Vec algorithm and is known for its ability to capture the relationships between objects.
@@ -270,6 +274,7 @@ Object2Vec is an unsupervised learning algorithm that's used for generating vect
   - Inference: CPU instances.
 
 ### Object Detection
+---
 
 ![](attachments/Pasted%20image%2020240307180946.png)
 
@@ -337,6 +342,7 @@ Image Classification is a computer vision algorithm that's used for classifying 
   - Inference: Single GPU instances or CPU instances (depending on the required performance).
 
 ### Semantic Segmentation
+--- 
 
 Semantic Segmentation is a computer vision algorithm that's used for segmenting an image into different regions or objects, assigning a class label to each pixel. It's based on deep learning techniques and is widely used in applications like self-driving cars, medical imaging, and image analysis.
 ![](attachments/Pasted%20image%2020240307181059.png)
@@ -371,6 +377,7 @@ Semantic Segmentation is a computer vision algorithm that's used for segmenting 
   - Inference: Single GPU instances or CPU instances (depending on the required performance).
 
 ### Random Cut Forest
+---
 
 Random Cut Forest is an unsupervised learning algorithm that's used for anomaly detection and data outlier detection. It's based on the concept of decision trees and is known for its ability to handle high-dimensional data and its robustness to noise.
 
@@ -403,6 +410,7 @@ Random Cut Forest is an unsupervised learning algorithm that's used for anomaly 
   - Inference: Single CPU instances.
 
 ### LDA (Latent Dirichlet Allocation)
+---
 
 LDA is an unsupervised learning algorithm that's used for topic modeling, which involves discovering the underlying topics or themes in a collection of documents. It's based on a probabilistic model and is widely used in applications like text analysis, information retrieval, and content recommendation.
 ![](attachments/Pasted%20image%2020240307181118.png)
@@ -470,6 +478,7 @@ KNN is a supervised learning algorithm that's used for classification and regres
   - Inference: Single CPU instances.
 
 ### K-Means Clustering
+---
 
 K-Means Clustering is an unsupervised learning algorithm that's used for clustering or partitioning data into K distinct groups or clusters. It's based on the idea of minimizing the sum of squared distances between data points and their assigned cluster centroids.
 
@@ -504,6 +513,7 @@ K-Means Clustering is an unsupervised learning algorithm that's used for cluster
   - Inference: Single CPU instances.
 
 ### IP Insights
+---
 
 IP Insights is a machine learning algorithm provided by Amazon SageMaker that is used for detecting and classifying entities, such as names, locations, and organizations, within text data. It is based on natural language processing (NLP) techniques and can be useful for tasks like named entity recognition, text analysis, and information extraction.
 
@@ -567,3 +577,44 @@ PCA is an unsupervised learning algorithm that is used for dimensionality reduct
   - Inference: Single CPU instances.
 
 PCA is often used as a preprocessing step for other machine learning algorithms, as it can help reduce the dimensionality of the data, which can improve the performance and efficiency of the algorithms while retaining the most important information.
+
+
+## Hyperparameter tuning
+
+> As  you saw that each  algorithm have it's on hyperparameter nobody can tell you the best hyperparameter for your model. So, you need to tune the hyperparameter to get the best model.
+
+
+- **What is Hyperparameter Tuning?**
+
+  - Hyperparameter tuning, also known as hyperparameter optimization, is the process of finding the best set of hyperparameters for a machine learning model.
+  
+
+- **Why is Hyperparameter Tuning Important?**
+  - The performance of a machine learning model is highly dependent on the choice of hyperparameters.
+  
+### Automatic Model Tuning Best Practices
+
+When tuning your machine learning model automatically, follow these best practices:
+
+#### 1. Optimize Selectively
+- **Rule:** Don't tweak too many settings at once.
+- **Explanation:** Adjust a few hyperparameters at a time to understand their impact better.
+
+#### 2. Restrict Parameter Ranges
+- **Rule:** Keep parameter ranges as narrow as possible.
+- **Explanation:** Focusing on specific values enhances the efficiency of the tuning process.
+
+#### 3. Logarithmic Scales
+- **Rule:** Use logarithmic scales when appropriate.
+- **Explanation:** Logarithmic scaling helps explore a wide range of values, especially for parameters with large value ranges.
+
+#### 4. Manage Concurrent Jobs
+- **Rule:** Limit the number of simultaneous training jobs.
+- **Explanation:** Running too many jobs concurrently may hinder the learning process. Opt for a balanced approach.
+
+#### 5. Ensure Metric Consistency
+- **Rule:** Confirm consistent reporting of objective metrics across multiple instances.
+- **Explanation:** Accurate metrics ensure reliable evaluation of model performance, especially when utilizing multiple computing instances.
+
+Remember, these practices contribute to a more effective and efficient automatic model tuning process.
+
