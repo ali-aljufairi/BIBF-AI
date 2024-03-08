@@ -31,9 +31,9 @@ Linear Learner is a supervised learning algorithm that can be used for both clas
     1.  Linear Learner uses the validation data to monitor the model's performance and prevent overfitting.
     1.  It can automatically stop training if the model's performance degrades.
 
-- **Important Hyperparamters**
+- **Important Hyperparameter**
 
-  - Balance_multiclass_weights
+  - Balance_multicast_weights
   - learning_rate,mini_batch_size,use_bias
   - L1
   - target_precision
@@ -184,7 +184,7 @@ DeepAR is a supervised learning algorithm that's used for time series forecastin
   - Train on many time series and not just one when possible
   - Use a large context length to capture long-term dependencies
 
-- **Important Hyperparamters**
+- **Important Hyperparameter**
 
   - context_length : Length of the context
   - prediction_length : Length of the prediction
@@ -216,7 +216,7 @@ BlazingText is a supervised learning algorithm that's used for word embeddings a
   - **Word Embeddings**: It can be used to generate word embeddings, which are dense vector representations of words.
   - **Text Classification**: It supports text classification tasks like sentiment analysis and topic classification.
   - **Speed and Scalability**: It's optimized for speed and can handle large datasets.
-  - **Customizable**: It supports a variety of hyperparameters to customize the model.
+  - **Customizable**: It supports a variety of hyperparameter to customize the model.
 
 - **Input**:
 
@@ -228,7 +228,7 @@ BlazingText is a supervised learning algorithm that's used for word embeddings a
   - Training: BlazingText uses the Word2Vec algorithm to learn word embeddings and a classification model.
   - Validation: BlazingText uses the validation data to monitor the model's performance and prevent overfitting.
 
-- **Important Hyperparameters**:
+- **Important Hyperparameter**:
 
   - mode: The mode of operation (e.g., "continuous_bag_of_words" or "skip_gram").
   - vector_dim: The dimension of the word embeddings.
@@ -618,3 +618,21 @@ When tuning your machine learning model automatically, follow these best practic
 
 Remember, these practices contribute to a more effective and efficient automatic model tuning process.
 
+
+
+### Sage Maker and Spark
+
+    > Covered in the following  
+    
+
+1. [Data Lakes](Data%20Lakes.md)
+2. [Data Engineering](Data%20Engineering.md)
+3. [Building Data Analytics](Building%20Data%20Analytics.md)
+
+
+
+### SageMaker New Features
+
+    > Covered in the following
+
+ 1.  [Parctical Data Science](Parctical%20Data%20Science.md)
