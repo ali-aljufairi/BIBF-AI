@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Building Data Analytics.md",
+                "file": "common_md/ML Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Building Data Analytics.md",
+                "file": "common_md/ML Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Building Data Analytics.md",
+                "file": "common_md/ML Services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Building Data Analytics.md"
+                "file": "common_md/ML Services.md"
               }
             }
           }
@@ -190,12 +191,15 @@
   },
   "active": "b88ca5b03792b8a1",
   "lastOpenFiles": [
-    "common_md/MLOPS Engineering.md",
-    "common_md/Amazon SageMaker.md",
     "common_md/AI/ML Services.md",
     "common_md/AI",
-    "common_md/Parctical Data Science.md",
+    "common_md/attachments/Pasted image 20240309162910.png",
+    "common_md/attachments/Pasted image 20240309162847.png",
     "common_md/Architecting-on-AWS.md",
+    "common_md/ML Services.md",
+    "common_md/MLOPS Engineering.md",
+    "common_md/Amazon SageMaker.md",
+    "common_md/Parctical Data Science.md",
     "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/attachments/Pasted image 20240307181223.png",
     "common_md/attachments/Pasted image 20240307181201.png",
@@ -205,8 +209,6 @@
     "common_md/attachments/Pasted image 20240307180946.png",
     "common_md/attachments/Pasted image 20240307180917.png",
     "common_md/attachments/Pasted image 20240307180853.png",
-    "common_md/attachments/Pasted image 20240307175820.png",
-    "common_md/attachments/Pasted image 20240307174934.png",
     "Excalidraw/Drawing 2024-03-07 17.11.06.excalidraw.md",
     "common_md/attachments/hello 2.html",
     "common_md/attachments/hello 1.html",
@@ -234,8 +236,6 @@
     "node_modules/mdast-util-gfm-table/readme.md",
     "node_modules/mdast-util-gfm/readme.md",
     "node_modules/remark-parse/readme.md",
-    "node_modules/zwitch/readme.md",
-    "node_modules/yallist/README.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
