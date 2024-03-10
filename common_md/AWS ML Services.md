@@ -148,3 +148,34 @@ AWS Personalize is a machine learning service provided by Amazon Web Services (A
 4. **Continuous Learning**: Personalize continuously updates and improves its models as it receives more data from your application, providing increasingly accurate personalization over time.
 
 AWS Personalize simplifies the process of building and deploying personalization capabilities, allowing developers to focus on their core application while providing their users with highly personalized experiences.
+
+
+## Amazon Textract
+
+
+- Amazon Textract is a machine learning service that automatically extracts text and data from scanned documents, forms, and tables.
+
+
+## Amazon TorchServe and Neuron
+
+- Amazon TorchServe is an open-source model serving library for PyTorch models, and Amazon Neuron is a hardware-accelerated inference engine for AWS Inferentia-based EC2 instances.
+
+- Amazon Neuron is a hardware-accelerated inference engine for AWS Inferentia-based EC2 instances. It is designed to deliver high-performance, low-latency inference for deep learning models in production.
+
+
+
+## Amazon Panorama
+
+- Amazon Panorama is a machine learning appliance and software development kit (SDK) that allows you to add computer vision (CV) to existing on-premises cameras to make them "smart" and capable of running computer vision models at the edge.
+
+
+## AWS DeepComposer
+
+
+- AWS DeepComposer is a machine learning-enabled musical keyboard and a cloud-based service that allows developers to create original music using machine learning models.
+
+
+
+## Amazon CodeGuru
+
+- Amazon CodeGuru is a machine learning-based service that provides intelligent recommendations for improving code quality and identifying potential performance issues in your applications.
