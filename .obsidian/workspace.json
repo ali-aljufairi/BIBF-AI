@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/Building Data Analytics.md",
+                "file": "common_md/AI/ML Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/Building Data Analytics.md",
+                "file": "common_md/AI/ML Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/Building Data Analytics.md",
+                "file": "common_md/AI/ML Services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/Building Data Analytics.md"
+                "file": "common_md/AI/ML Services.md"
               }
             }
           }
@@ -191,6 +191,8 @@
   },
   "active": "b88ca5b03792b8a1",
   "lastOpenFiles": [
+    "common_md/Parctical Data Science.md",
+    "common_md/Building Data Analytics.md",
     "common_md/ML Services.md",
     "common_md/AWS ML Services.md",
     "common_md/AI/ML Services.md",
@@ -200,7 +202,6 @@
     "common_md/Architecting-on-AWS.md",
     "common_md/MLOPS Engineering.md",
     "common_md/Amazon SageMaker.md",
-    "common_md/Parctical Data Science.md",
     "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/attachments/Pasted image 20240307181223.png",
     "common_md/attachments/Pasted image 20240307181201.png",
@@ -236,7 +237,6 @@
     "node_modules/remark-rehype/readme.md",
     "node_modules/mdast-util-gfm-table/readme.md",
     "node_modules/mdast-util-gfm/readme.md",
-    "node_modules/remark-parse/readme.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

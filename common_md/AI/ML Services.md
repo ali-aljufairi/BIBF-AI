@@ -11,8 +11,8 @@
 
 - Amazon Comprehend can be used to analyze a wide range of text, including social media posts, websites, and documents.
 
-| Feature   | Description                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------- |
+| Feature   | Description                                                                 |
+| --------- | --------------------------------------------------------------------------- |
 | Entity    | identify entities such as people, places, brands, or events in a text.      |
 | Languages | identify the language of the text.                                          |
 | Sentiment | determine the sentiment (positive, negative, neutral) of the text.          |
