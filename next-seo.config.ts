@@ -5,13 +5,13 @@ const description = "Host your second brain with NextJS";
 const config: DefaultSeoProps = {
   titleTemplate: "%s",
   defaultTitle:
-    "Blog to help you PASS AWS Machine Learning Specialty Exam | My Second Brain",
+    "Collection of AWS ML Notes",
   description,
 
   openGraph: {
     type: "website",
     locale: "en_IE",
-    title: "AWS Machine Learning Blog | My Second Brain",
+    title: "AWS Machine Learning Blog ",
     description,
   },
   additionalLinkTags: [

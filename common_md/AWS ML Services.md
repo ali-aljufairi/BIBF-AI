@@ -179,3 +179,8 @@ AWS Personalize simplifies the process of building and deploying personalization
 ## Amazon CodeGuru
 
 - Amazon CodeGuru is a machine learning-based service that provides intelligent recommendations for improving code quality and identifying potential performance issues in your applications.
+
+
+## Find more information on
+
+1. [Architecting-on-AWS](Architecting-on-AWS.md)

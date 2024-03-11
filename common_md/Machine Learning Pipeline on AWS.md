@@ -8,7 +8,7 @@
  - Build ,train ,evaluate and deploy and fine-tune  and ML model
  - Apply the steps of the Ml pipeline to solve the problem
  - Describe Best practices for training and deploying ML models pipeline in AWS
- - Identify the stpes to apply the ML to  business problems
+ - Identify the steps to apply the ML to  business problems
 
 ##  Course Outline
 

@@ -31,5 +31,8 @@ The website will host machine learning tutorials, examples, explanations of conc
 5. [Data Engineering](Data%20Engineering.md)
 6. [Building Data Analytics](Building%20Data%20Analytics.md)
 7. [Machine Learning Pipeline on AWS](Machine%20Learning%20Pipeline%20on%20AWS.md)
+8.  [MLOPS Engineering](MLOPS%20Engineering.md)
+
+
 
  

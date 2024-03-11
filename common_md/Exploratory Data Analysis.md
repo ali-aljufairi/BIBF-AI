@@ -50,7 +50,6 @@
   - **3D Surface Plot**: A 3D surface plot is a type of 3D plot that shows a surface.
   
   
-  - **3D Bar Plot
 
 ## Major Types of Data 
 
