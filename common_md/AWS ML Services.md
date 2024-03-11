@@ -168,7 +168,7 @@ AWS Personalize simplifies the process of building and deploying personalization
 
 - Amazon Panorama is a machine learning appliance and software development kit (SDK) that allows you to add computer vision (CV) to existing on-premises cameras to make them "smart" and capable of running computer vision models at the edge.
 
-
+  
 ## AWS DeepComposer
 
 

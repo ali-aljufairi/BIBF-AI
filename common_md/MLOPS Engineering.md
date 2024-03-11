@@ -66,3 +66,25 @@ For more Explanation Refer back to
 1. **Scalability**:  scale the model to handle the expected load.
 
 1. **Auditability**:  track the lineage of the model and the data used to train it.
+
+
+### Why ML governance
+
+
+![](attachments/Pasted%20image%2020240311154301.png)
+
+
+### Sage Maker 
+
+![](attachments/Pasted%20image%2020240311161655.png)
+
+> Important to know  BYOC (Bring Your Own Container) and BYOM (Bring Your Own Model) are two important concepts in Amazon SageMaker. BYOC allows you to use your own Docker container to train and deploy models in Amazon SageMaker. BYOM allows you to use your own machine learning model to train and deploy models in Amazon SageMaker.
+
+
+More Details
+
+[Parctical Data Science](Parctical%20Data%20Science.md)
+
+
+
+![](attachments/Pasted%20image%2020240311163037.png)
