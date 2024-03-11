@@ -38,22 +38,31 @@
 
 ![](attachments/Pasted%20image%2020240311140746.png)
 
-### Culture 
+### Why does ML workloads not make it to production?
 
-
-### Organization structure
-
-
-### Lack of cros-functional teams
+It might be because a lot of the focus when designing and implementing an ML workload is on the function of the model. The focus is on getting the model to work in a development environment. There is often less focus on operating the model and making it accessible and reliable for users after it is trained. 
 
 
 
-### Skill set 
+## ML Lifecycle
 
 
 
-### Priorize and needs (persona)
+![](attachments/Pasted%20image%2020240311145358.png)
 
 
-### unique challenges of ML lifecycle
+For more Explanation Refer back to 
 
+[Machine Learning Pipeline on AWS](Machine%20Learning%20Pipeline%20on%20AWS.md)
+
+
+### Consideration for MLOps
+
+
+1. **Consisitency**:  use the same tools and processes for training, deploying, and monitoring models.
+
+1. **Reproducibility**:  ensure that the results of a model can be reproduced.
+
+1. **Scalability**:  scale the model to handle the expected load.
+
+1. **Auditability**:  track the lineage of the model and the data used to train it.
