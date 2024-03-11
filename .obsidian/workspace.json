@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/AI/ML Services.md",
+                "file": "common_md/MLOPS Engineering.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/AI/ML Services.md",
+                "file": "common_md/MLOPS Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/AI/ML Services.md",
+                "file": "common_md/MLOPS Engineering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/AI/ML Services.md"
+                "file": "common_md/MLOPS Engineering.md"
               }
             }
           }
@@ -191,11 +191,17 @@
   },
   "active": "b88ca5b03792b8a1",
   "lastOpenFiles": [
+    "public/md_assets/attachments/Pasted image 20240311140746.png",
+    "public/md_assets/attachments/Pasted image 20240309162910.png",
+    "public/md_assets/attachments/Pasted image 20240309162847.png",
+    "public/md_assets/attachments/hello 1.html",
+    "components - Shortcut.lnk",
+    "common_md/attachments/Pasted image 20240311140746.png",
+    "common_md/AI/ML Services.md",
     "common_md/Parctical Data Science.md",
     "common_md/Building Data Analytics.md",
     "common_md/ML Services.md",
     "common_md/AWS ML Services.md",
-    "common_md/AI/ML Services.md",
     "common_md/AI",
     "common_md/attachments/Pasted image 20240309162910.png",
     "common_md/attachments/Pasted image 20240309162847.png",
@@ -208,9 +214,6 @@
     "common_md/attachments/Pasted image 20240307181118.png",
     "common_md/attachments/Pasted image 20240307181059.png",
     "common_md/attachments/Pasted image 20240307181047.png",
-    "common_md/attachments/Pasted image 20240307180946.png",
-    "common_md/attachments/Pasted image 20240307180917.png",
-    "common_md/attachments/Pasted image 20240307180853.png",
     "Excalidraw/Drawing 2024-03-07 17.11.06.excalidraw.md",
     "common_md/attachments/hello 2.html",
     "common_md/attachments/hello 1.html",
@@ -221,8 +224,6 @@
     "node_modules/@react-spring/core/package.json",
     "node_modules/@react-spring/types/package.json",
     "node_modules/@react-spring/shared/package.json",
-    "node_modules/@react-spring/web/package.json",
-    "node_modules/class-variance-authority/node_modules/clsx/clsx.d.ts",
     "common_md/BIBF-AI.md",
     "node_modules/tailwindcss-animate/README.md",
     "node_modules/classnames/README.md",
@@ -236,7 +237,6 @@
     "node_modules/section-matter/README.md",
     "node_modules/remark-rehype/readme.md",
     "node_modules/mdast-util-gfm-table/readme.md",
-    "node_modules/mdast-util-gfm/readme.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

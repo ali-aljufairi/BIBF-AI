@@ -2,9 +2,10 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import { getAllPosts } from "../lib/api";
-import ParticlesAnimation from "../components/ui/ParticlesAnimation";
-import { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import Header from "../components/misc/header";
+
+const ParticlesAnimation = lazy(() => import('../components/ui/ParticlesAnimation'));
 
 // Define the interface for page properties
 interface NotesProps {
@@ -35,15 +36,16 @@ const Notes: React.FC<NotesProps> = ({ allPages }) => {
   return (
     <>
       <Header />
-      <ParticlesAnimation />
+      <Suspense fallback={<div>Loading particles...</div>}>
+        <ParticlesAnimation />
+      </Suspense>
       <div className="flex flex-col min-h-screen justify-center items-center">
         <div className="m-10  flex flex-wrap justify-center items-center">
           {allPages.map((page) => (
             <Link key={page.slug} href={`${page.slug}`} passHref>
               <div
-                className={`card m-2 my-4 p-4 shadow-md text-center transition-transform transform hover:scale-105 relative ${
-                  hoveredTitle === page.title ? "bg-Pufr-600 text-white" : ""
-                }`}
+                className={`card m-2 my-4 p-4 shadow-md text-center transition-transform transform hover:scale-105 relative ${hoveredTitle === page.title ? "bg-Pufr-600 text-white" : ""
+                  }`}
                 onMouseEnter={() => handleCardHover(page.title)}
                 onMouseLeave={handleCardLeave}
               >
