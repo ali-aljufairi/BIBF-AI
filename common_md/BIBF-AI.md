@@ -25,13 +25,15 @@ The website will host machine learning tutorials, examples, explanations of conc
 ## Recommend Path 
 
 1. [Cloud Essential](Cloud%20Essential.md)
-2. [Architecting-on-AWS](Architecting-on-AWS.md)
-3. [Exploratory Data Anaylsis](Exploratory%20Data%20Anaylis)
-4.  [Data Analytics Fundamentals](Data%20Analytics%20Fundamentals.md)
-5. [Data Engineering](Data%20Engineering.md)
-6. [Building Data Analytics](Building%20Data%20Analytics.md)
-7. [Machine Learning Pipeline on AWS](Machine%20Learning%20Pipeline%20on%20AWS.md)
-8.  [MLOPS Engineering](MLOPS%20Engineering.md)
+1. [Architecting-on-AWS](Architecting-on-AWS.md)
+1. [Exploratory Data Anaylsis](Exploratory%20Data%20Anaylis)
+1.  [Data Analytics Fundamentals](Data%20Analytics%20Fundamentals.md)
+1. [Data Engineering](Data%20Engineering.md)
+1. [Building Data Analytics](Building%20Data%20Analytics.md)
+1. [Machine Learning Pipeline on AWS](Machine%20Learning%20Pipeline%20on%20AWS.md)
+1.  [MLOPS Engineering](MLOPS%20Engineering.md)
+1.  [Amazon Sage Maker](Amazon%20Sage%20Maker.md)
+
 
 
 
