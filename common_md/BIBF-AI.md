@@ -26,7 +26,7 @@ The website will host machine learning tutorials, examples, explanations of conc
 
 1. [Cloud Essential](Cloud%20Essential.md)
 1. [Architecting-on-AWS](Architecting-on-AWS.md)
-1. [Exploratory Data Anaylsis](Exploratory%20Data%20Anaylis)
+1. [Exploratory Data Analysis](Exploratory%20Data%20Analysis.md)
 1.  [Data Analytics Fundamentals](Data%20Analytics%20Fundamentals.md)
 1. [Data Engineering](Data%20Engineering.md)
 1. [Building Data Analytics](Building%20Data%20Analytics.md)
