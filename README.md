@@ -1,6 +1,13 @@
 
-```markdown
+
+<div align="center">
+
+<img src=".github/images/logo.gif" alt="fabriclogo" width="400" height="400"/>
+
+</div>
+
 # BIBF-AI
+
 
 This website aims to serve as a repository of notes from AWS machine learning training conducted at BIBF (Bahrain Institute of Banking and Finance) through a partnership program with Tamkeen. 
 The goal is to create an open platform where trainees can contribute and access a knowledge base to supplement their learning during the AWS ML certification course.
@@ -42,6 +49,24 @@ npm run dev
 - `public/`: Contains public assets like images.
 - `styles/`: Contains style-related files.
 - `utils/`: Contains utility functions.
+
+<br/>
+
+## Content Structure
+
+### Home Page 
+- Contains a brief introduction to the website and the purpose of the project and a guide on how readers could follow in reading the notes.
+
+
+### Notes
+
+- Contains a list of notes from the training sessions. 
+
+
+### Quiz 
+
+- Question and answer scraped from the ExamTopics website.
+
 
 ## Contributing
 

@@ -149,4 +149,144 @@ The analyzed dataset may then be filtered and adjusted to improve the quality fo
 
 
 
-### Sage Make studio and SageMaker Studio notebook
+
+
+### SageMaker Studio for ML Lifecycle
+
+SageMaker Studio is a web-based IDE for building, training, debugging, deploying, and monitoring ML models. It supports the full ML lifecycle with a unified visual interface.
+
+## Features
+
+- Write and run code in Jupyter notebooks
+- Build and train ML models
+- Deploy models and monitor performance
+- Track and debug ML experiments
+
+## Architecture
+
+SageMaker Studio notebooks have a two-layered architecture:
+
+1. **JupyterApp**: Provides the JupyterLab IDE user experience
+2. **Kernel App**: Runs notebook code cells, defines image and compute instance type
+
+This architecture uses a gateway application pattern to connect JupyterApp and Kernel App.
+
+## Key Benefits
+
+- **Fast**: Launch instances in under 2 minutes
+- **Convenient**: Amazon SageMaker Python SDK pre-installed, multiple kernels available
+- **Comprehensive**: Build, train, debug, track, monitor, and view experiments
+- **Sharable**: Read-only copy includes dependencies
+- **Scalable**: Fully elastic compute resources
+- **Persistent**: View and share notebooks even when instances or kernels are stopped
+- **Scheduled**: Run notebooks on demand or on a fixed/custom schedule
+- **Flexible**: Select different kernel images and instance types
+
+### SageMaker Data Wrangler
+
+SageMaker Data Wrangler is a tool that helps to complete each of the key ML data preparation workflow tasks. It includes data loading, cleaning, exploring, and visualization with little to no code. 
+
+## Key capabilities of SageMaker Data Wrangler include the following:
+
+- Select data from multiple data sources and semi-structured data formats.
+- Automatically verify data quality and detect abnormalities.
+- Understand data with visualization templates.
+- Transform data with 300+ built-in transformations plus the ability to author custom transformations.
+- Quickly estimate ML model accuracy and diagnose issues before models are deployed into production.
+- Automate ML data preparation workflows.# SageMaker Data Wrangler
+
+SageMaker Data Wrangler is a tool that helps to complete each of the key ML data preparation workflow tasks. It includes data loading, cleaning, exploring, and visualization with little to no code. 
+
+## Key capabilities of SageMaker Data Wrangler include the following:
+
+- Select data from multiple data sources and semi-structured data formats.
+- Automatically verify data quality and detect abnormalities.
+- Understand data with visualization templates.
+- Transform data with 300+ built-in transformations plus the ability to author custom transformations.
+- Quickly estimate ML model accuracy and diagnose issues before models are deployed into production.
+- Automate ML data preparation workflows.# SageMaker Data Wrangler
+
+SageMaker Data Wrangler is a tool that helps to complete each of the key ML data preparation workflow tasks. It includes data loading, cleaning, exploring, and visualization with little to no code. 
+
+## Key capabilities of SageMaker Data Wrangler include the following:
+
+- Select data from multiple data sources and semi-structured data formats.
+- Automatically verify data quality and detect abnormalities.
+- Understand data with visualization templates.
+- Transform data with 300+ built-in transformations plus the ability to author custom transformations.
+- Quickly estimate ML model accuracy and diagnose issues before models are deployed into production.
+- Automate ML data preparation workflows.
+
+
+### Regression Problem metrics
+
+
+![](attachments/Pasted%20image%2020240313164312.png)
+
+
+
+1. Mean Squared Error (MSE):
+   - MSE measures the average squared difference between the predicted values and the actual values.
+   - It provides an understanding of the magnitude of the errors made by the model.
+   - Lower MSE values indicate better model performance.
+   - MSE is sensitive to outliers, as squaring the errors magnifies the effect of large errors.
+
+2. R-squared (R²):
+   - R² measures the proportion of the variance in the target variable that is explained by the independent variables in the model.
+   - It ranges from 0 to 1, with a value closer to 1 indicating a better fit of the model to the data.
+   - R² provides an intuitive interpretation of the model's goodness-of-fit.
+   - However, R² tends to increase as more variables are added to the model, even if those variables are not significant, leading to potential overfitting.
+
+3. Adjusted R-squared (Adj. R²):
+   - Adjusted R² is a modified version of R² that accounts for the number of independent variables in the model.
+   - It aims to penalize the addition of insignificant variables, reducing the risk of overfitting.
+   - Adjusted R² only increases if the new variable improves the model's performance more than would be expected by chance.
+
+When evaluating a regression model, it is recommended to consider both MSE and R² (or Adjusted R²) to get a comprehensive understanding of the model's performance and potential overfitting issues.
+
+Python Code:
+
+```python
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Example data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([2, 4, 5, 4, 5])
+
+# Create and fit a linear regression model
+model = LinearRegression()
+model.fit(X, y)
+
+# Make predictions
+y_pred = model.predict(X)
+
+# Calculate mean squared error
+mse = mean_squared_error(y, y_pred)
+print("Mean Squared Error:", mse)
+
+# Calculate R-squared
+r2 = r2_score(y, y_pred)
+print("R-squared:", r2)
+
+# Calculate Adjusted R-squared (assuming single feature)
+n = X.shape[0]  # Number of observations
+p = 1  # Number of features (assuming single feature)
+adj_r2 = 1 - (1 - r2) * ((n - 1) / (n - p - 1))
+print("Adjusted R-squared:", adj_r2)
+```
+
+In this example, we generate some example data, create and fit a linear regression model, and then calculate the mean squared error, R-squared, and Adjusted R-squared using functions from the `sklearn.metrics` module.
+
+Note that the Adjusted R-squared calculation assumes a single feature (independent variable). If you have multiple features, you would need to adjust the formula accordingly.
+
+
+
+
+
+
+
+### More about sage Maker Built in Algorthim
+
+[Amazon Sage Maker](Amazon%20Sage%20Maker.md)

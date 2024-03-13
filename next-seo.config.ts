@@ -1,6 +1,6 @@
 import { DefaultSeoProps } from "next-seo";
 
-const description = "Host your second brain with NextJS";
+const description = "HOST ANY notes on AWS Machine Learning Services, Tutorials, and Tips.";
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
   titleTemplate: "%s",

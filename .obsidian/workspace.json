@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "inference options Real",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -149,8 +148,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8358fa573f60c442",
+  "active": "65d3c440cc2777d1",
   "lastOpenFiles": [
+    "common_md/attachments/Pasted image 20240313164312.png",
     "common_md/Amazon Sage Maker.md",
     "common_md/Parctical Data Science.md",
     "common_md/BIBF-AI.md",
