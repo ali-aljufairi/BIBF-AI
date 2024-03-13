@@ -4,6 +4,9 @@
 
 <img src=".github/images/logo.gif" alt="fabriclogo" width="400" height="400"/>
 
+<!-- Make somthing to fancy to link to the website -->
+
+    
 </div>
 
 # BIBF-AI
@@ -13,23 +16,19 @@ This website aims to serve as a repository of notes from AWS machine learning tr
 The goal is to create an open platform where trainees can contribute and access a knowledge base to supplement their learning during the AWS ML certification course.
 
 
-## Installation
+## Installation and Usage
 
 Clone the repository and install the dependencies:
 
 ```sh
-git clone BIBF-AI
+git clone https://github.com/Ali-Aljufairi/BIBF-AI
 cd BIBF-AI
 npm install
-```
-
-## Usage
-
-Start the development server:
-
-```sh
 npm run dev
 ```
+
+
+
 
 ## Project Structure
 
