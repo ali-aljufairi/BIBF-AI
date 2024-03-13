@@ -1,36 +1,52 @@
-
-
 <div align="center">
 
 <img src=".github/images/logo.gif" alt="fabriclogo" width="400" height="400"/>
 
-<!-- Make somthing to fancy to link to the website -->
-
-    
 </div>
 
-# BIBF-AI
+# BIBF-AI 🤖
 
-
-This website aims to serve as a repository of notes from AWS machine learning training conducted at BIBF (Bahrain Institute of Banking and Finance) through a partnership program with Tamkeen. 
+This website aims to serve as a repository of notes from AWS machine learning training conducted at BIBF (Bahrain Institute of Banking and Finance) through a partnership program with Tamkeen.
 The goal is to create an open platform where trainees can contribute and access a knowledge base to supplement their learning during the AWS ML certification course.
 
+<br/>
 
-## Installation and Usage
+## Installation and Setup ⚙️
 
-Clone the repository and install the dependencies:
+<br/>
 
-```sh
+### Local Development 🖥️
+
+```bash
 git clone https://github.com/Ali-Aljufairi/BIBF-AI
 cd BIBF-AI
 npm install
 npm run dev
 ```
+<br/>
+
+### Docker 🐳
+
+```bash
+git clone https://github.com/Ali-Aljufairi/BIBF-AI
+docker build -t bibf-ai .
+docker run -p 3000:3000 bibf-ai
+```
+
+<br/>
+
+### Just want to see the website? 🌐
+
+<br/>
+
+<a href="https://bibf-ai.vercel.app/BIBF-AI" style="text-decoration: none;">
+  <img src="https://img.shields.io/badge/Go%20to%20the%20website-BIBF AI-6281d8?style=flat-square" alt="Go to the website" />
+</a>
 
 
+<br/>
 
-
-## Project Structure
+##  Project Structure 📂
 
 - `.env`: Environment variables for the project.
 - `.github/`: Contains GitHub-related files like issue templates.
@@ -51,22 +67,20 @@ npm run dev
 
 <br/>
 
-## Content Structure
+## Content Structure 📋
 
-### Home Page 
+### Home Page 🏠
+
 - Contains a brief introduction to the website and the purpose of the project and a guide on how readers could follow in reading the notes.
 
+### Notes 📝
 
-### Notes
+- Contains a list of notes from the training sessions.
 
-- Contains a list of notes from the training sessions. 
-
-
-### Quiz 
+### Quiz ❓
 
 - Question and answer scraped from the ExamTopics website.
 
-
-## Contributing
+## Contributing 🤝
 
 Pull requests are welcome. For any changes, please open an issue first to discuss what you would like to change.
