@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "common_md/BIBF-AI.md",
+                "file": "common_md/Parctical Data Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,11 +65,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 318.5,
+    "collapsed": true
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -85,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "common_md/BIBF-AI.md",
+                "file": "common_md/Parctical Data Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "common_md/BIBF-AI.md",
+                "file": "common_md/Parctical Data Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "common_md/BIBF-AI.md"
+                "file": "common_md/Parctical Data Science.md"
               }
             }
           }
@@ -149,16 +151,16 @@
   },
   "active": "8358fa573f60c442",
   "lastOpenFiles": [
+    "common_md/Amazon Sage Maker.md",
+    "common_md/Parctical Data Science.md",
+    "common_md/BIBF-AI.md",
     "public/md_assets/attachments/Pasted image 20240311170731.png",
     "public/md_assets/attachments/Pasted image 20240311163037.png",
     "public/md_assets/attachments/Pasted image 20240311161655.png",
     "public/md_assets/attachments/Pasted image 20240311154301.png",
     "public/md_assets/attachments/Pasted image 20240311145358.png",
-    "common_md/Amazon Sage Maker.md",
-    "common_md/BIBF-AI.md",
     "common_md/Architecting-on-AWS.md",
     "common_md/Cloud Essential.md",
-    "common_md/Parctical Data Science.md",
     "common_md/MLOPS Engineering.md",
     "common_md/Machine Learning Pipeline on AWS.md",
     "common_md/Exploratory Data Analysis.md",
@@ -172,7 +174,6 @@
     "common_md/attachments/Pasted image 20240311161655.png",
     "common_md/attachments/Pasted image 20240311154301.png",
     "common_md/attachments/Pasted image 20240311145358.png",
-    "public/md_assets/attachments/Pasted image 20240311140746.png",
     "public/md_assets/attachments/hello 1.html",
     "components - Shortcut.lnk",
     "common_md/AI/ML Services.md",
