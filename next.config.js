@@ -2,12 +2,7 @@ const path = require('path');
 
 module.exports = {
   output: 'standalone',
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, '../../'),
-    outputFileTracingExcludes: {
-      '/.github': true,
-    },
-  },
+
   async redirects() {
     return [
       {
@@ -17,4 +12,11 @@ module.exports = {
       },
     ];
   },
+};
+
+module.exports.excludeFile = (file) => {
+  const excludedFiles = ['.github'];
+  const filePath = path.resolve(file);
+  const fileName = path.basename(filePath);
+  return excludedFiles.includes(fileName);
 };
