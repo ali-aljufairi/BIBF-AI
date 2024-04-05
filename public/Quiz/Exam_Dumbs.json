@@ -831,7 +831,12 @@
   {
     "question_number": "75",
     "question": "A Machine Learning Specialist wants to determine the appropriate SageMakerVariantInvocationsPerInstance setting for an endpoint automatic scaling configuration. The Specialist has performed a load test on a single instance and determined that peak requests per second (RPS) without service degradation is about 20 RPS. As this is the first deployment, the Specialist intends to set the invocation safety factor to 0.5.Based on the stated parameters and given that the invocations per instance setting is measured on a per-minute basis, what should the Specialist set as theSageMakerVariantInvocationsPerInstance setting?",
-    "answers": ["A. 10", "B. 30", "C. 600", "D. 2,400"],
+    "answers": [
+      "A. 10",
+      "B. 30",
+      "C. 600",
+      "D. 2,400"
+    ],
     "correct_answer": "C"
   },
   {
@@ -1110,7 +1115,7 @@
   },
   {
     "question_number": "100",
-    "question": "A Data Scientist is developing a binary classifier to predict whether a patient has a particular disease on a series of test results. The Data Scientist has data on400 patients randomly selected from the population. The disease is seen in 3% of the population.Which cross-validation strategy should the Data Scientist adopt?",
+    "question": "A Data Scientist is developing a binary classifier to predict whether a patient has a particular disease on a series of test results. The Data Scientist has data on 400 patients randomly selected from the population. The disease is seen in 3% of the population.Which cross-validation strategy should the Data Scientist adopt?",
     "answers": [
       "A. A k-fold cross-validation strategy with k=5",
       "B. A stratified k-fold cross-validation strategy with k=5",
@@ -1133,7 +1138,12 @@
   {
     "question_number": "102",
     "question": "A Machine Learning Specialist prepared the following graph displaying the results of k-means for k = [1..10]:Considering the graph, what is a reasonable selection for the optimal choice of k?",
-    "answers": ["A. 1", "B. 4", "C. 7", "D. 10"],
+    "answers": [
+      "A. 1",
+      "B. 4",
+      "C. 7",
+      "D. 10"
+    ],
     "Image_Path": "components//images/102.png",
     "correct_answer": "B"
   },

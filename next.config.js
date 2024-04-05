@@ -13,10 +13,3 @@ module.exports = {
     ];
   },
 };
-
-module.exports.excludeFile = (file) => {
-  const excludedFiles = ['.github'];
-  const filePath = path.resolve(file);
-  const fileName = path.basename(filePath);
-  return excludedFiles.includes(fileName);
-};

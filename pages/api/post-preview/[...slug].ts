@@ -2,6 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import path from "path";
 import { getPostBySlug } from "../../../lib/api";
 
+
+//  hellow world
 export default function postHandler(req: NextApiRequest, res: NextApiResponse) {
   const {
     query: { slug },
