@@ -4,7 +4,7 @@
 ## Create Role
 
 ### Trust Policy: 
-The trust policy defines who or what can assume the role. It outlines the entities that are allowed to take on the permissions associated with the role. This can include AWS services, users, accounts, or even external identities.
+The trust policy defines who or what can assume the role. It outlines the entities that are allowed to take on the permissions associated with the role. This can include AWS services, users, accounts, or even external identities
 
 ### Permissions Policy: 
 The permissions policy specifies what actions and resources the role is allowed to access or manipulate. It defines the boundaries of the role's capabilities within AWS. Permissions policies can be crafted to be very granular, allowing for fine-tuned control over the role's actions.
