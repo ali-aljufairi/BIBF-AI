@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Promt Engeering"
             }
+          },
+          {
+            "id": "883333fef722fa7b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -55,7 +67,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -178,8 +191,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a16798c07c8bdae7",
+  "active": "187d128a8bd91fe8",
   "lastOpenFiles": [
+    "common_md/App Prototyping.md",
+    "common_md/App P",
     "common_md/attachments/Pasted image 20250129175745.png",
     "common_md/attachments/GenAI Essentials Zero Shot.png",
     "common_md/attachments/Pasted image 20250129175254.png",
@@ -194,7 +209,6 @@
     "common_md/attachments/Understanding Transformer Architecture AI (1) 1.png",
     "common_md/attachments/Understanding Transformer Architecture AI (1).png",
     "common_md/attachments/Positional Encoding in Transformers.png",
-    "common_md/attachments/Pasted image 20250115233039.png",
     "common_md/Exploratory Data Analysis.md",
     "common_md/BIBF-AI.md",
     "common_md/Exploratory Data Anaylsis.md",
@@ -222,7 +236,6 @@
     "common_md/attachments/hello.html",
     "README.md",
     "node_modules/@react-spring/animated/package.json",
-    "node_modules/@react-spring/core/package.json",
     "node_modules/tailwindcss-animate/README.md",
     "node_modules/classnames/README.md",
     "node_modules/classnames/HISTORY.md",
