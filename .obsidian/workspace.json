@@ -179,6 +179,8 @@
   },
   "active": "187d128a8bd91fe8",
   "lastOpenFiles": [
+    "common_md/Containers.md",
+    "common_md/OPEA.md",
     "common_md/Prompt Engineering.md",
     "common_md/App Prototyping.md",
     "common_md/App P",
@@ -223,8 +225,6 @@
     "common_md/attachments/hello.html",
     "README.md",
     "node_modules/@react-spring/animated/package.json",
-    "node_modules/tailwindcss-animate/README.md",
-    "node_modules/classnames/README.md",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"
