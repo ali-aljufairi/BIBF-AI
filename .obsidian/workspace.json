@@ -179,6 +179,7 @@
   },
   "active": "187d128a8bd91fe8",
   "lastOpenFiles": [
+    "common_md/kserve.md",
     "common_md/Containers.md",
     "common_md/OPEA.md",
     "common_md/Prompt Engineering.md",
@@ -223,7 +224,6 @@
     "common_md/attachments/hello 2.html",
     "common_md/attachments/hello 1.html",
     "common_md/attachments/hello.html",
-    "README.md",
     "node_modules/@react-spring/animated/package.json",
     "Untitled.canvas",
     "Untitled 2.canvas",
