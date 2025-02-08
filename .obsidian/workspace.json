@@ -25,12 +25,14 @@
             "id": "883333fef722fa7b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.4"
+                "file": "common_md/0 Week GenAI.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
+              "icon": "lucide-file",
+              "title": "0 Week GenAI"
             }
           }
         ],
@@ -177,10 +179,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "187d128a8bd91fe8",
+  "active": "883333fef722fa7b",
   "lastOpenFiles": [
-    "common_md/kserve.md",
+    "common_md/attachments/Pasted image 20250202172056.png",
+    "common_md/attachments/Pasted image 20250202171958.png",
+    "common_md/attachments/Pasted image 20250202171302.png",
     "common_md/Containers.md",
+    "common_md/preweek.md",
+    "common_md/0 Week GenAI.md",
+    "common_md/attachments/Pasted image 20250202170417.png",
+    "common_md/attachments/Pasted image 20250202170333.png",
+    "common_md/attachments/Pasted image 20250202170324.png",
+    "common_md/kserve.md",
     "common_md/OPEA.md",
     "common_md/Prompt Engineering.md",
     "common_md/App Prototyping.md",
@@ -194,11 +204,6 @@
     "common_md/Promt Engeering.md",
     "common_md/AI ML basic.md",
     "common_md/Data & ML",
-    "common_md/attachments/Foundational Model ExamPro.png",
-    "common_md/attachments/Tokenization in NLP TeacherSeat (1).png",
-    "common_md/attachments/Understanding Transformer Architecture AI (1) 1.png",
-    "common_md/attachments/Understanding Transformer Architecture AI (1).png",
-    "common_md/attachments/Positional Encoding in Transformers.png",
     "common_md/Exploratory Data Analysis.md",
     "common_md/BIBF-AI.md",
     "common_md/Exploratory Data Anaylsis.md",
@@ -217,10 +222,7 @@
     "common_md/AWS ML Services.md",
     "public/md_assets/attachments/hello 1.html",
     "components - Shortcut.lnk",
-    "common_md/AI/ML Services.md",
-    "common_md/ML Services.md",
     "common_md/AI",
-    "Excalidraw/Drawing 2024-03-07 17.11.06.excalidraw.md",
     "common_md/attachments/hello 2.html",
     "common_md/attachments/hello 1.html",
     "common_md/attachments/hello.html",
