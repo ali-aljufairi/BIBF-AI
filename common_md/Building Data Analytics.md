@@ -10,6 +10,9 @@ In this guide, we'll explore how to build batch data analytics solutions using A
 
 Amazon EMR is a managed big data platform that simplifies the deployment and management of distributed data processing frameworks such as Apache Hadoop, Apache Spark, and Apache Hive. It allows you to process large amounts of data using scalable compute resources.
 
+
+
+![](attachments/ExamPro%20-%20What%20is%20Data%20Analytics%20-%20AWS%20AI%20Practitioner%20AIF-C01%20[VNc-5CExPTE%20-%201062x597%20-%200m22s].png)
 ### Key Features of Amazon EMR:
 
 - **Scalability**: EMR automatically scales resources based on workload requirements.

@@ -68,6 +68,10 @@ These models may have some components open while others remain proprietary.
     
     .Physical — a low level diagram that details all possible parameters and connections used by engineers/developers to accurately implement a solution (e.g. ARNs for resources, IP addresses, etc)**
 
-Good article for  thi
+
 
 https://medium.com/@nolomokgosi/conceptual-logical-and-physical-design-c24100846931
+
+
+
+![](attachments/Data%20Modeling%20ExamPro.png)![](attachments/ExamPro%20-%20GenAI%20Solution%20Architecting%20with%20Marko%20[rlSBUWYCmeo%20-%201455x818%20-%2020m36s].png)

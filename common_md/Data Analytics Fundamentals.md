@@ -196,3 +196,4 @@ Certainly! Let’s delve into the differences between the **ACID** and **BASE** 
 
 
 ![](attachments/Pasted%20image%2020240205160719.png)
+![](attachments/Data%20Modeling%20ExamPro%201.png)![](attachments/Data%20Roles%20Compared%20AWS%20AI%20Practitioner.png)
