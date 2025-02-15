@@ -84,7 +84,7 @@ speaker Take how data is important and how you should procese date and give you 
 ### key take away for Data primer
 
 
-1. Quality data is essential for accurate and reliable AI models.
+1. Quality data is essential for accurate and reliable AI models
 2. Consitency matters in data processing and analysis.
 3. Privaacy and security are critical considerations in data handling.
 4. Dcocumetation and transparency are key to reproducibility and accountability.
