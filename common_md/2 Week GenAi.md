@@ -9,3 +9,5 @@
 
 RAG needs vector store to tell you how data is important to each other and how to 
 benefit from it
+
+Bonus points for decoded andrew soon
