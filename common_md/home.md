@@ -15,9 +15,11 @@ The complete collection of AWS Machine Learning certification notes remains avai
 As this site evolves, I'm adding new content across these areas:
 - **Data Science**: Practical applications, methodologies, and insights
 - **Cloud Computing**: Multi-cloud strategies and architecture patterns
+- **Systems Design**: Architectural patterns and best practices for scalable systems
 - **MLOps**: Machine learning operations, pipelines, and deployment strategies
 - **Tutorials**: Step-by-step guides on various technical topics
 - **Tech Insights**: Analysis of emerging technologies and industry trends
+- **Personal Projects**: Sharing my own experiments and learnings in tech
 
 ## Featured Content
 
