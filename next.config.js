@@ -7,7 +7,7 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: '/BIBF-AI',
+        destination: '/home',
         permanent: true,
       },
     ];

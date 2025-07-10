@@ -22,9 +22,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <h2 className="shrink-0 mr-4 text-2xl text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
             <Link
-              href="/BIBF-AI"
+              href="/"
               className="block hover:underline"
-              aria-label="My Blog"
+              aria-label="Home"
             >
               Home
             </Link>
@@ -44,9 +44,29 @@ const Header = () => {
             <Link
               href="/QuizPage"
               className="block hover:underline"
-              aria-label="notes"
+              aria-label="Quiz"
             >
               Quiz
+            </Link>
+          </h2>
+
+          <h2 className="shrink-0 mr-4 text-2xl text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
+            <Link
+              href="/About-This-Blog"
+              className="block hover:underline"
+              aria-label="About This Blog"
+            >
+              About
+            </Link>
+          </h2>
+
+          <h2 className="shrink-0 mr-4 text-2xl text-Pufr-300 font-bold tracking-tight md:tracking-tighter leading-tight">
+            <Link
+              href="/BIBF-AI"
+              className="block hover:underline"
+              aria-label="AWS ML Content"
+            >
+              AWS ML
             </Link>
           </h2>
           {/* Move the Search button and ⌘k to the left of the search icon */}

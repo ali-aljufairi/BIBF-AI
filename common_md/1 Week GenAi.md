@@ -41,8 +41,7 @@ speaker Take how data is important and how you should procese date and give you 
   a. Remove Duplicates
   b. Remove Null Values
   c. Remove Outliers
-  d. Remove Irrelevant Data
-
+  d. Remove Irrelevant Dat
 2. Data Transformation
     a. Normalization
     b. Standardization
