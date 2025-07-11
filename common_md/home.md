@@ -27,7 +27,7 @@ Browse the latest featured articles below or navigate to specific sections using
 
 ## About the Evolution
 
-Curious about how this site transformed from certification notes to a personal blog? Read the full story in [About This Blog](/About-This-Blog).
+Curious about how this site transformed from certification notes to a personal blog? Read the full story in [About This Blog](/About%20This%20Blog).
 
 ## Stay Connected
 

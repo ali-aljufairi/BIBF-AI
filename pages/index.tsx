@@ -1,12 +1,10 @@
 import { GetStaticProps } from "next";
-import React, { useState, lazy, Suspense, useEffect } from "react";
+import React, { useState } from "react";
 import { getAllPosts } from "../lib/api";
 import Link from "next/link";
 import Header from "../components/misc/header";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
-
-const ParticlesAnimation = lazy(() => import('../components/ui/ParticlesAnimation'));
 
 // Define interfaces
 interface HomeProps {
@@ -45,9 +43,6 @@ const Home: React.FC<HomeProps> = ({ allPages, featuredPosts }) => {
                 }}
             />
             <Header />
-            <Suspense fallback={<div>Loading particles...</div>}>
-                <ParticlesAnimation />
-            </Suspense>
 
             {/* Hero Section */}
             <section className="flex flex-col min-h-screen justify-center items-center text-center p-4">
