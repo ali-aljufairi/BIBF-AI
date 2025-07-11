@@ -1,3 +1,7 @@
+---
+date: 2025-01-29
+---
+
 ## Utilizing AWS: Unveiling its Significance
 
 The instructors shed light on the essential role of Amazon Web Services (AWS) and its profound importance. They narrated compelling stories to underscore the significance of embracing cloud computing, emphasizing two key aspects:

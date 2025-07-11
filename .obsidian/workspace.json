@@ -29,7 +29,17 @@
               "state": {
                 "file": "common_md/1 Week GenAi.md",
                 "mode": "source",
-                "source": false
+                "source": true,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "1 Week GenAi"
@@ -93,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5,
-    "collapsed": true
+    "width": 318.5
   },
   "right": {
     "id": "8e5d42575f68d93b",
@@ -182,11 +191,14 @@
   },
   "active": "883333fef722fa7b",
   "lastOpenFiles": [
+    "scripts/add_creation_dates.py",
+    "scripts",
+    "common_md/Data & ML.md",
+    "common_md/1 Week GenAi.md",
     "common_md/Untitled.md",
     "common_md/2 Week GenAi.md",
     "common_md/3 Week GenAi.md",
     "common_md/1 Week GenAi copy.md",
-    "common_md/1 Week GenAi.md",
     "common_md/attachments/Pasted image 20250214194927.png",
     "common_md/attachments/Pasted image 20250214194628.png",
     "common_md/attachments/Pasted image 20250214194616.png",
@@ -201,7 +213,6 @@
     "common_md/0 Week GenAI.md",
     "common_md/attachments/ExamPro - GenAI Solution Architecting with Marko [rlSBUWYCmeo - 1455x818 - 20m36s].png",
     "common_md/Data Analytics Fundamentals.md",
-    "common_md/Data & ML.md",
     "common_md/Exploratory Data Analysis.md",
     "common_md/Data Engineering.md",
     "common_md/Containers.md",
@@ -219,7 +230,6 @@
     "common_md/BIBF-AI.md",
     "common_md/Exploratory Data Anaylsis.md",
     "common_md/Machine Learning Pipeline on AWS.md",
-    "common_md/Exploratory Data Analysis 1.md",
     "Dockerfile",
     "public/md_assets/attachments/hello 1.html",
     "components - Shortcut.lnk",
@@ -227,7 +237,6 @@
     "common_md/attachments/hello 2.html",
     "common_md/attachments/hello 1.html",
     "common_md/attachments/hello.html",
-    "node_modules/@react-spring/animated/package.json",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

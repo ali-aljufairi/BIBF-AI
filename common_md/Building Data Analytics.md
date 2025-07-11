@@ -1,3 +1,7 @@
+---
+date: 2025-01-29
+---
+
 
 
 # Building Batch Data Analytics Solutions on AWS

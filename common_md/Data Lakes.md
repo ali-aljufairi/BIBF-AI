@@ -1,3 +1,7 @@
+---
+date: 2025-01-29
+---
+
 # Data Lake
 
 ## Introduction to data lakes

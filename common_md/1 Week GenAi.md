@@ -1,3 +1,9 @@
+---
+date: 2025-02-09
+---
+
+
+
 # This Goal and what to do until now
 
 1. Learn about devlopers tools and use Andrew Template
@@ -7,6 +13,7 @@
 5. Composer mode vs Chat mode in cursor 
 6. Broson
 7. Instructor
+
 ### GoveTech 
 
 Andrew brought someone to speak about GoveTech what are oppurinites that you can have

@@ -1,3 +1,7 @@
+---
+date: 2025-02-16
+---
+
 # 2 Week GenAi
 1. Multili modal
 2. Copy audio from youtube use Transcribe

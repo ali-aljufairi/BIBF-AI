@@ -1,3 +1,7 @@
+---
+date: 2025-02-01
+---
+
 # Sandboxing in Large Language Models (LLMs)
 
 Sandboxing is a crucial security measure in LLMs that isolates the execution environment of AI-generated code. This prevents it from accessing critical systems or sensitive data, ensuring a secure and controlled space for running untrusted code.

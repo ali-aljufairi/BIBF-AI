@@ -1,3 +1,7 @@
+---
+date: 2025-01-29
+---
+
 # Day 1: AWS Security and Identity Management
 
 ![](attachments/Untitled-2023-10-15-0815.svg)

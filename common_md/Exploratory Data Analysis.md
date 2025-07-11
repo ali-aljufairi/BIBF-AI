@@ -1,3 +1,7 @@
+---
+date: 2025-01-29
+---
+
 # Exploratory Data Analysis
 
 ## Python

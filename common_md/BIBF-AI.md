@@ -1,3 +1,7 @@
+---
+date: 2025-01-29
+---
+
 # Machine Learning Notes Website 
 
 This website aims to serve as a repository of notes from AWS machine learning training conducted at BIBF (Bahrain Institute of Banking and Finance) through a partnership program with Tamkeen. 

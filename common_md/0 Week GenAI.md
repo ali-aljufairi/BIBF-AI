@@ -1,3 +1,7 @@
+---
+date: 2025-02-02
+---
+
 # Preweek Gen Ai
 
 This preweek bootcamp notes is a summary of the week's activities and the tasks that were completed the bootcam is organized by Andrew Brown.

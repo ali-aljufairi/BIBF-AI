@@ -1,3 +1,7 @@
+---
+date: 2025-02-01
+---
+
 ## Streamlit
 
 Streamlit is a Python library for creating interactive web applications for data science and machine learning projects.

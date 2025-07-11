@@ -1,3 +1,7 @@
+---
+date: 2025-07-10
+---
+
 # Welcome to My Personal Blog & Tech Notes
 
 ## A Journey From AWS ML Notes to a Knowledge-Sharing Platform

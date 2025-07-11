@@ -1,3 +1,7 @@
+---
+date: 2025-07-10
+---
+
 # About This Blog
 
 ## Evolution of Purpose

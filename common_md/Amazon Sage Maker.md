@@ -1,5 +1,6 @@
 ---
 excerpt: "This about all about SageMaker and it's built in Algorthims and how to use them and how to tune them."
+date: 2025-01-29
 ---
 ## Sage Maker Built-in Algorithms
 
