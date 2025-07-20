@@ -45,8 +45,7 @@
               "title": "1 Week GenAi"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,12 +188,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "883333fef722fa7b",
+  "active": "791ec4010d8a36ed",
   "lastOpenFiles": [
+    "common_md/1 Week GenAi.md",
     "scripts/add_creation_dates.py",
     "scripts",
     "common_md/Data & ML.md",
-    "common_md/1 Week GenAi.md",
     "common_md/Untitled.md",
     "common_md/2 Week GenAi.md",
     "common_md/3 Week GenAi.md",
@@ -236,7 +235,6 @@
     "common_md/AI",
     "common_md/attachments/hello 2.html",
     "common_md/attachments/hello 1.html",
-    "common_md/attachments/hello.html",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas"

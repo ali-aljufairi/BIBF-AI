@@ -1,5 +1,8 @@
 {
   "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
     "copyimages": "node ./lib/modules/copy-images.mjs",
@@ -29,7 +32,7 @@
     "lucide-react": "^0.316.0",
     "next": "latest",
     "next-seo": "^5.15.0",
-    "react": "^22.2.0",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-icons": "^5.0.1",
