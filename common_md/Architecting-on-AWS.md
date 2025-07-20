@@ -1,5 +1,6 @@
 ---
 date: 2025-01-29
+category: "Tutorials"
 ---
 
 # Day 1: AWS Security and Identity Management

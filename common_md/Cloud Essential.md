@@ -1,5 +1,7 @@
 ---
 date: 2025-01-29
+category: "Cloud Computing"
+color: "from-sky-500 to-blue-500"
 ---
 
 ## Utilizing AWS: Unveiling its Significance

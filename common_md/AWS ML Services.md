@@ -1,5 +1,6 @@
 ---
 date: 2025-01-29
+category: "AWS ML"
 ---
 
 # AWS Machine Learning Services

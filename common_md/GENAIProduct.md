@@ -1,5 +1,6 @@
 ---
 date: 2025-07-10
+category: "Techn Insights"
 ---
 
 #Sorami

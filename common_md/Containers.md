@@ -1,5 +1,6 @@
 ---
 date: 2025-02-01
+category: "Cloud Computing"
 ---
 
 # Sandboxing in Large Language Models (LLMs)

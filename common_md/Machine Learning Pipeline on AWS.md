@@ -1,5 +1,6 @@
 ---
 date: 2025-01-29
+category: "MLops"
 ---
 
 # Machine Learning Pipeline on AWS

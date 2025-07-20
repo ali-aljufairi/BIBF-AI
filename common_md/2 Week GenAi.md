@@ -1,5 +1,6 @@
 ---
 date: 2025-02-16
+category: "Tutorials"
 ---
 
 # 2 Week GenAi

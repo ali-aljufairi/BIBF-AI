@@ -1,5 +1,6 @@
 ---
 date: 2025-02-02
+category: "Tutorials"
 ---
 
 # Preweek Gen Ai
