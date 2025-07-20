@@ -48,6 +48,7 @@ export function getMDExcerpt(markdown: string, length: number = 500) {
   const text = removeMd(markdown, {
     stripListLeaders: false,
     gfm: true,
+    useImgAltText: true
   }) as string;
   return text.slice(0, length).trim();
 }
