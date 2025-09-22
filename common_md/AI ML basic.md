@@ -3,7 +3,7 @@ date: 2025-01-29
 category: "Tech Insights"
 ---
 
-# Bert
+# AI and ML Basics: From BERT to Transformers - A Comprehensive Guide
 
 The BERT model was proposed in BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding by Jacob Devlin, Ming-Wei Chang, Kenton Lee and Kristina Toutanova. It’s a bidirectional transformer pre-trained using a combination of masked language modeling objective and next sentence prediction on a large corpus comprising the Toronto Book Corpus and Wikipedia.
 
