@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-slate-900 text-white;
+    @apply bg-air text-slate-700;
   }
 }
 
