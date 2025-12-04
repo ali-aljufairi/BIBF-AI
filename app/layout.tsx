@@ -1,4 +1,4 @@
-import "@/styles/index.css"
+import "../styles/index.css"
 import { Inter } from "next/font/google"
 import { Metadata } from "next"
 
