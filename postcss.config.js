@@ -2,9 +2,7 @@
 // https://tailwindcss.com/docs/using-with-preprocessors
 module.exports = {
   plugins: {
-    '@tailwindcss/postcss': {
-      config: './tailwind.config.js'
-    },
+    tailwindcss: {},
     autoprefixer: {},
   },
 };
