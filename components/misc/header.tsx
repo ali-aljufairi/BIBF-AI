@@ -25,9 +25,9 @@ const Header = () => {
             <Link
               href="/"
               className="block hover:text-cloud-600 transition-colors"
-              aria-label="Home"
+              aria-label="Ali Aljufairi Notes"
             >
-              Home
+              Ali Aljufairi
             </Link>
           </h2>
 
