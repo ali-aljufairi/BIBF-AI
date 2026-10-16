@@ -25,7 +25,9 @@ function PostSingle({ title, date, category, minutes, dek, content, backlinks }:
 
   return (
     <article>
-      <header className="dot-grid border-b border-rule">
+      <header className="relative isolate -mt-16 overflow-hidden border-b border-rule pt-16">
+        <div className="glow absolute inset-0 -z-10" aria-hidden="true" />
+        <div className="grid-lines absolute inset-0 -z-10" aria-hidden="true" />
         <div className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 md:pb-16 md:pt-14">
           <Link
             href="/notes"
@@ -36,11 +38,11 @@ function PostSingle({ title, date, category, minutes, dek, content, backlinks }:
           <div className="mt-10 max-w-3xl">
             <Link
               href={`/notes?topic=${slugifyCategory(category)}`}
-              className="eyebrow transition hover:text-mark"
+              className="inline-flex rounded-full border border-rule bg-surface/60 px-3 py-1 font-mono text-[0.7rem] uppercase tracking-wider text-cobalt transition hover:border-cobalt/50"
             >
               {category}
             </Link>
-            <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl md:text-6xl">
+            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-ink [font-stretch:112%] sm:text-5xl md:text-6xl">
               {title}
             </h1>
             {dek && <p className="mt-5 max-w-[60ch] text-xl leading-snug text-subtle">{dek}</p>}

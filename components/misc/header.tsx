@@ -6,7 +6,6 @@ import Search from "./search";
 
 const NAV: { href: string; label: string; short?: string }[] = [
   { href: "/notes", label: "Notes" },
-  { href: "/QuizPage", label: "Practice quiz", short: "Quiz" },
 ];
 
 function ThemeToggle() {
@@ -15,7 +14,8 @@ function ThemeToggle() {
   useEffect(() => {
     const root = document.documentElement;
     const explicit = root.dataset.theme;
-    setDark(explicit ? explicit === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches);
+    // Dark is the default unless the system asks for light.
+    setDark(explicit ? explicit === "dark" : !window.matchMedia("(prefers-color-scheme: light)").matches);
   }, []);
 
   const toggle = () => {
@@ -56,13 +56,13 @@ const Header = () => {
   return (
     <header
       className={`sticky top-0 z-30 border-b transition-colors duration-300 ${
-        scrolled ? "border-rule bg-paper/85 backdrop-blur-md" : "border-transparent bg-paper/0"
+        scrolled ? "border-rule bg-paper/85 backdrop-blur-md" : "border-transparent bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-2 px-4 sm:px-6">
         <Link href="/" className="group mr-auto flex items-baseline gap-2" aria-label="Ali Aljufairi, home">
-          <span className="whitespace-nowrap font-display text-lg font-bold tracking-tight text-ink">Ali Aljufairi</span>
-          <span className="hidden font-mono text-xs text-subtle transition group-hover:text-mark sm:inline">/ notes</span>
+          <span className="whitespace-nowrap font-display text-lg font-extrabold uppercase tracking-tight text-ink [font-stretch:120%]">Ali Aljufairi</span>
+          <span className="hidden font-mono text-xs text-subtle transition group-hover:text-cobalt sm:inline">/ notes</span>
         </Link>
 
         <nav className="flex items-center gap-1" aria-label="Main">
@@ -93,7 +93,7 @@ const Header = () => {
         <button
           type="button"
           onClick={() => setSearching(true)}
-          className="ml-1 flex h-9 shrink-0 items-center gap-2 rounded-full border border-rule bg-surface px-2.5 text-sm text-subtle md:pl-3 md:pr-2 transition hover:border-ink/40 hover:text-ink"
+          className="ml-1 flex h-9 shrink-0 items-center gap-2 rounded-full border border-rule bg-surface/60 px-2.5 text-sm text-subtle md:pl-3 md:pr-2 transition hover:border-ink/40 hover:text-ink"
           aria-label="Search notes"
         >
           <SearchIcon className="h-4 w-4" />

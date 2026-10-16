@@ -160,14 +160,14 @@
 
 .markdown-body input[type="checkbox"] {
   margin: 0 0.5em 0 0;
-  accent-color: rgb(var(--mark));
+  accent-color: rgb(var(--aurora-a));
   vertical-align: middle;
 }
 
 /* Blocks */
 .markdown-body blockquote {
   padding: 0.2em 0 0.2em 1.1em;
-  border-left: 3px solid rgb(var(--mark));
+  border-left: 3px solid rgb(var(--aurora-a));
   color: rgb(var(--subtle));
 }
 

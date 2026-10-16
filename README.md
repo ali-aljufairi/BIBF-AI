@@ -81,10 +81,6 @@ docker run -p 3000:3000 bibf-ai
 - Preserved section of the original AWS machine learning training notes and resources.
 - Organized learning path for those interested in AWS ML certification.
 
-### Quiz ❓
-
-- Interactive quizzes on technical topics to test knowledge (preserved from the original site).
-
 ## Contributing 🤝
 
 Pull requests are welcome. For any changes, please open an issue first to discuss what you would like to change.

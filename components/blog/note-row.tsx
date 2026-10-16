@@ -12,7 +12,7 @@ const NoteRow = ({ note }: Props) => {
     <li>
       <Link
         href={`/${note.slug}`}
-        className="group grid grid-cols-1 gap-x-8 gap-y-2 py-6 sm:grid-cols-[7.5rem_minmax(0,1fr)_auto]"
+        className="group -mx-4 grid grid-cols-1 gap-x-8 gap-y-2 rounded-2xl px-4 py-6 transition hover:bg-surface sm:grid-cols-[7.5rem_minmax(0,1fr)_auto]"
       >
         <time
           dateTime={note.date ?? undefined}
@@ -21,7 +21,7 @@ const NoteRow = ({ note }: Props) => {
           {formatDate(note.date, "iso")}
         </time>
         <div className="min-w-0">
-          <h3 className="font-display text-xl font-semibold tracking-tight text-ink transition group-hover:text-cobalt">
+          <h3 className="font-display text-xl font-bold tracking-tight text-ink transition group-hover:text-cobalt">
             {note.title}
           </h3>
           <p className="mt-1.5 line-clamp-2 max-w-[65ch] text-[0.95rem] leading-relaxed text-subtle">{note.excerpt}</p>
@@ -29,7 +29,7 @@ const NoteRow = ({ note }: Props) => {
         <div className="flex items-center gap-3 sm:flex-col sm:items-end sm:gap-2 sm:pt-1">
           <span className="font-mono text-xs text-ink/80">{note.category}</span>
           <span className="font-mono text-xs text-subtle tabular">{note.minutes} min read</span>
-          <ArrowUpRight className="ml-auto h-4 w-4 text-subtle opacity-0 transition group-hover:text-mark group-hover:opacity-100 sm:ml-0" />
+          <ArrowUpRight className="ml-auto h-4 w-4 text-subtle opacity-0 transition group-hover:text-cobalt group-hover:opacity-100 sm:ml-0" />
         </div>
       </Link>
     </li>

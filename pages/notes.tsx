@@ -37,10 +37,14 @@ const Notes: React.FC<NotesProps> = ({ notes, topics }) => {
     <Layout>
       <NextSeo title="All notes · Ali Aljufairi" description="Every note on machine learning, AWS and the cloud." />
 
-      <section className="dot-grid border-b border-rule">
+      <section className="relative isolate -mt-16 overflow-hidden border-b border-rule pt-16">
+        <div className="glow absolute inset-0 -z-10" aria-hidden="true" />
+        <div className="grid-lines absolute inset-0 -z-10" aria-hidden="true" />
         <div className="mx-auto max-w-6xl px-4 pb-10 pt-14 sm:px-6 md:pt-20">
           <p className="eyebrow">Index</p>
-          <h1 className="mt-4 font-display text-5xl font-bold tracking-tight text-ink md:text-6xl">All notes</h1>
+          <h1 className="headline mt-4 text-5xl text-ink md:text-7xl">
+            All <span className="aurora-text">notes</span>
+          </h1>
           <p className="mt-4 max-w-[60ch] text-lg text-subtle">
             {notes.length} notes on machine learning, AWS and the cloud, newest first.
           </p>
@@ -71,7 +75,7 @@ const Notes: React.FC<NotesProps> = ({ notes, topics }) => {
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
                 placeholder="Filter by title or text"
-                className="h-10 w-full rounded-full border border-rule bg-surface pl-9 pr-4 text-sm text-ink placeholder:text-subtle focus:border-ink/40 focus:outline-none"
+                className="h-10 w-full rounded-full border border-rule bg-surface/60 pl-9 pr-4 text-sm text-ink placeholder:text-subtle focus:border-ink/40 focus:outline-none"
               />
             </label>
           </div>

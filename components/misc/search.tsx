@@ -112,7 +112,7 @@ function Search({ visible, setVisible }: Props) {
                     </div>
                     <p className="mt-1 line-clamp-2 text-sm text-subtle">{item.excerpt}</p>
                   </div>
-                  <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-subtle transition group-hover:text-mark" />
+                  <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-subtle transition group-hover:text-cobalt" />
                 </Link>
               </li>
             ))}

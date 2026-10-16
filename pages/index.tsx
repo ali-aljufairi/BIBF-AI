@@ -2,11 +2,11 @@ import { GetStaticProps } from "next";
 import React from "react";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { ArrowRight, BookOpen, Brain, Cloud, Database, GitBranch, Lightbulb, NotebookPen } from "lucide-react";
+import { ArrowRight, BookOpen, Brain, Cloud, Database, GitBranch, Lightbulb } from "lucide-react";
 import Layout from "../components/misc/layout";
-import NoteRow from "../components/blog/note-row";
+import NoteCard from "../components/blog/note-card";
 import { getNoteIndex } from "../lib/notes";
-import { NoteSummary, formatDate, slugifyCategory } from "../lib/format";
+import { NoteSummary, slugifyCategory } from "../lib/format";
 
 type Topic = { name: string; count: number };
 
@@ -35,119 +35,106 @@ const TOPIC_BLURBS: Record<string, string> = {
 };
 
 const Home: React.FC<HomeProps> = ({ latest, topics, stats }) => {
+  const [featured, ...rest] = latest;
+  const since = stats.first ? new Date(stats.first).getUTCFullYear() : null;
+
   return (
     <Layout>
       <NextSeo
         title="Ali Aljufairi · Notes on ML & Cloud"
-        description="A working notebook on machine learning and the cloud, started during the AWS ML program at BIBF."
+        description="Notes on machine learning and the cloud, started during the AWS ML program at BIBF."
         openGraph={{
           title: "Ali Aljufairi · Notes on ML & Cloud",
-          description: "A working notebook on machine learning and the cloud, started during the AWS ML program at BIBF.",
+          description: "Notes on machine learning and the cloud, started during the AWS ML program at BIBF.",
         }}
       />
 
       {/* Hero */}
-      <section className="dot-grid border-b border-rule">
-        <div className="mx-auto grid max-w-6xl gap-12 px-4 pb-16 pt-14 sm:px-6 md:pb-24 md:pt-20 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-end">
-          <div className="min-w-0">
-            <p className="eyebrow">Machine learning · Cloud · MLOps</p>
-            <h1 className="mt-5 max-w-[16ch] font-display text-5xl font-bold leading-[1.02] tracking-tight text-ink sm:text-6xl md:text-7xl">
-              A working notebook on <span className="marker">machine learning</span> and the cloud.
-            </h1>
-            <p className="mt-7 max-w-[58ch] text-lg leading-relaxed text-subtle">
-              It started as my notes from the AWS machine learning program at BIBF, the Bahrain Institute of Banking
-              and Finance. Now it is where I write up SageMaker, data engineering, MLOps and generative AI as I learn
-              them.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Link href="/notes" className="btn-primary">
-                Browse all notes <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link href="/BIBF-AI" className="btn-ghost">
-                Start with the BIBF notes
-              </Link>
-            </div>
+      <section className="relative isolate -mt-16 overflow-hidden pt-16">
+        <div className="glow absolute inset-0 -z-10" aria-hidden="true" />
+        <div className="grid-lines absolute inset-0 -z-10" aria-hidden="true" />
+        <div className="mx-auto max-w-6xl px-4 pb-16 pt-16 sm:px-6 md:pb-24 md:pt-28">
+          <p className="inline-flex items-center gap-2 rounded-full border border-rule bg-surface/60 px-3 py-1.5 font-mono text-xs text-subtle backdrop-blur">
+            <span className="h-1.5 w-1.5 rounded-full bg-[rgb(var(--aurora-a))] shadow-[0_0_10px_rgb(var(--aurora-a))]" />
+            Notes from BIBF&apos;s AWS ML program
+          </p>
+          <h1 className="headline mt-8 text-[clamp(2.4rem,7.4vw,6.6rem)] text-ink">
+            Learning machine learning <span className="aurora-text">in public.</span>
+          </h1>
+          <p className="mt-8 max-w-[56ch] text-lg leading-relaxed text-subtle md:text-xl">
+            My notes on SageMaker, data engineering, MLOps and generative AI. They began in class at the Bahrain
+            Institute of Banking and Finance and keep growing as I learn.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link href="/notes" className="btn-primary">
+              Explore the notes <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link href="/BIBF-AI" className="btn-ghost">
+              Read the BIBF story
+            </Link>
           </div>
 
-          {/* Index card */}
-          <aside className="rounded-2xl border border-rule bg-surface p-6 shadow-[0_1px_0_rgb(var(--rule)),0_24px_48px_-24px_rgb(var(--ink)/0.18)]">
-            <div className="flex items-center justify-between">
-              <p className="eyebrow">In the notebook</p>
-              <NotebookPen className="h-4 w-4 text-mark" />
-            </div>
-            <dl className="mt-5 grid grid-cols-2 gap-x-6 gap-y-5">
-              <div>
-                <dt className="text-xs text-subtle">Notes</dt>
-                <dd className="mt-1 font-display text-4xl font-bold text-ink tabular">{stats.notes}</dd>
-              </div>
-              <div>
-                <dt className="text-xs text-subtle">Topics</dt>
-                <dd className="mt-1 font-display text-4xl font-bold text-ink tabular">{topics.length}</dd>
-              </div>
-              <div className="col-span-2">
-                <dt className="text-xs text-subtle">Reading time, all notes</dt>
-                <dd className="mt-1 font-display text-2xl font-semibold text-ink tabular">
-                  {Math.floor(stats.minutes / 60)} h {stats.minutes % 60} min
+          <dl className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-rule bg-rule md:grid-cols-4">
+            {[
+              { label: "Notes", value: String(stats.notes) },
+              { label: "Topics", value: String(topics.length) },
+              { label: "Hours of reading", value: (stats.minutes / 60).toFixed(1) },
+              { label: "Writing since", value: since ? String(since) : "" },
+            ].map((item) => (
+              <div key={item.label} className="bg-paper/90 p-5 md:p-6">
+                <dt className="eyebrow">{item.label}</dt>
+                <dd className="mt-2 font-display text-4xl font-extrabold tracking-tight text-ink tabular md:text-5xl">
+                  {item.value}
                 </dd>
               </div>
-            </dl>
-            <div className="mt-6 space-y-2 border-t border-dashed border-rule pt-4 font-mono text-xs text-subtle">
-              <div className="flex justify-between">
-                <span>First entry</span>
-                <span className="tabular text-ink">{formatDate(stats.first, "iso")}</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Latest entry</span>
-                <span className="tabular text-ink">{formatDate(stats.last, "iso")}</span>
-              </div>
-            </div>
-          </aside>
+            ))}
+          </dl>
         </div>
       </section>
 
       {/* Latest */}
-      <section className="mx-auto max-w-6xl px-4 pt-20 sm:px-6">
-        <div className="flex items-end justify-between gap-4 border-b border-rule pb-4">
-          <div>
-            <p className="eyebrow">Latest</p>
-            <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-ink">Recent notes</h2>
-          </div>
+      <section className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <h2 className="headline text-3xl text-ink md:text-5xl">Latest notes</h2>
           <Link href="/notes" className="flex items-center gap-1 text-sm font-medium text-cobalt hover:underline">
-            View all {stats.notes} <ArrowRight className="h-4 w-4" />
+            All {stats.notes} notes <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
-        <ul className="divide-y divide-rule">
-          {latest.map((note) => (
-            <NoteRow key={note.slug} note={note} />
+        <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {featured && <NoteCard note={featured} featured className="md:col-span-2 lg:row-span-2" />}
+          {rest.map((note) => (
+            <NoteCard key={note.slug} note={note} />
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* Topics */}
-      <section className="mx-auto max-w-6xl px-4 pt-20 sm:px-6">
-        <div className="border-b border-rule pb-4">
-          <p className="eyebrow">Topics</p>
-          <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-ink">What the notes cover</h2>
-        </div>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="mx-auto max-w-6xl px-4 pt-24 sm:px-6">
+        <h2 className="headline text-3xl text-ink md:text-5xl">Browse by topic</h2>
+        <ul className="mt-8 border-t border-rule">
           {topics.map((topic) => {
             const Icon = TOPIC_ICONS[topic.name] ?? BookOpen;
             return (
-              <li key={topic.name}>
+              <li key={topic.name} className="border-b border-rule">
                 <Link
                   href={`/notes?topic=${slugifyCategory(topic.name)}`}
-                  className="group flex h-full flex-col rounded-2xl border border-rule bg-surface p-5 transition hover:-translate-y-0.5 hover:border-ink/30"
+                  className="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-5 py-6 transition md:gap-8"
                 >
-                  <div className="flex items-center justify-between">
-                    <Icon className="h-5 w-5 text-subtle transition group-hover:text-mark" />
-                    <span className="font-mono text-xs text-subtle tabular">
-                      {topic.count} {topic.count === 1 ? "note" : "notes"}
-                    </span>
+                  <span className="grid h-11 w-11 place-items-center rounded-xl border border-rule bg-surface text-subtle transition group-hover:border-transparent group-hover:text-paper group-hover:[background-image:linear-gradient(135deg,rgb(var(--aurora-a)),rgb(var(--aurora-b)))]">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="font-display text-xl font-bold tracking-tight text-ink transition group-hover:text-cobalt md:text-3xl">
+                      {topic.name}
+                    </h3>
+                    {TOPIC_BLURBS[topic.name] && (
+                      <p className="mt-1 text-sm text-subtle md:text-base">{TOPIC_BLURBS[topic.name]}</p>
+                    )}
                   </div>
-                  <h3 className="mt-6 font-display text-lg font-semibold text-ink">{topic.name}</h3>
-                  {TOPIC_BLURBS[topic.name] && (
-                    <p className="mt-1 text-sm leading-relaxed text-subtle">{TOPIC_BLURBS[topic.name]}</p>
-                  )}
+                  <span className="flex items-center gap-3 font-mono text-sm text-subtle tabular">
+                    {topic.count}
+                    <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1 group-hover:text-cobalt" />
+                  </span>
                 </Link>
               </li>
             );

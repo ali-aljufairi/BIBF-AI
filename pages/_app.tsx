@@ -1,17 +1,14 @@
 import { AppProps } from "next/app";
-import { Bricolage_Grotesque, Geist, JetBrains_Mono } from "next/font/google";
+import { Archivo, Geist, Geist_Mono } from "next/font/google";
 import "../styles/index.css";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 import { Analytics } from "@vercel/analytics/react";
 
-const display = Bricolage_Grotesque({
-  subsets: ["latin"],
-  variable: "--font-display",
-  weight: ["500", "600", "700", "800"],
-});
+// Archivo's width axis gives the wide, heavy headlines.
+const display = Archivo({ subsets: ["latin"], variable: "--font-display", axes: ["wdth"] });
 const sans = Geist({ subsets: ["latin"], variable: "--font-sans" });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", weight: ["400", "500"] });
+const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
