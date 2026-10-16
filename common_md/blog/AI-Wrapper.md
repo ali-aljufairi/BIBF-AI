@@ -1,7 +1,7 @@
 ---
 date: 2025-11-24
 title: "AI Wrappers Aren't the Problem—Exploitative Design Is"
-excerpt: "The GenAI gold rush unleashed a flood of wrappers and 'AI solutions' scrambling for budget. C-suite executives, desperate to check the 'using AI' box, have created a market where some vendors prioritize invoicing over engineering."
+description: "The GenAI gold rush unleashed a flood of wrappers and 'AI solutions' scrambling for budget. C-suite executives, desperate to check the 'using AI' box, have created a market where some vendors prioritize invoicing over engineering."
 ---
 
 **AI Wrappers Aren't the Problem—Exploitative Design Is**

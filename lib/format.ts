@@ -2,6 +2,8 @@
 
 export type NoteSummary = {
   slug: string;
+  /** "post" for files in common_md/blog/, "note" for everything else. */
+  kind: "post" | "note";
   title: string;
   excerpt: string;
   date: string | null;
@@ -20,3 +22,5 @@ export function formatDate(date: string | null, style: "iso" | "long" = "long"):
 export function slugifyCategory(category: string): string {
   return category.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
+
+export const BLOG_DIR = "blog";

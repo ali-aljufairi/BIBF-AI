@@ -35,18 +35,14 @@ const Notes: React.FC<NotesProps> = ({ notes, topics }) => {
 
   return (
     <Layout>
-      <NextSeo title="All notes · Ali Aljufairi" description="Every note on machine learning, AWS and the cloud." />
+      <NextSeo title="Notes · Ali Aljufairi" description="Every note on machine learning, AWS and the cloud." />
 
-      <section className="relative isolate -mt-16 overflow-hidden border-b border-rule pt-16">
-        <div className="glow absolute inset-0 -z-10" aria-hidden="true" />
-        <div className="grid-lines absolute inset-0 -z-10" aria-hidden="true" />
+      <section className="hero-glow border-b border-rule">
         <div className="mx-auto max-w-6xl px-4 pb-10 pt-14 sm:px-6 md:pt-20">
-          <p className="eyebrow">Index</p>
-          <h1 className="headline mt-4 text-5xl text-ink md:text-7xl">
-            All <span className="aurora-text">notes</span>
-          </h1>
+          <p className="eyebrow">Notes</p>
+          <h1 className="mt-3 text-4xl font-bold tracking-[-0.035em] text-ink md:text-6xl">The BIBF notebook</h1>
           <p className="mt-4 max-w-[60ch] text-lg text-subtle">
-            {notes.length} notes on machine learning, AWS and the cloud, newest first.
+            {notes.length} notes from the AWS machine learning program at BIBF and after, newest first.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -75,7 +71,7 @@ const Notes: React.FC<NotesProps> = ({ notes, topics }) => {
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
                 placeholder="Filter by title or text"
-                className="h-10 w-full rounded-full border border-rule bg-surface/60 pl-9 pr-4 text-sm text-ink placeholder:text-subtle focus:border-ink/40 focus:outline-none"
+                className="h-10 w-full rounded-lg border border-rule bg-surface pl-9 pr-4 text-sm text-ink placeholder:text-subtle focus:border-ink/40 focus:outline-none"
               />
             </label>
           </div>
@@ -91,7 +87,7 @@ const Notes: React.FC<NotesProps> = ({ notes, topics }) => {
           </ul>
         ) : (
           <div className="py-20 text-center">
-            <p className="font-display text-xl font-semibold text-ink">No notes match that filter.</p>
+            <p className="text-xl font-semibold text-ink">No notes match that filter.</p>
             <button
               type="button"
               className="mt-4 text-sm font-medium text-cobalt hover:underline"

@@ -27,7 +27,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "var(--font-sans)", "ui-sans-serif", "sans-serif"],
+        display: ["var(--font-sans)", "ui-sans-serif", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       colors: {
@@ -39,6 +39,7 @@ const config = {
         rule: "rgb(var(--rule) / <alpha-value>)",
         mark: "rgb(var(--mark) / <alpha-value>)",
         cobalt: "rgb(var(--cobalt) / <alpha-value>)",
+        signal: "rgb(var(--signal) / <alpha-value>)",
         good: "rgb(var(--good) / <alpha-value>)",
         bad: "rgb(var(--bad) / <alpha-value>)",
         Pufr: {

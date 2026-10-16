@@ -5,64 +5,26 @@
 @tailwind utilities;
 
 /*
- * Design tokens. Layout concept: "bold dark". A deep night-blue canvas with
- * oversized wide headlines, an aurora gradient (teal to sky) as the one loud
- * element, faint grid lines and glows behind heroes. Dark is the default;
- * light is the alternate theme. Colors are RGB channels so Tailwind can
- * apply alpha.
+ * Design tokens. Layout concept: a dark, terminal-flavoured blog. Ink-black
+ * canvas, one signal blue, monospace for metadata, and an animated ASCII
+ * hero as the single loud element. Dark only. Colors are RGB channels so
+ * Tailwind can apply alpha.
  */
 @layer base {
   :root {
-    --paper: 6 9 18;
-    --surface: 12 17 30;
-    --sunken: 19 26 43;
-    --ink: 236 241 248;
-    --subtle: 139 151 173;
-    --rule: 30 40 60;
-    --aurora-a: 45 212 191;
-    --aurora-b: 56 189 248;
-    --cobalt: 94 214 245;
-    --mark: 251 191 36;
-    --mark-wash: 45 212 191;
+    --paper: 10 10 16;
+    --surface: 17 17 27;
+    --sunken: 24 24 38;
+    --ink: 236 236 244;
+    --subtle: 141 141 163;
+    --rule: 35 35 56;
+    --cobalt: 120 146 255;
+    --signal: 74 108 255;
+    --mark: 120 146 255;
+    --mark-wash: 74 108 255;
     --good: 74 222 128;
     --bad: 251 113 133;
     color-scheme: dark;
-  }
-
-  @media (prefers-color-scheme: light) {
-    :root:not([data-theme="dark"]) {
-      --paper: 248 250 252;
-      --surface: 255 255 255;
-      --sunken: 238 242 247;
-      --ink: 8 14 28;
-      --subtle: 84 96 118;
-      --rule: 220 226 235;
-      --aurora-a: 13 148 136;
-      --aurora-b: 2 132 199;
-      --cobalt: 3 105 161;
-      --mark: 217 119 6;
-      --mark-wash: 153 246 228;
-      --good: 21 128 61;
-      --bad: 190 18 60;
-      color-scheme: light;
-    }
-  }
-
-  :root[data-theme="light"] {
-    --paper: 248 250 252;
-    --surface: 255 255 255;
-    --sunken: 238 242 247;
-    --ink: 8 14 28;
-    --subtle: 84 96 118;
-    --rule: 220 226 235;
-    --aurora-a: 13 148 136;
-    --aurora-b: 2 132 199;
-    --cobalt: 3 105 161;
-    --mark: 217 119 6;
-    --mark-wash: 153 246 228;
-    --good: 21 128 61;
-    --bad: 190 18 60;
-    color-scheme: light;
   }
 
   html {
@@ -81,7 +43,7 @@
   }
 
   ::selection {
-    background: rgb(var(--aurora-a) / 0.35);
+    background: rgb(var(--signal) / 0.45);
     color: rgb(var(--ink));
   }
 
@@ -105,85 +67,33 @@
 }
 
 @layer components {
-  /* Faint blueprint grid that fades out toward the bottom */
-  .grid-lines {
-    background-image:
-      linear-gradient(rgb(var(--rule) / 0.7) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(var(--rule) / 0.7) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000 30%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, #000 30%, transparent 75%);
-  }
-
-  /* Soft colored light behind a hero */
-  .glow {
-    background:
-      radial-gradient(40rem 22rem at 15% 0%, rgb(var(--aurora-a) / 0.22), transparent 70%),
-      radial-gradient(36rem 20rem at 85% 10%, rgb(var(--aurora-b) / 0.18), transparent 70%);
-  }
-
-  .aurora-text {
-    background-image: linear-gradient(95deg, rgb(var(--aurora-a)), rgb(var(--aurora-b)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
   .eyebrow {
-    @apply font-mono text-[0.72rem] uppercase tracking-[0.16em] text-subtle;
+    @apply font-mono text-[0.72rem] uppercase tracking-[0.12em] text-cobalt;
   }
 
-  .headline {
-    @apply font-display font-extrabold uppercase leading-[0.92] tracking-[-0.01em];
-    font-stretch: 125%;
-  }
-
-  /* Card whose border lights up with the aurora on hover */
-  .glow-card {
-    @apply relative rounded-2xl border border-rule bg-surface transition duration-300;
-  }
-
-  .glow-card::before {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(135deg, rgb(var(--aurora-a)), transparent 45%, rgb(var(--aurora-b)));
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
-  }
-
-  .glow-card:hover::before,
-  .glow-card:focus-visible::before {
-    opacity: 1;
-  }
-
-  .glow-card:hover {
-    box-shadow: 0 20px 60px -30px rgb(var(--aurora-b) / 0.45);
+  .card {
+    @apply rounded-2xl border border-rule bg-surface transition duration-200 hover:border-cobalt/40 hover:bg-sunken;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-paper transition hover:brightness-110;
-    background-image: linear-gradient(95deg, rgb(var(--aurora-a)), rgb(var(--aurora-b)));
-    box-shadow: 0 10px 30px -10px rgb(var(--aurora-b) / 0.6);
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-signal px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-rule bg-surface/60 px-6 py-3 text-sm font-semibold text-ink backdrop-blur transition hover:border-ink/40;
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-rule px-5 py-3 text-sm font-semibold text-ink transition hover:border-ink/40;
   }
 
   .chip {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-rule bg-surface/60 px-3 py-1.5 font-mono text-xs text-subtle transition hover:border-ink/40 hover:text-ink;
+    @apply inline-flex items-center gap-1.5 rounded-lg border border-rule px-3 py-1.5 font-mono text-xs text-subtle transition hover:border-ink/40 hover:text-ink;
   }
 
   .chip[aria-pressed="true"] {
-    @apply border-transparent text-paper;
-    background-image: linear-gradient(95deg, rgb(var(--aurora-a)), rgb(var(--aurora-b)));
+    @apply border-signal bg-signal text-white;
+  }
+
+  /* Soft blue light under a hero */
+  .hero-glow {
+    background: radial-gradient(44rem 16rem at 50% 70%, rgb(var(--signal) / 0.13), transparent 72%);
   }
 }
 

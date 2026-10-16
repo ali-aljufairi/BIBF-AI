@@ -12,6 +12,7 @@ type Props = {
   category: string;
   minutes: number;
   dek: string | null;
+  isPost: boolean;
   backlinks: {
     [k: string]: {
       title: string;
@@ -20,29 +21,29 @@ type Props = {
   };
 };
 
-function PostSingle({ title, date, category, minutes, dek, content, backlinks }: Props) {
+function PostSingle({ title, date, category, minutes, dek, isPost, content, backlinks }: Props) {
   const hasBacklinks = Object.keys(backlinks).length > 0;
+  const back = isPost ? { href: "/blog", label: "All posts" } : { href: "/notes", label: "All notes" };
 
   return (
     <article>
-      <header className="relative isolate -mt-16 overflow-hidden border-b border-rule pt-16">
-        <div className="glow absolute inset-0 -z-10" aria-hidden="true" />
-        <div className="grid-lines absolute inset-0 -z-10" aria-hidden="true" />
+      <header className="hero-glow border-b border-rule">
         <div className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 md:pb-16 md:pt-14">
           <Link
-            href="/notes"
+            href={back.href}
             className="inline-flex items-center gap-1.5 text-sm text-subtle transition hover:text-ink"
           >
-            <ArrowLeft className="h-4 w-4" /> All notes
+            <ArrowLeft className="h-4 w-4" /> {back.label}
           </Link>
           <div className="mt-10 max-w-3xl">
-            <Link
-              href={`/notes?topic=${slugifyCategory(category)}`}
-              className="inline-flex rounded-full border border-rule bg-surface/60 px-3 py-1 font-mono text-[0.7rem] uppercase tracking-wider text-cobalt transition hover:border-cobalt/50"
-            >
-              {category}
-            </Link>
-            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.02] tracking-tight text-ink [font-stretch:112%] sm:text-5xl md:text-6xl">
+            {isPost ? (
+              <p className="eyebrow">{category === "Notes" ? "Essay" : category}</p>
+            ) : (
+              <Link href={`/notes?topic=${slugifyCategory(category)}`} className="eyebrow transition hover:text-ink">
+                {category}
+              </Link>
+            )}
+            <h1 className="mt-4 text-4xl font-bold leading-[1.05] tracking-[-0.035em] text-ink sm:text-5xl md:text-6xl">
               {title}
             </h1>
             {dek && <p className="mt-5 max-w-[60ch] text-xl leading-snug text-subtle">{dek}</p>}
@@ -76,10 +77,10 @@ function PostSingle({ title, date, category, minutes, dek, content, backlinks }:
             <p className="mt-3 text-sm leading-relaxed text-subtle">No other notes link here yet.</p>
           )}
           <Link
-            href="/notes"
+            href={back.href}
             className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-cobalt hover:underline"
           >
-            <ArrowLeft className="h-4 w-4" /> Back to all notes
+            <ArrowLeft className="h-4 w-4" /> Back to {back.label.toLowerCase()}
           </Link>
         </aside>
       </div>

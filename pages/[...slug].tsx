@@ -7,7 +7,7 @@ import path from "path";
 import PostSingle from "../components/blog/post-single";
 import Layout from "../components/misc/layout";
 import { NextSeo } from "next-seo";
-import { normalizeCategory, readingMinutes, splitLeadingH1 } from "../lib/notes";
+import { isPost, normalizeCategory, readingMinutes, splitLeadingH1 } from "../lib/notes";
 
 interface notesProps {
   allPages: Page[];
@@ -26,7 +26,7 @@ type Items = {
 };
 
 type Props = {
-  post: PostType & { category: string; minutes: number; dek: string | null };
+  post: PostType & { category: string; minutes: number; dek: string | null; isPost: boolean };
   slug: string;
   backlinks: { [k: string]: Items };
 };
@@ -70,6 +70,7 @@ export default function Post({ post, backlinks }: Props) {
             category={post.category}
             minutes={post.minutes}
             dek={post.dek}
+            isPost={post.isPost}
             backlinks={backlinks}
           />
         </Layout>
@@ -122,6 +123,7 @@ export async function getStaticProps({ params }: Params) {
         category: normalizeCategory(post.category),
         minutes: readingMinutes(post.content),
         dek,
+        isPost: isPost(post.slug),
       },
       backlinks: backlinkNodes,
     },

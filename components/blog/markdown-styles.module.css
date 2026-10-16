@@ -32,7 +32,7 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-family: var(--font-sans), sans-serif;
   color: rgb(var(--ink));
   font-weight: 700;
   letter-spacing: -0.015em;
@@ -160,14 +160,14 @@
 
 .markdown-body input[type="checkbox"] {
   margin: 0 0.5em 0 0;
-  accent-color: rgb(var(--aurora-a));
+  accent-color: rgb(var(--signal));
   vertical-align: middle;
 }
 
 /* Blocks */
 .markdown-body blockquote {
   padding: 0.2em 0 0.2em 1.1em;
-  border-left: 3px solid rgb(var(--aurora-a));
+  border-left: 3px solid rgb(var(--signal));
   color: rgb(var(--subtle));
 }
 

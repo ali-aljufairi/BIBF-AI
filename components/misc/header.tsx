@@ -1,45 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Moon, Search as SearchIcon, Sun } from "lucide-react";
+import { Github, Search as SearchIcon } from "lucide-react";
 import Search from "./search";
 
-const NAV: { href: string; label: string; short?: string }[] = [
+const NAV = [
+  { href: "/blog", label: "Blog" },
   { href: "/notes", label: "Notes" },
+  { href: "/blog/About This Blog", label: "About" },
 ];
-
-function ThemeToggle() {
-  const [dark, setDark] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    const explicit = root.dataset.theme;
-    // Dark is the default unless the system asks for light.
-    setDark(explicit ? explicit === "dark" : !window.matchMedia("(prefers-color-scheme: light)").matches);
-  }, []);
-
-  const toggle = () => {
-    const next = dark ? "light" : "dark";
-    document.documentElement.dataset.theme = next;
-    try {
-      localStorage.setItem("theme", next);
-    } catch (e) {
-      // Storage can be blocked; the choice still applies for this visit.
-    }
-    setDark(!dark);
-  };
-
-  return (
-    <button
-      type="button"
-      onClick={toggle}
-      className="grid h-9 w-9 place-items-center rounded-full text-subtle transition hover:bg-sunken hover:text-ink"
-      aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
-    >
-      {dark ? <Sun className="h-[18px] w-[18px]" /> : <Moon className="h-[18px] w-[18px]" />}
-    </button>
-  );
-}
 
 const Header = () => {
   const router = useRouter();
@@ -53,54 +22,57 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const isActive = (href: string) =>
+    href === "/blog"
+      ? router.pathname === "/blog" || (router.asPath.startsWith("/blog/") && !router.asPath.includes("About"))
+      : decodeURI(router.asPath).split("?")[0] === href;
+
   return (
     <header
       className={`sticky top-0 z-30 border-b transition-colors duration-300 ${
-        scrolled ? "border-rule bg-paper/85 backdrop-blur-md" : "border-transparent bg-transparent"
+        scrolled ? "border-rule bg-paper/85 backdrop-blur-md" : "border-transparent bg-paper"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center gap-2 px-4 sm:px-6">
-        <Link href="/" className="group mr-auto flex items-baseline gap-2" aria-label="Ali Aljufairi, home">
-          <span className="whitespace-nowrap font-display text-lg font-extrabold uppercase tracking-tight text-ink [font-stretch:120%]">Ali Aljufairi</span>
-          <span className="hidden font-mono text-xs text-subtle transition group-hover:text-cobalt sm:inline">/ notes</span>
+      <div className="mx-auto flex h-16 max-w-6xl items-center gap-1 px-4 sm:px-6">
+        <Link href="/" className="mr-auto flex items-center gap-2.5" aria-label="Ali Aljufairi, home">
+          <span className="grid h-7 w-7 place-items-center rounded-lg bg-signal font-mono text-[0.68rem] font-medium text-white">
+            AA
+          </span>
+          <span className="hidden whitespace-nowrap font-semibold text-ink sm:inline">Ali Aljufairi</span>
         </Link>
 
-        <nav className="flex items-center gap-1" aria-label="Main">
-          {NAV.map((item) => {
-            const active = router.pathname === item.href;
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`whitespace-nowrap rounded-full px-3 py-1.5 text-sm font-medium transition ${
-                  active ? "bg-sunken text-ink" : "text-subtle hover:text-ink"
-                }`}
-                aria-current={active ? "page" : undefined}
-              >
-                {item.short ? (
-                  <>
-                    <span className="sm:hidden">{item.short}</span>
-                    <span className="hidden sm:inline">{item.label}</span>
-                  </>
-                ) : (
-                  item.label
-                )}
-              </Link>
-            );
-          })}
+        <nav className="flex items-center" aria-label="Main">
+          {NAV.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`whitespace-nowrap rounded-lg px-3 py-1.5 text-sm transition ${
+                isActive(item.href) ? "text-ink" : "text-subtle hover:text-ink"
+              }`}
+              aria-current={isActive(item.href) ? "page" : undefined}
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         <button
           type="button"
           onClick={() => setSearching(true)}
-          className="ml-1 flex h-9 shrink-0 items-center gap-2 rounded-full border border-rule bg-surface/60 px-2.5 text-sm text-subtle md:pl-3 md:pr-2 transition hover:border-ink/40 hover:text-ink"
-          aria-label="Search notes"
+          className="ml-1 flex h-9 shrink-0 items-center gap-2 rounded-lg border border-rule px-2.5 text-sm text-subtle transition hover:border-ink/40 hover:text-ink"
+          aria-label="Search"
         >
           <SearchIcon className="h-4 w-4" />
-          <span className="hidden md:inline">Search</span>
-          <kbd className="hidden rounded border border-rule bg-sunken px-1.5 font-mono text-[0.7rem] md:inline">⌘K</kbd>
+          <kbd className="hidden font-mono text-[0.7rem] md:inline">⌘K</kbd>
         </button>
-        <ThemeToggle />
+        <a
+          href="https://github.com/Ali-Aljufairi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-1 hidden h-9 items-center gap-2 rounded-lg border border-rule px-3 text-sm text-ink transition hover:border-ink/40 md:flex"
+        >
+          <Github className="h-4 w-4" /> GitHub
+        </a>
       </div>
 
       <Search visible={searching} setVisible={setSearching} />

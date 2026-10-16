@@ -1,6 +1,6 @@
 import { getMDExcerpt } from "./markdownToHtml";
 import { getAllPosts } from "./api";
-import type { NoteSummary } from "./format";
+import { BLOG_DIR, type NoteSummary } from "./format";
 
 export type { NoteSummary };
 
@@ -30,14 +30,19 @@ export function splitLeadingH1(markdown = ""): { heading: string | null; body: s
 /** Builds the small, serializable summary used by lists and the index. */
 export function toNoteSummary(post: { [key: string]: any }): NoteSummary {
   const content: string = post.content ?? "";
-  // Skip headings so the excerpt opens on prose, and drop a repeated title.
-  const prose = content.replace(/^\s*#{1,6}\s.*$/gm, "");
-  let excerpt = getMDExcerpt(prose, 260).replace(/\s+/g, " ").trim();
-  if (excerpt.toLowerCase().startsWith(String(post.title).toLowerCase())) {
-    excerpt = excerpt.slice(String(post.title).length).trim();
+  // Prefer a hand-written summary from frontmatter. Otherwise skip headings so the
+  // excerpt opens on prose, and drop a repeated title.
+  let excerpt: string = post.description ?? post.summary ?? "";
+  if (!excerpt) {
+    const prose = content.replace(/^\s*#{1,6}\s.*$/gm, "");
+    excerpt = getMDExcerpt(prose, 260).replace(/\s+/g, " ").trim();
+    if (excerpt.toLowerCase().startsWith(String(post.title).toLowerCase())) {
+      excerpt = excerpt.slice(String(post.title).length).trim();
+    }
   }
   return {
     slug: post.slug,
+    kind: isPost(post.slug) ? "post" : "note",
     title: post.title,
     excerpt,
     date: post.date ?? null,
@@ -46,11 +51,25 @@ export function toNoteSummary(post: { [key: string]: any }): NoteSummary {
   };
 }
 
-/** All notes as summaries (newest first) plus topic counts, for the home page and the index. */
-export function getNoteIndex() {
-  const notes = getAllPosts(["slug", "title", "content", "date", "category"])
+export function isPost(slug: string): boolean {
+  return slug.split(/[\\/]/)[0] === BLOG_DIR;
+}
+
+/** Every Markdown file as a summary, newest first. */
+function getAllSummaries() {
+  return getAllPosts(["slug", "title", "content", "date", "category", "description", "summary"])
     .map(toNoteSummary)
     .sort((a, b) => (b.date ? Date.parse(b.date) : 0) - (a.date ? Date.parse(a.date) : 0));
+}
+
+/** Blog posts (files in common_md/blog/), newest first. */
+export function getBlogPosts() {
+  return getAllSummaries().filter((n) => n.kind === "post");
+}
+
+/** Notes (every other Markdown file), newest first, plus topic counts. */
+export function getNoteIndex() {
+  const notes = getAllSummaries().filter((n) => n.kind === "note");
 
   const counts = new Map<string, number>();
   for (const note of notes) counts.set(note.category, (counts.get(note.category) ?? 0) + 1);
