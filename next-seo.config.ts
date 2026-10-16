@@ -34,7 +34,7 @@ const config: DefaultSeoProps = {
     },
     {
       rel: "shortcut icon",
-      type: "image/png",
+      type: "image/x-icon",
       href: "/favicon/favicon.ico",
     },
     {
