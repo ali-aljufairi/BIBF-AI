@@ -17,6 +17,11 @@ const config: DefaultSeoProps = {
   additionalLinkTags: [
     {
       rel: "icon",
+      type: "image/svg+xml",
+      href: "/favicon/icon.svg",
+    },
+    {
+      rel: "icon",
       type: "image/png",
       href: "/favicon/favicon-32x32.png",
       sizes: "32x32",
