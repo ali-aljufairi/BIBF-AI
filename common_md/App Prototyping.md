@@ -2,12 +2,6 @@
 date: 2025-02-01
 category: "Tutorials"
 ---
-
----
-date: 2025-02-01
-category: "Tutorials"
----
-
 # App Prototyping Tools for AI/ML: From Streamlit to FastHTML
 
 Building prototypes for AI and machine learning applications requires tools that balance rapid development with the ability to showcase complex functionality. This comprehensive guide explores the leading prototyping tools, their strengths, use cases, and practical implementation strategies. Whether you're a data scientist, ML engineer, or full-stack developer, understanding these tools will help you choose the right approach for your next project.
