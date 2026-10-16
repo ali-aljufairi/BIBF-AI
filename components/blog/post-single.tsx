@@ -1,14 +1,17 @@
 import React from "react";
-import Author from "../../interfaces/author";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import Backlinks from "../misc/backlinks";
 import PostBody from "./post-body";
-import PostMeta from "./post-meta";
+import { formatDate, slugifyCategory } from "../../lib/format";
 
 type Props = {
   title: string;
   content: string;
   date?: string;
-  author?: Author;
+  category: string;
+  minutes: number;
+  dek: string | null;
   backlinks: {
     [k: string]: {
       title: string;
@@ -17,57 +20,68 @@ type Props = {
   };
 };
 
-function PostSingle({ title, date, author, content, backlinks }: Props) {
+function PostSingle({ title, date, category, minutes, dek, content, backlinks }: Props) {
+  const hasBacklinks = Object.keys(backlinks).length > 0;
+
   return (
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-          <div className="max-w-3xl mx-auto lg:max-w-none">
-            <article>
-              {/* Article header */}
-              <header className="max-w-3xl mx-auto mb-20">
-                {/* Title */}
-                <h1 className="h1 text-center mb-4 text-6xl">{title}</h1>
-              </header>
-
-              {/* Article content */}
-              <div className="lg:flex lg:justify-between" data-sticky-container>
-                {/* Main content */}
-                <div>
-                  {/* Article meta */}
-                  {(author || date) && (
-                    <>
-                      <PostMeta author={author} date={date} />
-                      <hr className="w-16 h-px pt-px bg-gray-200 border-0 my-6" />
-                    </>
-                  )}
-
-                  {/* Article body */}
-                  <PostBody content={content} />
-                </div>
-
-                {/* Sidebar */}
-                <hr className="my-10 border border-dashed lg:block" />
-                <aside className="relative lg:block lg:w-72 lg:ml-20 shrink-0">
-                  <div>
-                    <h4 className="text-lg font-bold leading-snug tracking-tight mb-4">
-                      Backlinks
-                    </h4>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
-                      {Object.keys(backlinks).length > 0 && (
-                        <Backlinks backlinks={backlinks} />
-                      )}
-                    </div>
-                  </div>
-                </aside>
-              </div>
-
-              {/* Article footer */}
-            </article>
+    <article>
+      <header className="dot-grid border-b border-rule">
+        <div className="mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 md:pb-16 md:pt-14">
+          <Link
+            href="/notes"
+            className="inline-flex items-center gap-1.5 text-sm text-subtle transition hover:text-ink"
+          >
+            <ArrowLeft className="h-4 w-4" /> All notes
+          </Link>
+          <div className="mt-10 max-w-3xl">
+            <Link
+              href={`/notes?topic=${slugifyCategory(category)}`}
+              className="eyebrow transition hover:text-mark"
+            >
+              {category}
+            </Link>
+            <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-5xl md:text-6xl">
+              {title}
+            </h1>
+            {dek && <p className="mt-5 max-w-[60ch] text-xl leading-snug text-subtle">{dek}</p>}
+            <div className="mt-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-xs text-subtle">
+              {date && (
+                <time dateTime={date} className="tabular">
+                  {formatDate(date)}
+                </time>
+              )}
+              {date && <span aria-hidden="true">·</span>}
+              <span className="tabular">{minutes} min read</span>
+              <span aria-hidden="true">·</span>
+              <span>Ali Aljufairi</span>
+            </div>
           </div>
         </div>
+      </header>
+
+      <div className="mx-auto grid max-w-6xl gap-16 px-4 pt-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_16rem]">
+        <div className="min-w-0">
+          <PostBody content={content} />
+        </div>
+
+        <aside className="lg:sticky lg:top-24 lg:self-start">
+          <p className="eyebrow">Linked from</p>
+          {hasBacklinks ? (
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+              <Backlinks backlinks={backlinks} />
+            </div>
+          ) : (
+            <p className="mt-3 text-sm leading-relaxed text-subtle">No other notes link here yet.</p>
+          )}
+          <Link
+            href="/notes"
+            className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-cobalt hover:underline"
+          >
+            <ArrowLeft className="h-4 w-4" /> Back to all notes
+          </Link>
+        </aside>
       </div>
-    </section>
+    </article>
   );
 }
 

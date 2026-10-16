@@ -7,6 +7,7 @@ import path from "path";
 import PostSingle from "../components/blog/post-single";
 import Layout from "../components/misc/layout";
 import { NextSeo } from "next-seo";
+import { normalizeCategory, readingMinutes, splitLeadingH1 } from "../lib/notes";
 
 interface notesProps {
   allPages: Page[];
@@ -25,7 +26,7 @@ type Items = {
 };
 
 type Props = {
-  post: PostType;
+  post: PostType & { category: string; minutes: number; dek: string | null };
   slug: string;
   backlinks: { [k: string]: Items };
 };
@@ -66,7 +67,9 @@ export default function Post({ post, backlinks }: Props) {
             title={post.title}
             content={post.content}
             date={post.date}
-            author={post.author}
+            category={post.category}
+            minutes={post.minutes}
+            dek={post.dek}
             backlinks={backlinks}
           />
         </Layout>
@@ -92,8 +95,12 @@ export async function getStaticProps({ params }: Params) {
     "author",
     "content",
     "ogImage",
+    "category",
   ]);
-  const content = await markdownToHtml(post.content || "", slug);
+  // A leading "# Heading" repeats the title, so show it as the subtitle instead.
+  const { heading, body } = splitLeadingH1(post.content || "");
+  const dek = heading && heading.trim().toLowerCase() !== post.title.trim().toLowerCase() ? heading : null;
+  const content = await markdownToHtml(body, slug);
   const linkMapping = await getLinksMapping();
   const backlinks = Object.keys(linkMapping).filter(
     (k) => linkMapping[k].includes(post.slug) && k !== post.slug,
@@ -112,6 +119,9 @@ export async function getStaticProps({ params }: Params) {
       post: {
         ...post,
         content,
+        category: normalizeCategory(post.category),
+        minutes: readingMinutes(post.content),
+        dek,
       },
       backlinks: backlinkNodes,
     },

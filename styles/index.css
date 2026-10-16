@@ -3,3 +3,144 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Design tokens. Layout concept: a lab notebook. Cool paper with a faint
+ * dot grid, ink-navy text, one amber highlighter mark for emphasis and a
+ * cobalt link color. Colors are RGB channels so Tailwind can apply alpha.
+ */
+@layer base {
+  :root {
+    --paper: 246 247 249;
+    --surface: 255 255 255;
+    --sunken: 237 240 245;
+    --ink: 14 27 44;
+    --subtle: 88 99 118;
+    --rule: 219 225 234;
+    --mark: 217 119 6;
+    --mark-wash: 253 230 170;
+    --cobalt: 37 87 214;
+    --good: 21 128 61;
+    --bad: 190 18 60;
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: 10 15 26;
+      --surface: 17 24 39;
+      --sunken: 23 32 50;
+      --ink: 229 234 242;
+      --subtle: 148 160 181;
+      --rule: 36 48 69;
+      --mark: 245 158 11;
+      --mark-wash: 120 72 8;
+      --cobalt: 125 165 255;
+      --good: 74 222 128;
+      --bad: 251 113 133;
+      color-scheme: dark;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper: 10 15 26;
+    --surface: 17 24 39;
+    --sunken: 23 32 50;
+    --ink: 229 234 242;
+    --subtle: 148 160 181;
+    --rule: 36 48 69;
+    --mark: 245 158 11;
+    --mark-wash: 120 72 8;
+    --cobalt: 125 165 255;
+    --good: 74 222 128;
+    --bad: 251 113 133;
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: rgb(var(--mark-wash));
+    color: rgb(var(--ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--cobalt));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Faint dot grid, like notebook paper */
+  .dot-grid {
+    background-image: radial-gradient(rgb(var(--rule)) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Highlighter stroke behind a word */
+  .marker {
+    background-image: linear-gradient(
+      100deg,
+      rgb(var(--mark-wash) / 0) 0.5%,
+      rgb(var(--mark-wash)) 2%,
+      rgb(var(--mark-wash)) 97%,
+      rgb(var(--mark-wash) / 0) 99%
+    );
+    background-size: 100% 0.42em;
+    background-position: 0 88%;
+    background-repeat: no-repeat;
+    padding-inline: 0.08em;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[0.72rem] uppercase tracking-[0.14em] text-subtle;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-semibold text-paper transition hover:bg-ink/85;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-rule bg-surface px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/40;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-rule px-3 py-1 font-mono text-xs text-subtle transition hover:border-ink/40 hover:text-ink;
+  }
+
+  .chip[aria-pressed="true"] {
+    @apply border-ink bg-ink text-paper;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}

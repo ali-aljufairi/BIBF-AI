@@ -4,7 +4,7 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 const config = {
-  darkMode: ["class"],
+  darkMode: ["selector", '[data-theme="dark"]'],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -25,7 +25,22 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "var(--font-sans)", "ui-sans-serif", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
+      },
       colors: {
+        paper: "rgb(var(--paper) / <alpha-value>)",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        sunken: "rgb(var(--sunken) / <alpha-value>)",
+        ink: "rgb(var(--ink) / <alpha-value>)",
+        subtle: "rgb(var(--subtle) / <alpha-value>)",
+        rule: "rgb(var(--rule) / <alpha-value>)",
+        mark: "rgb(var(--mark) / <alpha-value>)",
+        cobalt: "rgb(var(--cobalt) / <alpha-value>)",
+        good: "rgb(var(--good) / <alpha-value>)",
+        bad: "rgb(var(--bad) / <alpha-value>)",
         Pufr: {
           50: "#F1F3F9",
           100: "#E2E6F3",
@@ -156,8 +171,12 @@ const config = {
 
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
+  // Theme tokens (paper, ink, ...) are defined in styles/index.css; skip them
+  // here so this plugin doesn't overwrite them with self-references.
   let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+    Object.entries(allColors)
+      .filter(([, val]) => typeof val === "string" && !val.includes("var("))
+      .map(([key, val]) => [`--${key}`, val]),
   );
 
   addBase({

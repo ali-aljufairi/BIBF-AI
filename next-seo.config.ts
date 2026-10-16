@@ -1,17 +1,17 @@
 import { DefaultSeoProps } from "next-seo";
 
-const description = "HOST ANY notes on AWS Machine Learning Services, Tutorials, and Tips.";
+const description = "Notes on machine learning, AWS and the cloud by Ali Aljufairi, started during the AWS ML program at BIBF.";
 // See https://www.npmjs.com/package/next-seo for more options
 const config: DefaultSeoProps = {
   titleTemplate: "%s",
   defaultTitle:
-    "Collection of AWS ML Notes",
+    "Ali Aljufairi · Notes on ML & Cloud",
   description,
 
   openGraph: {
     type: "website",
     locale: "en_IE",
-    title: "AWS Machine Learning Blog ",
+    title: "Ali Aljufairi · Notes on ML & Cloud",
     description,
   },
   additionalLinkTags: [
