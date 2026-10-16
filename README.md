@@ -47,6 +47,32 @@ docker run -p 3000:3000 bibf-ai
 
 <br/>
 
+## Writing a new post or note ✍️
+
+Every Markdown file in `common_md/` becomes a page automatically. There is no code to change: add the file, commit, push to `main`, and Vercel rebuilds the site with it.
+
+- **Blog post:** put the file in `common_md/blog/`. It shows up on the home page and on `/blog`, at `/blog/<file name>`.
+- **Note:** put the file anywhere else in `common_md/`. It shows up on `/notes`, grouped by its `category`.
+
+Start the file with a small frontmatter block:
+
+```markdown
+---
+title: "My new post"            # optional, defaults to the file name
+date: 2026-10-16                # used for sorting, newest first
+category: "Tech Insights"       # optional; notes are grouped by this
+description: "One sentence."    # optional; shown in lists instead of an auto excerpt
+---
+
+# My new post
+
+Write the rest in normal Markdown: headings, lists, tables, code blocks and images.
+```
+
+Images go in `common_md/attachments/` and are linked with a relative path, for example `![Diagram](attachments/diagram.png)`. Links to other notes, such as `[SageMaker](Amazon%20Sage%20Maker.md)`, get a hover preview and show up under "Linked from" on the other note.
+
+To preview locally before pushing, run `npm run dev` and open http://localhost:3000.
+
 ##  Project Structure 📂
 
 - `@/`: Contains reusable components and libraries.
@@ -80,10 +106,6 @@ docker run -p 3000:3000 bibf-ai
 
 - Preserved section of the original AWS machine learning training notes and resources.
 - Organized learning path for those interested in AWS ML certification.
-
-### Quiz ❓
-
-- Interactive quizzes on technical topics to test knowledge (preserved from the original site).
 
 ## Contributing 🤝
 

@@ -3,3 +3,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Design tokens. Layout concept: a dark, terminal-flavoured blog. Ink-black
+ * canvas, one signal blue, monospace for metadata, and an animated ASCII
+ * hero as the single loud element. Dark only. Colors are RGB channels so
+ * Tailwind can apply alpha.
+ */
+@layer base {
+  :root {
+    --paper: 10 10 16;
+    --surface: 17 17 27;
+    --sunken: 24 24 38;
+    --ink: 236 236 244;
+    --subtle: 141 141 163;
+    --rule: 35 35 56;
+    --cobalt: 120 146 255;
+    --signal: 74 108 255;
+    --mark: 120 146 255;
+    --mark-wash: 74 108 255;
+    --good: 74 222 128;
+    --bad: 251 113 133;
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: rgb(var(--signal) / 0.45);
+    color: rgb(var(--ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--cobalt));
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[0.72rem] uppercase tracking-[0.12em] text-cobalt;
+  }
+
+  .card {
+    @apply rounded-2xl border border-rule bg-surface transition duration-200 hover:border-cobalt/40 hover:bg-sunken;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-signal px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-rule px-5 py-3 text-sm font-semibold text-ink transition hover:border-ink/40;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-lg border border-rule px-3 py-1.5 font-mono text-xs text-subtle transition hover:border-ink/40 hover:text-ink;
+  }
+
+  .chip[aria-pressed="true"] {
+    @apply border-signal bg-signal text-white;
+  }
+
+  /* Soft blue light under a hero */
+  .hero-glow {
+    background: radial-gradient(44rem 16rem at 50% 70%, rgb(var(--signal) / 0.13), transparent 72%);
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}

@@ -90,26 +90,29 @@ export function getSlugFromHref(currSlug: string, href: string) {
 export function updateMarkdownLinks(markdown: string, currSlug: string) {
   // remove `.md` from links
   markdown = markdown.replaceAll(
-    /(\[[^\[\]]+\]\([^\(\)]+)(\.md(?:#[^\)]*)?)(\))/g,
+    /(\[[^\[\]]+\]\((?:[^()\s]|\([^()\s]*\))+?)(\.md(?:#[^()\s]*)?)(\))/g,
     "$1$3",
   );
 
-  // update image links
+  // Point links to files next to the Markdown (images, PDFs) at their copy in
+  // public/. Paths may be relative to the note's own folder or to common_md/,
+  // and may contain one level of parentheses, e.g. "image (1).png".
+  const relAssetDir = path.relative("./public", process.env.MD_ASSET_DIR || "");
+  const noteDir = path.dirname(currSlug);
   markdown = markdown.replaceAll(
-    /(\[[^\[\]]*\]\()([^\(\)]+)(\))/g,
+    /(\[[^\[\]]*\]\()((?:[^()\s]|\([^()\s]*\))+)(\))/g,
     (m, m1, m2: string, m3) => {
-      const relAssetDir = path.relative(
-        "./public",
-        process.env.MD_ASSET_DIR || "",
-      );
-      const fileSlugRel = decodeURI(path.join(mdDir, m2));
-      const fileSlugAbs = decodeURI(path.join(mdDir, m2));
-      if (fs.existsSync(fileSlugRel)) {
-        const imgPath = path.join(relAssetDir, m2);
-        return `${m1}/${imgPath}${m3}`;
-      } else if (fs.existsSync(fileSlugAbs)) {
-        const imgPath = path.join(relAssetDir, m2);
-        return `${m1}/${imgPath}${m3}`;
+      if (/^[a-z]+:|^\/|^#/i.test(m2)) return m;
+      for (const candidate of [path.join(noteDir, m2), m2]) {
+        let onDisk: string;
+        try {
+          onDisk = path.join(mdDir, decodeURI(candidate));
+        } catch {
+          continue;
+        }
+        if (onDisk.startsWith(mdDir) && fs.existsSync(onDisk) && fs.statSync(onDisk).isFile()) {
+          return `${m1}/${path.join(relAssetDir, candidate)}${m3}`;
+        }
       }
       return m;
     },

@@ -1,5 +1,5 @@
 .internal-link-container>.note-preview {
-    @apply hidden absolute w-[350px] left-0 z-50;
+    @apply hidden absolute top-full mt-1 w-[320px] max-w-[80vw] left-0 z-50 shadow-xl;
     text-align: left !important;
     line-height: normal !important;
     letter-spacing: normal !important;
@@ -18,9 +18,9 @@
 }
 
 .internal-link {
-    @apply rounded;
-    color: #0969da;
-    background-color: rgb(243 250 251) !important;
+    @apply rounded px-0.5;
+    color: rgb(var(--cobalt));
+    background-color: rgb(var(--cobalt) / 0.08);
 }
 
 /* Typography */

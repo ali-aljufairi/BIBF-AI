@@ -1,72 +1,112 @@
-// Import necessary libraries and styles
 import { GetStaticProps } from "next";
-import Link from "next/link";
-import { getAllPosts } from "../lib/api";
-import React, { useState, lazy, Suspense } from "react";
-import Header from "../components/misc/header";
-const ParticlesAnimation = lazy(() => import('../components/ui/ParticlesAnimation'));
+import { useRouter } from "next/router";
+import React, { useMemo, useState } from "react";
+import { NextSeo } from "next-seo";
+import { Filter } from "lucide-react";
+import Layout from "../components/misc/layout";
+import NoteRow from "../components/blog/note-row";
+import { getNoteIndex } from "../lib/notes";
+import { NoteSummary, slugifyCategory } from "../lib/format";
 
-// Define the interface for page properties
 interface NotesProps {
-  allPages: Page[];
+  notes: NoteSummary[];
+  topics: { name: string; count: number }[];
 }
 
-// Define the interface for a page
-interface Page {
-  slug: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  author: string;
-}
+const Notes: React.FC<NotesProps> = ({ notes, topics }) => {
+  const router = useRouter();
+  const [filter, setFilter] = useState("");
+  const topicSlug = typeof router.query.topic === "string" ? router.query.topic : null;
+  const activeTopic = topics.find((t) => slugifyCategory(t.name) === topicSlug)?.name ?? null;
 
-// Define the Notes component
-const Notes: React.FC<NotesProps> = ({ allPages }) => {
-  const [hoveredTitle, setHoveredTitle] = useState<string | null>(null);
-
-  const handleCardHover = (title: string) => {
-    setHoveredTitle(title);
+  const setTopic = (name: string | null) => {
+    const query = name ? { topic: slugifyCategory(name) } : {};
+    router.replace({ pathname: "/notes", query }, undefined, { shallow: true, scroll: false });
   };
 
-  const handleCardLeave = () => {
-    setHoveredTitle(null);
-  };
+  const visible = useMemo(() => {
+    const q = filter.trim().toLowerCase();
+    return notes.filter(
+      (n) =>
+        (!activeTopic || n.category === activeTopic) &&
+        (!q || n.title.toLowerCase().includes(q) || n.excerpt.toLowerCase().includes(q)),
+    );
+  }, [notes, activeTopic, filter]);
 
   return (
-    <>
-      <Header />
-      <Suspense fallback={<div>Loading particles...</div>}>
-        <ParticlesAnimation />
-      </Suspense>
-      <div className="flex flex-col min-h-screen justify-center items-center">
-        <div className="m-10  flex flex-wrap justify-center items-center">
-          {allPages.map((page) => (
-            <Link key={page.slug} href={`${page.slug}`} passHref>
-              <div
-                className={`card m-2 my-4 p-4 shadow-md text-center transition-transform transform hover:scale-105 relative ${hoveredTitle === page.title ? "bg-Pufr-600 text-white" : ""
-                  }`}
-                onMouseEnter={() => handleCardHover(page.title)}
-                onMouseLeave={handleCardLeave}
-              >
-                {hoveredTitle === page.title && (
-                  <div className="absolute inset-0 border-4 border-Pufr-300 animate-pulse"></div>
-                )}
-                <h2 className="text-2xl font-bold">{page.title}</h2>
-                <p className="mt-2 text-gray-50">{page.excerpt}</p>
-              </div>
-            </Link>
-          ))}
+    <Layout>
+      <NextSeo title="Notes · Ali Aljufairi" description="Every note on machine learning, AWS and the cloud." />
+
+      <section className="hero-glow border-b border-rule">
+        <div className="mx-auto max-w-6xl px-4 pb-10 pt-14 sm:px-6 md:pt-20">
+          <p className="eyebrow">Notes</p>
+          <h1 className="mt-3 text-4xl font-bold tracking-[-0.035em] text-ink md:text-6xl">The BIBF notebook</h1>
+          <p className="mt-4 max-w-[60ch] text-lg text-subtle">
+            {notes.length} notes from the AWS machine learning program at BIBF and after, newest first.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by topic">
+              <button type="button" className="chip" aria-pressed={!activeTopic} onClick={() => setTopic(null)}>
+                All <span className="tabular opacity-70">{notes.length}</span>
+              </button>
+              {topics.map((t) => (
+                <button
+                  key={t.name}
+                  type="button"
+                  className="chip"
+                  aria-pressed={activeTopic === t.name}
+                  onClick={() => setTopic(activeTopic === t.name ? null : t.name)}
+                >
+                  {t.name} <span className="tabular opacity-70">{t.count}</span>
+                </button>
+              ))}
+            </div>
+            <label className="relative block md:w-72" htmlFor="notes-filter">
+              <span className="sr-only">Filter notes</span>
+              <Filter className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-subtle" />
+              <input
+                id="notes-filter"
+                type="search"
+                value={filter}
+                onChange={(e) => setFilter(e.target.value)}
+                placeholder="Filter by title or text"
+                className="h-10 w-full rounded-lg border border-rule bg-surface pl-9 pr-4 text-sm text-ink placeholder:text-subtle focus:border-ink/40 focus:outline-none"
+              />
+            </label>
+          </div>
         </div>
-      </div>
-    </>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 sm:px-6">
+        {visible.length > 0 ? (
+          <ul className="divide-y divide-rule">
+            {visible.map((note) => (
+              <NoteRow key={note.slug} note={note} />
+            ))}
+          </ul>
+        ) : (
+          <div className="py-20 text-center">
+            <p className="text-xl font-semibold text-ink">No notes match that filter.</p>
+            <button
+              type="button"
+              className="mt-4 text-sm font-medium text-cobalt hover:underline"
+              onClick={() => {
+                setFilter("");
+                setTopic(null);
+              }}
+            >
+              Clear filters
+            </button>
+          </div>
+        )}
+      </section>
+    </Layout>
   );
 };
 
-// Define the static props function
 export const getStaticProps: GetStaticProps = async () => {
-  const allPages = getAllPosts(["slug", "title", "content", "author", "date"]);
-  return { props: { allPages } };
+  return { props: getNoteIndex() };
 };
 
-// Export the component as default
 export default Notes;
