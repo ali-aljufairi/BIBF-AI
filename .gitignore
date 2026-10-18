@@ -38,3 +38,10 @@ workspace.json
 
 /public/md_assets/**
 .git/objects/pack/
+# generated at build time by lib/modules/generate-agent-files.mjs
+/public/**/*.md
+/public/llms.txt
+/public/llms-full.txt
+/public/feed.xml
+/public/sitemap.xml
+/public/robots.txt

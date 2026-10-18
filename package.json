@@ -6,9 +6,10 @@
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
     "copyimages": "node ./lib/modules/copy-images.mjs",
-    "predev": "npm run copyimages",
+    "agentfiles": "node ./lib/modules/generate-agent-files.mjs",
+    "predev": "npm run copyimages && npm run agentfiles",
     "dev": "next",
-    "prebuild": "npm run copyimages",
+    "prebuild": "npm run copyimages && npm run agentfiles",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc"
