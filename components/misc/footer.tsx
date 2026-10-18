@@ -11,7 +11,13 @@ const Footer: React.FC = () => {
   return (
     <footer className="mt-28 border-t border-rule">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-8 text-sm text-subtle sm:px-6">
-        <p>© {new Date().getFullYear()} Ali Aljufairi</p>
+        <p>
+          © {new Date().getFullYear()} Ali Aljufairi
+          <span className="mx-2" aria-hidden="true">·</span>
+          <a href="/feed.xml" className="transition hover:text-ink">RSS</a>
+          <span className="mx-2" aria-hidden="true">·</span>
+          <a href="/llms.txt" className="transition hover:text-ink">llms.txt</a>
+        </p>
         <div className="flex items-center gap-5">
           {SOCIALS.map(({ href, label, Icon }) => (
             <a
