@@ -6,6 +6,10 @@
 
 # My Personal Blog & Notes 📝
 
+Live site: https://notes.aljufairi.org
+
+Pageview-only analytics loads `https://metrics.aljufairi.org/script.js` from `app/layout.tsx` with this site's public website ID. It sends origin/path and origin-only referrers, excludes queries/fragments/titles, uses no cookies or storage, respects Do Not Track, and has no session replay. Change the public website ID in the layout when moving to another collector; no secret is required. The authenticated dashboard is private: https://sin.koi-procyon.ts.net:9443 (Tailscale required).
+
 > **Updated July 2025:** This website was originally created as a repository of notes from AWS machine learning training conducted at BIBF (Bahrain Institute of Banking and Finance). Due to growing interest in these resources, it has evolved into my personal blog and knowledge-sharing platform.
 
 This website now serves as my personal blog where I share insights, notes, and resources on technology, machine learning, cloud computing, MLOps, and other technical topics that interest me and my readers.
