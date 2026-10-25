@@ -1,4 +1,5 @@
 import { AppProps } from "next/app";
+import Script from "next/script";
 import { Geist, JetBrains_Mono } from "next/font/google";
 import "../styles/index.css";
 import { DefaultSeo } from "next-seo";
@@ -14,6 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
       <Analytics />
+      <Script src="https://metrics.aljufairi.org/script.js" data-website-id="52f9f094-7f2d-4e8e-8684-a51eeb8ccb6d" strategy="afterInteractive" />
     </div>
   );
 }
